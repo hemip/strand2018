@@ -1,0 +1,4 @@
+#Tue Apr 11 16:06:16 CEST 2017
+base.0=E\:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-18.0.0_4eae53b63e0ba4f7969d0fe11231035ff8ec4332
+renamed.0=classes.dex
+file.0=E\:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10\\support-v4-18.0.0_4eae53b63e0ba4f7969d0fe11231035ff8ec4332\\classes.dex

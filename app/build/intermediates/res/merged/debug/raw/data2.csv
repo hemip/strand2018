@@ -1,0 +1,236 @@
+"ruta","vattendist","namn","strandtyp","kusttyp","urvalsklass","provyta","pyid","exponering","transektlen","transektriktning","easting","northing","longitud","latitud"
+3007,5,"Fjällbacka inre skärgård","klippa/häll","öar","08_havsklippa_Exploaterad",1,"20133007001","3-Extremt skyddat",5.4,312,282014.2886,6497676.3953,11.2517552092084,58.5647588417076
+3007,5,"Fjällbacka yttre skärgård","sand","öar","03_sand_Ickeexploaterad",2,"20133007002","2-Ultra skyddat",47.3,319,280428.5877,6497784.9964,11.2244522812839,58.5649348577867
+3007,5,"Fjällbacka inre skärgård","klippa/häll","öar","08_havsklippa_Ickeexploaterad",3,"20133007003","4-Mycket skyddat",20.8,185,281986.5118,6497801.8778,11.2511584366598,58.5658695036285
+3007,5,"Fjällbacka inre skärgård","strandäng/våtmark","fastland","10_vasstrand_Exploaterad",4,"20133007004","3-Extremt skyddat",10.7,146,284400.6949,6497911.182,11.2924670818674,58.5680520776921
+3007,5,"Fjällbacka inre skärgård","strandäng/våtmark","fastland","04_strandäng/våtmark_Exploaterad",5,"20133007005","3-Extremt skyddat",7.5,93,283436.0869,6498073.0664,11.2757653258134,58.5690238652533
+3007,5,"Fjällbacka inre skärgård","klippa/häll","fastland","08_havsklippa_Exploaterad",6,"20133007006","3-Extremt skyddat",1.9,284,283656.7594,6498254.217,11.2793785580716,58.5707571824243
+3007,5,"Fjällbacka inre skärgård","klippa/häll","öar","08_havsklippa_Ickeexploaterad",7,"20133007007","4-Mycket skyddat",7,319,282231.7247,6498419.518,11.2547728523281,58.5715276271044
+3007,5,"Fjällbacka inre skärgård","klippa/häll","öar","01_klippstränder_Ickeexploaterad",8,"20133007008","3-Extremt skyddat",5.9,274,283264.6028,6498640.9304,11.2722819252807,58.5740278037138
+3007,5,"Fjällbacka inre skärgård","klippa/häll","öar","08_havsklippa_Ickeexploaterad",9,"20133007009","3-Extremt skyddat",4.4,236,282256.2594,6498758.6008,11.2548688382706,58.5745787874973
+3007,5,"Fjällbacka inre skärgård","strandäng/våtmark","öar","04_strandäng/våtmark_Ickeexploaterad",10,"20133007010","2-Ultra skyddat",4.8,211,282939.6857,6498832.6045,11.2665240844907,58.5755836046955
+3007,5,"Fjällbacka yttre skärgård","klippa/häll","öar","01_klippstränder_Exploaterad",11,"20133007011","2-Ultra skyddat",3.3,262,280265.7062,6498961.4228,11.2205211404381,58.5753954315222
+3007,5,"Fjällbacka yttre skärgård","klippa/häll","öar","08_havsklippa_Ickeexploaterad",12,"20133007012","3-Extremt skyddat",11.9,280,281699.7764,6499097.8353,11.2449951655734,58.5773400657063
+3007,5,"Fjällbacka yttre skärgård","sand","öar","03_sand_Ickeexploaterad",13,"20133007013","3-Extremt skyddat",11.5,146,282421.187,6499652.3237,11.2568424793229,58.5826709265791
+3007,5,"Fjällbacka yttre skärgård","klippa/häll","öar","01_klippstränder_Ickeexploaterad",14,"20133007014","3-Extremt skyddat",7.1,256,280352.3547,6499689.8716,11.2213033707124,58.5819673396258
+3007,5,"Fjällbacka inre skärgård","block/grus","fastland","02_block/grus_Exploaterad",15,"20133007015","4-Mycket skyddat",4.9,44,283816.0522,6499813.0657,11.2806278268589,58.5848072689327
+3007,5,"Fjällbacka inre skärgård","klippa/häll","öar","08_havsklippa_Ickeexploaterad",16,"20133007016","4-Mycket skyddat",3.7,272,283290.8831,6499831.3026,11.2715970746284,58.5847092785566
+3007,5,"Fjällbacka yttre skärgård","sand","öar","08_havsklippa_Exploaterad",17,"20133007017","3-Extremt skyddat",6.3,281,280300.1104,6499886.8055,11.2202163076667,58.5837058070577
+3008,5,"Bottnefjorden","klippa/häll","skär","09_skär_Exploaterad",18,"20133008018","5-Skyddat",1.8,303,285165.3825,6487618.8807,11.3152831077238,58.4761836215684
+3008,5,"Bottnefjorden","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",19,"20133008019","4-Mycket skyddat",12.4,321,287873.554,6488786.8568,11.3605398612273,58.4879765990549
+3017,5,"Askeröfjorden","strandäng/våtmark","öar","04_strandäng/våtmark_Ickeexploaterad",20,"20133017020","4-Mycket skyddat",7.8,257,305871.6719,6442583.7076,11.7074347916324,58.0820681082032
+3017,5,"Askeröfjorden","sand","öar","03_sand_Exploaterad",21,"20133017021","4-Mycket skyddat",10.7,310,309758.1107,6442590.2644,11.7732253386389,58.0838117184457
+3017,5,"Askeröfjorden","sand","öar","08_havsklippa_Exploaterad",22,"20133017022","4-Mycket skyddat",14,91,309253.9453,6442712.803,11.7645900418871,58.0846939516278
+3017,5,"Askeröfjorden","klippa/häll","öar","01_klippstränder_Exploaterad",23,"20133017023","4-Mycket skyddat",5.3,312,308716.9458,6442836.9417,11.755397116846,58.0855757763796
+3017,5,"Askeröfjorden","sand","fastland","03_sand_Ickeexploaterad",24,"20133017024","3-Extremt skyddat",6.1,118,306051.4962,6443322.9789,11.7098682900459,58.0887759499379
+3017,5,"Askeröfjorden","strandäng/våtmark","fastland","04_strandäng/våtmark_Exploaterad",25,"20133017025","3-Extremt skyddat",20.6,25,306054.6625,6443392.2434,11.7098646710054,58.0893984382618
+3017,5,"Askeröfjorden","sand","öar","08_havsklippa_Ickeexploaterad",26,"20133017026","4-Mycket skyddat",2.9,139,307224.007,6443404.2897,11.7296546407883,58.0900166156628
+3017,5,"Askeröfjorden","sand","fastland","08_havsklippa_Exploaterad",27,"20133017027","3-Extremt skyddat",3.1,53,305908.2308,6443534.0488,11.7072680083407,58.0906059194159
+3017,5,"Askeröfjorden","block/grus","öar","02_block/grus_Exploaterad",28,"20133017028","3-Extremt skyddat",7.5,266,305580.7737,6443764.3614,11.7015325135059,58.0925276146242
+3017,5,"Halsefjorden","sand","öar","08_havsklippa_Exploaterad",29,"20133017029","3-Extremt skyddat",3,92,308992.7687,6443925.4761,11.7591812429076,58.0954562099377
+3017,5,"Halsefjorden","strandäng/våtmark","öar","04_strandäng/våtmark_Ickeexploaterad",30,"20133017030","4-Mycket skyddat",13.9,142,307486.6112,6444030.8246,11.7335872861429,58.0957491033016
+3017,5,"Halsefjorden","sand","öar","03_sand_Ickeexploaterad",31,"20133017031","3-Extremt skyddat",6.2,75,308888.094,6444152.5706,11.7572234995798,58.0974475527442
+3017,5,"Stigfjorden","sand","fastland","03_sand_Exploaterad",32,"20133017032","3-Extremt skyddat",12.9,89,305668.3996,6444375.719,11.7025099730649,58.0980481182257
+3017,5,"Stigfjorden","sand","fastland","08_havsklippa_Exploaterad",33,"20133017033","4-Mycket skyddat",11.4,114,305647.4304,6444576.8878,11.7019881600508,58.0998428075072
+3027,5,"Yttre Kungsbackafjorden","block/grus","öar","02_block/grus_Ickeexploaterad",34,"20133027034","5-Skyddat",17.5,8,323929.3347,6365289.6434,12.0698739805674,57.3962465429942
+3027,5,"Yttre Kungsbackafjorden","strandäng/våtmark","öar","04_strandäng/våtmark_Ickeexploaterad",35,"20133027035","4-Mycket skyddat",36,114,324355.7758,6365357.7245,12.0769115075774,57.3970220744388
+3027,5,"Inre Kungsbackafjorden","klippa/häll","öar","01_klippstränder_Ickeexploaterad",36,"20133027036","4-Mycket skyddat",2.6,202,324308.9657,6365933.3034,12.0757220363279,57.4021676473532
+3027,5,"Yttre Kungsbackafjorden","sand","fastland","03_sand_Exploaterad",37,"20133027037","5-Skyddat",12,279,321332.7562,6366005.0689,12.0262079402484,57.4016526760245
+3027,5,"Inre Kungsbackafjorden","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",38,"20133027038","5-Skyddat",17.8,100,324668.7516,6366363.5215,12.0813944830061,57.4061660064203
+3028,5,"Vändelsöarkipelagen","strandäng/våtmark","skär","09_skär_Ickeexploaterad",39,"20133028039","3-Extremt skyddat",6.2,261,328232.5747,6357769.1505,12.1466304226022,57.3304185243405
+3028,5,"Vändelsöarkipelagen","klippa/häll","fastland","01_klippstränder_Exploaterad",40,"20133028040","5-Skyddat",12.5,50,327342.3959,6358703.3019,12.1312102870384,57.338463535609
+3028,5,"Vändelsöarkipelagen","sand","fastland","03_sand_Ickeexploaterad",41,"20133028041","5-Skyddat",17.8,75,325656.3909,6359112.0284,12.1029481793517,57.3414891755417
+3028,5,"Vändelsöarkipelagen","block/grus","fastland","08_havsklippa_Ickeexploaterad",42,"20133028042","4-Mycket skyddat",17.4,334,326448.7213,6359581.5143,12.1157647730537,57.3460033902302
+3028,5,"Vändelsöarkipelagen","sand","fastland","06_dyner_Ickeexploaterad",43,"20133028043","5-Skyddat",48.3,35,326699.4432,6359585.9171,12.1199224039226,57.3461382378921
+3038,4,"N m Öresunds kustvatten","sand","öar","03_sand_Exploaterad",44,"20133038044","5-Skyddat",2.8,238,363852.6134,6192904.5525,12.8245541667831,55.8623961360001
+3038,4,"N m Öresunds kustvatten","sand","fastland","03_sand_Ickeexploaterad",45,"20133038045","5-Skyddat",11.8,95,363623.9144,6193808.5439,12.8204481752908,55.8704481305334
+3047,4,"Valjeviken","strandäng/våtmark","fastland","04_strandäng/våtmark_Exploaterad",46,"20133047046","5-Skyddat",15.2,68,471950.3839,6212808.9718,14.5495592787792,56.0596409755781
+3057,4,"S Ölands kustvatten","sand","fastland","03_sand_Ickeexploaterad",47,"20133057047","7-Exponerat",8.9,270,596848.0359,6248369.3018,16.5679422806116,56.3700448642048
+3058,4,"S Ölands kustvatten","sand","fastland","03_sand_Ickeexploaterad",48,"20133058048","7-Exponerat",16.1,265,597683.6791,6255068.6283,16.5839623110589,56.4300392610966
+3058,4,"S Ölands kustvatten","block/grus","fastland","02_block/grus_Ickeexploaterad",49,"20133058049","7-Exponerat",15.2,312,597892.3558,6255631.9307,16.5875554278163,56.4350549762104
+3058,4,"S Ölands kustvatten","sand","fastland","03_sand_Ickeexploaterad",50,"20133058050","7-Exponerat",23.9,283,598248.5229,6256727.1951,16.5937406412065,56.4448173491813
+3067,4,"M n Kalmarsunds utsjövatten","block/grus","fastland","02_block/grus_Exploaterad",51,"20133067051","5-Skyddat",10.4,71,608257.5047,6317740.4671,16.7817416017434,56.9905028255971
+3068,4,"N Ölands kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",52,"20133068052","3-Extremt skyddat",11.9,142,616818.7733,6322528.2766,16.9247789636603,57.0314052352612
+3068,4,"N Ölands kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",53,"20133068053","6-Mod exponerat",5.9,182,617139.3958,6322697.677,16.9301372035475,57.0328448955933
+3068,4,"N Ölands kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",54,"20133068054","5-Skyddat",12.3,12,616567.9425,6322966.7144,16.920851897348,57.0354051286437
+3068,4,"N Ölands kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",55,"20133068055","5-Skyddat",39.8,354,617461.4429,6323166.3081,16.9356590354102,57.0369705464329
+3068,4,"N Ölands kustvatten","sand","fastland","03_sand_Exploaterad",56,"20133068056","7-Exponerat",8,276,618571.9669,6323295.5682,16.954008371488,57.0378470087619
+3068,4,"N Ölands kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",57,"20133068057","6-Mod exponerat",6.2,354,618354.587,6323375.9693,16.9504662512016,57.0386246843046
+3068,4,"N Ölands kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Exploaterad",58,"20133068058","7-Exponerat",7.6,188,618553.8263,6323401.0033,16.9537593187991,57.0387982888499
+3068,4,"N Ölands kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",59,"20133068059","6-Mod exponerat",6.3,278,618459.3871,6323949.8463,16.9524625413024,57.0437501758856
+3068,4,"N Ölands kustvatten","sand","fastland","03_sand_Ickeexploaterad",60,"20133068060","6-Mod exponerat",13.5,359,618787.2921,6324313.4963,16.9580353584185,57.0469307611421
+3068,4,"N Ölands kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",61,"20133068061","6-Mod exponerat",2.5,255,618750.6901,6324485.9176,16.9575138854524,57.0484882153591
+3077,4,"Vistingsdjupet","block/grus","öar","07_landhöjningsskog_Ickeexploaterad",62,"20133077062","4-Mycket skyddat",3.9,274,601179.271,6387737.9106,16.6939625927473,57.620626663091
+3077,4,"Misterhults skärgårds inre kustvatten","klippa/häll","öar","01_klippstränder_Ickeexploaterad",63,"20133077063","2-Ultra skyddat",3.3,329,602271.7006,6387832.9425,16.7122831233825,57.621233617673
+3077,4,"Misterhults skärgårds inre kustvatten","klippa/häll","skär","08_havsklippa_Ickeexploaterad",64,"20133077064","6-Mod exponerat",5.4,279,603736.8427,6387944.5035,16.736848275579,57.6219007769824
+3077,4,"Vistingsdjupet","block/grus","öar","07_landhöjningsskog_Ickeexploaterad",65,"20133077065","5-Skyddat",32.9,137,601510.6345,6388017.8514,16.6996249505416,57.6230657214791
+3077,4,"Vistingsdjupet","klippa/häll","skär","09_skär_Ickeexploaterad",66,"20133077066","4-Mycket skyddat",10.4,19,601766.4813,6388018.6765,16.7039068607092,57.6230154906622
+3077,4,"Misterhults skärgårds inre kustvatten","klippa/häll","öar","01_klippstränder_Exploaterad",67,"20133077067","3-Extremt skyddat",5.5,340,602764.5548,6388049.4929,16.7206224225097,57.6230659379037
+3077,4,"Vistingsdjupet","klippa/häll","öar","01_klippstränder_Ickeexploaterad",68,"20133077068","4-Mycket skyddat",4.6,14,601443.5222,6388480.5064,16.6986957569728,57.6272348298622
+3077,4,"Vistingsdjupet","block/grus","öar","07_landhöjningsskog_Ickeexploaterad",69,"20133077069","4-Mycket skyddat",3.5,341,601586.6875,6388557.6592,16.7011242773013,57.6278953365873
+3077,4,"Vistingsdjupet","klippa/häll","skär","09_skär_Ickeexploaterad",70,"20133077070","5-Skyddat",5.5,309,601010.7745,6389072.6617,16.6917001357431,57.6326487083901
+3077,4,"Vistingsdjupet","klippa/häll","öar","07_landhöjningsskog_Ickeexploaterad",71,"20133077071","5-Skyddat",5.1,21,602644.955,6389252.9906,16.719131491301,57.6338988179212
+3077,4,"Misterhults skärgårds inre kustvatten","klippa/häll","öar","08_havsklippa_Ickeexploaterad",72,"20133077072","6-Mod exponerat",5.6,246,602677.8028,6389531.1272,16.719799432777,57.6363885971501
+3078,4,"Verkebäcksviken","block/grus","öar","02_block/grus_Ickeexploaterad",73,"20133078073","3-Extremt skyddat",1.8,53,595235.6753,6395122.7002,16.5974109173366,57.6882288696856
+3078,4,"Verkebäcksviken","strandäng/våtmark","öar","10_vasstrand_Ickeexploaterad",74,"20133078074","3-Extremt skyddat",5.2,245,595741.5577,6395336.0867,16.6059771777265,57.6900375180912
+3087,4,"Håsköfjärden sek namn","klippa/häll","öar","01_klippstränder_Ickeexploaterad",75,"20133087075","4-Mycket skyddat",2.7,321,612799.4477,6457826.7308,16.9217371246798,58.2470716679061
+3087,4,"Håsköfjärden sek namn","klippa/häll","öar","01_klippstränder_Ickeexploaterad",76,"20133087076","3-Extremt skyddat",2.1,91,612295.152,6458202.5836,16.9133328570728,58.2505744518418
+3087,4,"Hesselöfjärden","strandäng/våtmark","öar","04_strandäng/våtmark_Ickeexploaterad",77,"20133087077","3-Extremt skyddat",5.7,302,611100.4499,6458539.0298,16.893150874777,58.2538976950967
+3087,4,"Håsköfjärden sek namn","klippa/häll","öar","01_klippstränder_Ickeexploaterad",78,"20133087078","5-Skyddat",2.4,302,613205.6918,6458813.6774,16.9291350006749,58.2558268669809
+3087,4,"Hesselöfjärden","klippa/häll","öar","01_klippstränder_Ickeexploaterad",79,"20133087079","3-Extremt skyddat",4.6,359,611698.6543,6459340.8019,16.9037237668648,58.2609436401799
+3087,4,"Håsköfjärden sek namn","klippa/häll","öar","08_havsklippa_Ickeexploaterad",80,"20133087080","3-Extremt skyddat",2.4,94,613332.5318,6459401.5836,16.9315822196777,58.2610716239254
+3087,4,"Finnfjärden","klippa/häll","öar","01_klippstränder_Ickeexploaterad",81,"20133087081","3-Extremt skyddat",6.1,244,610895.0618,6459609.6755,16.8901649561672,58.2635604436498
+3087,4,"Finnfjärden","klippa/häll","öar","01_klippstränder_Exploaterad",82,"20133087082","2-Ultra skyddat",2.3,168,610800.2615,6459873.116,16.8886759813297,58.265949170739
+3088,4,"Kullskärsdjupet","klippa/häll","skär","09_skär_Ickeexploaterad",83,"20133088083","6-Mod exponerat",24,311,616755.3826,6462931.4435,16.9916579743297,58.2918619410484
+3088,4,"Turmulefjärden","klippa/häll","skär","08_havsklippa_Ickeexploaterad",84,"20133088084","5-Skyddat",36.2,212,617424.5194,6463111.7582,17.0031558309599,58.2933022711356
+3088,4,"Kullskärsdjupet","klippa/häll","öar","08_havsklippa_Exploaterad",85,"20133088085","5-Skyddat",9.4,346,615726.8096,6463622.3902,16.9744696675992,58.2983360291271
+3088,4,"Kullskärsdjupet","klippa/häll","skär","01_klippstränder_Ickeexploaterad",86,"20133088086","5-Skyddat",13.4,49,617662.0578,6464316.0126,17.0078174785628,58.3040482896961
+3088,4,"Turmulefjärden","klippa/häll","skär","08_havsklippa_Ickeexploaterad",87,"20133088087","5-Skyddat",49.5,59,618766.5957,6464498.189,17.0267456597549,58.3053863858997
+3088,4,"Turmulefjärden","klippa/häll","skär","09_skär_Ickeexploaterad",88,"20133088088","6-Mod exponerat",8.8,154,618038.7609,6464585.6979,17.0143787071519,58.3063679824515
+3097,3,"Kränkfjärden sek namn","klippa/häll","skär","08_havsklippa_Ickeexploaterad",89,"20133097089","6-Mod exponerat",17.8,4,629144.7166,6501344.7467,17.2245022029296,58.6331453517193
+3097,3,"Kränkfjärden sek namn","klippa/häll","skär","09_skär_Ickeexploaterad",90,"20133097090","6-Mod exponerat",18.4,53,628590.4738,6501407.7578,17.2149994933092,58.6338754623475
+3097,3,"Furöområdet sek namn","block/grus","öar","02_block/grus_Ickeexploaterad",91,"20133097091","5-Skyddat",2.2,100,626434.5539,6502183.1278,17.178327931637,58.6414677877274
+3097,3,"Furöområdet sek namn","klippa/häll","öar","01_klippstränder_Ickeexploaterad",92,"20133097092","5-Skyddat",4.7,258,626545.929,6502206.3436,17.180258193305,58.641643660344
+3097,3,"Kränkfjärden sek namn","klippa/häll","skär","09_skär_Ickeexploaterad",93,"20133097093","6-Mod exponerat",31.6,43,629549.7272,6502218.5973,17.2319728654195,58.6408668401572
+3097,4,"Bråvikens kustvatten","klippa/häll","öar","08_havsklippa_Ickeexploaterad",94,"20133097094","6-Mod exponerat",5,339,625762.5836,6502279.2232,17.1668136430483,58.6425255817052
+3098,4,"Marsviken","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",95,"20133098095","4-Mycket skyddat",7.2,292,613980.8195,6505574.4567,16.9656287682816,58.6753596430036
+3098,4,"Marsviken","strandäng/våtmark","fastland","10_vasstrand_Ickeexploaterad",96,"20133098096","3-Extremt skyddat",5.3,318,614360.1111,6505941.544,16.9723513942,58.678554560267
+3098,4,"Marsviken","strandäng/våtmark","fastland","10_vasstrand_Exploaterad",97,"20133098097","3-Extremt skyddat",18.4,329,614527.3233,6506056.0713,16.9752914585859,58.6795383435974
+3107,4,"Ö Gotlands m kustvatten","sand","fastland","03_sand_Ickeexploaterad",98,"20133107098","6-Mod exponerat",17.3,302,725557.5517,6395889.7844,18.7801803177903,57.6487038534937
+3107,4,"Ö Gotlands n kustvatten","sand","fastland","03_sand_Ickeexploaterad",99,"20133107099","6-Mod exponerat",11.7,266,726578.425,6396590.4462,18.7979034627276,57.6544718768212
+3127,3,"Horsfjärden","klippa/häll","fastland","01_klippstränder_Ickeexploaterad",100,"20133127100","5-Skyddat",6.8,274,678473.2243,6550020.6118,18.1118877244817,59.0521804007414
+3127,3,"Horsfjärden","block/grus","fastland","02_block/grus_Ickeexploaterad",101,"20133127101","4-Mycket skyddat",5.3,279,678335.4665,6551598.5018,18.1107701032312,59.0663874360534
+3127,3,"Horsfjärden","klippa/häll","fastland","01_klippstränder_Exploaterad",102,"20133127102","4-Mycket skyddat",5.6,273,679264.3429,6551974.086,18.1272514812417,59.0693660626411
+3128,3,"Fåglaröfjärden sek namn","klippa/häll","skär","08_havsklippa_Ickeexploaterad",103,"20133128103","5-Skyddat",9.3,312,691000.2359,6552801.1406,18.332314048753,59.0716880443256
+3128,3,"Mysingen","klippa/häll","öar","01_klippstränder_Ickeexploaterad",104,"20133128104","5-Skyddat",6.4,327,690591.8556,6552851.0665,18.3252464089376,59.072318324253
+3128,3,"Fåglaröfjärden sek namn","strandäng/våtmark","öar","04_strandäng/våtmark_Exploaterad",105,"20133128105","4-Mycket skyddat",3.8,292,693588.3797,6553078.306,18.3776226304495,59.0730060532021
+3128,3,"Fåglaröfjärden sek namn","strandäng/våtmark","öar","04_strandäng/våtmark_Ickeexploaterad",106,"20133128106","3-Extremt skyddat",4.3,327,694032.301,6553092.6955,18.3853650105734,59.0729333376861
+3128,3,"Fåglaröfjärden sek namn","block/grus","öar","02_block/grus_Exploaterad",107,"20133128107","4-Mycket skyddat",9.5,33,692829.2408,6553108.1875,18.3644303107842,59.0736178249155
+3128,3,"Fåglaröfjärden sek namn","block/grus","öar","07_landhöjningsskog_Exploaterad",108,"20133128108","4-Mycket skyddat",5.2,343,693304.4016,6553241.8663,18.372821862454,59.0746011648489
+3128,3,"Fåglaröfjärden sek namn","sand","öar","07_landhöjningsskog_Ickeexploaterad",109,"20133128109","4-Mycket skyddat",7.1,221,693344.6001,6554137.3052,18.374310534173,59.082610519955
+3128,3,"Fåglaröfjärden sek namn","klippa/häll","skär","01_klippstränder_Exploaterad",110,"20133128110","5-Skyddat",6.2,98,693296.2688,6554266.2093,18.3735822771493,59.083788054456
+3128,3,"Fåglaröfjärden sek namn","block/grus","öar","07_landhöjningsskog_Exploaterad",111,"20133128111","3-Extremt skyddat",7.4,319,694857.0955,6554773.5033,18.4012184530116,59.0876252945038
+3137,3,"Möja söderfjärd","klippa/häll","öar","07_landhöjningsskog_Ickeexploaterad",112,"20133137112","5-Skyddat",18.1,92,719839.7879,6585104.8778,18.8668755383973,59.3472476668156
+3137,3,"Möja söderfjärd","klippa/häll","öar","08_havsklippa_Ickeexploaterad",113,"20133137113","5-Skyddat",1.6,312,718268.5603,6585803.7508,18.8400186443137,59.3543252449582
+3137,3,"Kanholmsfjärden","klippa/häll","öar","08_havsklippa_Exploaterad",114,"20133137114","5-Skyddat",22.8,24,716720.2201,6586028.7681,18.8130751864864,59.357139764551
+3137,3,"Möja söderfjärd","klippa/häll","skär","09_skär_Ickeexploaterad",115,"20133137115","5-Skyddat",6,89,717147.7459,6586247.1889,18.8207981389806,59.3588769745399
+3137,3,"Möja söderfjärd","klippa/häll","öar","01_klippstränder_Exploaterad",116,"20133137116","4-Mycket skyddat",8,311,716538.9149,6586598.1597,18.8104660176224,59.3623347930531
+3137,3,"Kanholmsfjärden","klippa/häll","skär","09_skär_Ickeexploaterad",117,"20133137117","5-Skyddat",15.3,98,715627.8121,6586920.7142,18.7947971981242,59.3656918773074
+3137,3,"Möja söderfjärd","klippa/häll","öar","01_klippstränder_Ickeexploaterad",118,"20133137118","5-Skyddat",7.4,80,717063.2971,6586954.5989,18.8200293093345,59.3652589689321
+3137,3,"Möja söderfjärd","strandäng/våtmark","öar","10_vasstrand_Ickeexploaterad",119,"20133137119","2-Ultra skyddat",20.9,202,716789.8909,6587182.857,18.8154600222152,59.367444868849
+3137,3,"Kanholmsfjärden","klippa/häll","skär","08_havsklippa_Ickeexploaterad",120,"20133137120","4-Mycket skyddat",18,259,715005.9455,6587434.7758,18.7843944156321,59.370615708801
+3137,3,"Kanholmsfjärden","klippa/häll","skär","08_havsklippa_Exploaterad",121,"20133137121","4-Mycket skyddat",4.8,295,715911.3234,6587465.0245,18.8003200615017,59.3704240257463
+3138,3,"Björkskärsfjärden","klippa/häll","skär","09_skär_Ickeexploaterad",122,"20133138122","5-Skyddat",6,30,734565.9361,6588163.2437,19.1284771079906,59.3667133545956
+3138,3,"Björkskärsfjärden","klippa/häll","skär","09_skär_Ickeexploaterad",123,"20133138123","5-Skyddat",25.8,164,734926.6243,6588744.1964,19.1354404591432,59.371715999912
+3147,3,"Lökharfjärden","klippa/häll","skär","09_skär_Ickeexploaterad",124,"20133147124","6-Mod exponerat",15.8,140,747518.9961,6611566.6679,19.3828086436458,59.5688617754042
+3148,3,"Stenfjärden","klippa/häll","öar","01_klippstränder_Ickeexploaterad",125,"20133148125","6-Mod exponerat",35.9,84,751769.2238,6613319.1488,19.459884386347,59.5820148240197
+3148,3,"Stenfjärden","klippa/häll","öar","08_havsklippa_Ickeexploaterad",126,"20133148126","6-Mod exponerat",32.2,266,751853.3214,6613394.4114,19.4614582491697,59.5826379718948
+3148,3,"Stenfjärden","klippa/häll","skär","09_skär_Ickeexploaterad",127,"20133148127","6-Mod exponerat",32,283,750699.4152,6613569.9839,19.4412964830364,59.584903360562
+3148,3,"Stenfjärden","klippa/häll","öar","01_klippstränder_Exploaterad",128,"20133148128","5-Skyddat",4.1,292,750136.2064,6613866.2604,19.4317032006824,59.5878932845667
+3148,3,"Stenfjärden","klippa/häll","skär","09_skär_Ickeexploaterad",129,"20133148129","6-Mod exponerat",8.2,22,752379.2522,6614147.0701,19.4716379475157,59.5890590020444
+3157,3,"Ortalaviken","block/grus","fastland","10_vasstrand_Exploaterad",130,"20133157130","3-Extremt skyddat",5.7,74,709952.2675,6662781.0295,18.7709538100202,60.0483105742928
+3157,3,"Ortalaviken","block/grus","fastland","02_block/grus_Exploaterad",131,"20133157131","3-Extremt skyddat",3,259,709757.9179,6663047.9718,18.7677447945035,60.050801716805
+3158,3,"Östhammars kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Exploaterad",132,"20133158132","5-Skyddat",7.1,282,712080.2037,6670153.072,18.8167117619066,60.1132643849561
+3158,3,"Singöfjärden","strandäng/våtmark","skär","10_vasstrand_Exploaterad",133,"20133158133","3-Extremt skyddat",18.1,183,710314.2587,6670428.3993,18.7852956707747,60.1166425190038
+3158,3,"Östhammars kustvatten","klippa/häll","fastland","01_klippstränder_Ickeexploaterad",134,"20133158134","6-Mod exponerat",8.3,204,711922.5982,6670519.0077,18.8142624397913,60.1166245218309
+3158,3,"Östhammars kustvatten","strandäng/våtmark","skär","09_skär_Exploaterad",135,"20133158135","3-Extremt skyddat",13.4,156,711372.5317,6670633.415,18.8045060721468,60.1179340398195
+3158,3,"Östhammars kustvatten","strandäng/våtmark","skär","10_vasstrand_Ickeexploaterad",136,"20133158136","3-Extremt skyddat",2.8,22,710601.2097,6670702.2354,18.7907295254889,60.1189483566658
+3158,3,"Östhammars kustvatten","block/grus","skär","09_skär_Ickeexploaterad",137,"20133158137","5-Skyddat",5.1,331,711989.5105,6670780.7146,18.8157353205285,60.118934544753
+3158,3,"Östhammars kustvatten","klippa/häll","skär","09_skär_Ickeexploaterad",138,"20133158138","6-Mod exponerat",19.4,147,712470.7995,6671011.9912,18.8246165163521,60.1207569338671
+3158,3,"Östhammars kustvatten","strandäng/våtmark","fastland","10_vasstrand_Exploaterad",139,"20133158139","3-Extremt skyddat",20.3,314,710339.7477,6671264.8803,18.7866150405045,60.1241238625347
+3158,3,"Östhammars kustvatten","block/grus","öar","02_block/grus_Ickeexploaterad",140,"20133158140","6-Mod exponerat",13.9,14,711759.7781,6671696.8522,18.8125613095367,60.1272613835396
+3158,3,"Östhammars kustvatten","strandäng/våtmark","öar","04_strandäng/våtmark_Ickeexploaterad",141,"20133158141","5-Skyddat",13.6,218,711856.0152,6671872.6814,18.8144720479261,60.1287868356543
+3158,3,"Östhammars kustvatten","klippa/häll","öar","01_klippstränder_Ickeexploaterad",142,"20133158142","6-Mod exponerat",14.1,252,711693.7556,6672204.107,18.8119020002935,60.131840164043
+3167,3,"Karlholmsfjärden","block/grus","fastland","07_landhöjningsskog_Exploaterad",143,"20133167143","2-Ultra skyddat",10.2,234,644914.6939,6713529.5662,17.641039887072,60.5316387845332
+3167,3,"Lövstabukten","block/grus","skär","07_landhöjningsskog_Ickeexploaterad",144,"20133167144","5-Skyddat",3.4,33,644037.471,6714638.245,17.6258782479676,60.5418976549069
+3177,2,"S M Bottenhavets kustvatten","block/grus","skär","09_skär_Ickeexploaterad",145,"20133177145","6-Mod exponerat",28.3,225,615870.6818,6811097.1308,17.1711039796552,61.4163974252587
+3177,2,"S M Bottenhavets kustvatten","block/grus","fastland","07_landhöjningsskog_Ickeexploaterad",146,"20133177146","6-Mod exponerat",11.9,352,616985.3434,6811614.9442,17.1922976456624,61.4207081259447
+3177,2,"S M Bottenhavets kustvatten","konstruerad","fastland","07_landhöjningsskog_Exploaterad",147,"20133177147","6-Mod exponerat",5.9,112,616365.3312,6811621.651,17.1806928205841,61.420954775058
+3177,2,"S M Bottenhavets kustvatten","block/grus","fastland","02_block/grus_Ickeexploaterad",148,"20133177148","6-Mod exponerat",10.9,11,617313.8645,6811626.34,17.1984559586265,61.4207111431073
+3177,2,"S M Bottenhavets kustvatten","block/grus","fastland","02_block/grus_Exploaterad",149,"20133177149","6-Mod exponerat",11.3,242,617805.8478,6812494.561,17.2082181118744,61.4283505733956
+3178,2,"S M Bottenhavets kustvatten","block/grus","öar","02_block/grus_Ickeexploaterad",150,"20133178150","5-Skyddat",15.3,216,626681.4817,6823119.9239,17.3816953539949,61.5208575616608
+3178,2,"S M Bottenhavets kustvatten","block/grus","öar","02_block/grus_Ickeexploaterad",151,"20133178151","6-Mod exponerat",13.5,1,627762.5935,6824961.6812,17.4032761036478,61.5370208234398
+3187,2,"Sundsvallsbukten","sand","fastland","03_sand_Exploaterad",152,"20133187152","6-Mod exponerat",20.8,271,630185.5415,6920231.0443,17.5182905168877,62.390605796572
+3187,2,"Sundsvallsbukten","klippa/häll","öar","08_havsklippa_Ickeexploaterad",153,"20133187153","6-Mod exponerat",24,270,634018.7095,6920608.3368,17.5926422178759,62.3926296291375
+3187,2,"Sundsvallsbukten","sand","öar","03_sand_Ickeexploaterad",154,"20133187154","3-Extremt skyddat",7.9,119,631835.4033,6920670.8974,17.5505032695571,62.3939697923754
+3187,2,"Sundsvallsbukten","klippa/häll","öar","01_klippstränder_Ickeexploaterad",155,"20133187155","5-Skyddat",7.1,136,630816.3455,6920843.7419,17.53094226441,62.3958790579094
+3187,2,"Sundsvallsbukten","block/grus","öar","02_block/grus_Ickeexploaterad",156,"20133187156","4-Mycket skyddat",5.1,151,632340.5574,6921198.39,17.560668403295,62.3985207241803
+3187,2,"Sundsvallsbukten","sand","fastland","03_sand_Exploaterad",157,"20133187157","5-Skyddat",5.4,228,630440.1355,6921356.2669,17.5240589530293,62.4006070052009
+3187,2,"Sundsvallsbukten","block/grus","öar","02_block/grus_Ickeexploaterad",158,"20133187158","5-Skyddat",14.4,176,633048.5423,6921853.5291,17.5748554289064,62.4041430732115
+3187,2,"Sundsvallsbukten","block/grus","fastland","02_block/grus_Exploaterad",159,"20133187159","5-Skyddat",10.9,255,630298.329,6921905.8641,17.5217327209876,62.4055850915149
+3187,2,"Sundsvallsbukten","klippa/häll","öar","01_klippstränder_Exploaterad",160,"20133187160","5-Skyddat",6,210,631656.5761,6922246.8338,17.548248790984,62.4081647565668
+3188,2,"Åvikebukten","klippa/häll","skär","09_skär_Ickeexploaterad",161,"20133188161","6-Mod exponerat",25.3,240,640745.2853,6925949.9755,17.7269559309077,62.4380413512557
+3188,2,"Åvikebukten","sand","öar","03_sand_Ickeexploaterad",162,"20133188162","6-Mod exponerat",19.7,186,640328.8036,6926095.0661,17.7190155795417,62.439499658545
+3197,2,"Höga kustens kustvatten","klippa/häll","öar","08_havsklippa_Ickeexploaterad",163,"20133197163","6-Mod exponerat",20.9,283,685031.6579,6990966.7908,18.6545464167785,63.0010515418748
+3197,2,"Höga kustens kustvatten","block/grus","öar","02_block/grus_Ickeexploaterad",164,"20133197164","6-Mod exponerat",28.8,274,685124.1017,6991972.8095,18.6574968091566,63.010015314966
+3198,2,"Mjältöfjärden sek namn","block/grus","öar","07_landhöjningsskog_Ickeexploaterad",165,"20133198165","4-Mycket skyddat",8.6,97,678077.9235,6997521.2273,18.524610529689,63.0632464076473
+3198,2,"Mjältöfjärden sek namn","block/grus","fastland","02_block/grus_Ickeexploaterad",166,"20133198166","5-Skyddat",3.7,273,677798.0682,6998933.9677,18.5206142946557,63.0760396592151
+3198,2,"Mjältöfjärden sek namn","klippa/häll","fastland","01_klippstränder_Ickeexploaterad",167,"20133198167","4-Mycket skyddat",9.2,182,677308.141,6999884.8118,18.5119629614585,63.0847980545908
+3208,1,"Mjölefjärden","sand","fastland","03_sand_Ickeexploaterad",168,"20133208168","6-Mod exponerat",17.4,99,749888.1005,7070423.1418,20.0538973105348,63.6726402204802
+3208,1,"Mjölefjärden","sand","fastland","06_dyner_Ickeexploaterad",169,"20133208169","6-Mod exponerat",88.2,291,749912.2467,7070456.0325,20.0544358620266,63.6729171373912
+3217,1,"Bjuröfjärden","block/grus","fastland","07_landhöjningsskog_Ickeexploaterad",170,"20133217170","5-Skyddat",9.5,353,812446.0907,7170250.7144,21.5163455487622,64.5130658451923
+3217,1,"Bjuröfjärden","block/grus","fastland","02_block/grus_Ickeexploaterad",171,"20133217171","6-Mod exponerat",21.2,16,814053.0407,7170537.2416,21.5502105701795,64.5141392338357
+3217,1,"Bäckfjärden","sand","fastland","03_sand_Exploaterad",172,"20133217172","3-Extremt skyddat",2.6,96,810115.0528,7170631.5239,21.4689119793039,64.5185961820553
+3217,1,"Bjuröfjärden","block/grus","fastland","07_landhöjningsskog_Ickeexploaterad",173,"20133217173","5-Skyddat",8.3,246,812804.5993,7170912.9182,21.5251788721031,64.5186398120173
+3217,1,"Bjuröfjärden","block/grus","fastland","02_block/grus_Ickeexploaterad",174,"20133217174","5-Skyddat",13.1,50,813407.5971,7171345.3283,21.5385846849801,64.5219391391691
+3217,1,"M Bottenvikens kustvatten","block/grus","fastland","07_landhöjningsskog_Ickeexploaterad",175,"20133217175","6-Mod exponerat",55.7,257,813903.5634,7171738.8115,21.5496945365355,64.5249891040368
+3217,1,"M Bottenvikens kustvatten","sand","fastland","03_sand_Ickeexploaterad",176,"20133217176","5-Skyddat",11.2,82,812544.8028,7172335.993,21.5228421421496,64.5315660038483
+3217,1,"M Bottenvikens kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",177,"20133217177","5-Skyddat",29.7,250,812830.3457,7172450.6315,21.5290000013698,64.5323251177352
+3218,1,"Burefjärden","block/grus","skär","09_skär_Exploaterad",178,"20133218178","5-Skyddat",8.7,74,798885.5521,7182504.8057,21.2607468454359,64.6345710831957
+3218,1,"Burefjärden","block/grus","skär","09_skär_Exploaterad",179,"20133218179","4-Mycket skyddat",11,49,797917.6371,7182656.4536,21.2409292772403,64.6367782755093
+3218,1,"Simpan","block/grus","skär","07_landhöjningsskog_Exploaterad",180,"20133218180","5-Skyddat",7.7,192,797970.2728,7182715.0306,21.2421444160203,64.6372543839175
+3218,1,"Burefjärden","block/grus","fastland","02_block/grus_Ickeexploaterad",181,"20133218181","5-Skyddat",3.8,338,797730.7624,7182859.5743,21.2374598213516,64.638754803629
+3218,1,"Skelleftebukten","block/grus","öar","07_landhöjningsskog_Ickeexploaterad",182,"20133218182","6-Mod exponerat",4,167,799224.2722,7183847.0178,21.270562103753,64.6462433501836
+3218,1,"Simpan","sand","fastland","03_sand_Exploaterad",183,"20133218183","3-Extremt skyddat",3.9,216,795955.8434,7184349.6019,21.2035841027839,64.6536059449406
+3218,1,"Simpan","block/grus","fastland","07_landhöjningsskog_Exploaterad",184,"20133218184","2-Ultra skyddat",13.2,109,796422.5228,7184428.5081,21.2134583215588,64.6539005494869
+3218,1,"Simpan","block/grus","fastland","10_vasstrand_Ickeexploaterad",185,"20133218185","3-Extremt skyddat",19.8,12,796314.4764,7184539.4257,21.2114366697643,64.6549848090509
+3218,1,"Simpan","block/grus","fastland","07_landhöjningsskog_Ickeexploaterad",186,"20133218186","5-Skyddat",2.6,201,795056.4555,7184924.9435,21.1860379629367,64.6595255120767
+3218,1,"Simpan","block/grus","fastland","02_block/grus_Exploaterad",187,"20133218187","4-Mycket skyddat",3.3,117,795422.2114,7184932.2924,21.1936671044786,64.6592712440564
+3227,1,"Norrbottens skärgårds kustvatten","block/grus","öar","02_block/grus_Ickeexploaterad",188,"20133227188","5-Skyddat",19.2,216,819977.3691,7264435.0889,21.8850856704154,65.3452587579966
+3227,1,"Storfjärden","block/grus","fastland","02_block/grus_Ickeexploaterad",189,"20133227189","5-Skyddat",12.7,34,815756.2702,7264741.0835,21.7957469670125,65.3520844811461
+3228,1,"Storfjärden","strandäng/våtmark","fastland","07_landhöjningsskog_Ickeexploaterad",190,"20133228190","4-Mycket skyddat",7.6,304,811584.4506,7267924.3703,21.7139841027878,65.3844498337081
+3228,1,"Storfjärden","strandäng/våtmark","fastland","04_strandäng/våtmark_Exploaterad",191,"20133228191","4-Mycket skyddat",13.3,81,811902.2754,7267974.8038,21.720890762522,65.3845959816942
+3228,1,"Norrbottens skärgårds kustvatten","block/grus","fastland","07_landhöjningsskog_Ickeexploaterad",192,"20133228192","3-Extremt skyddat",28.5,141,814733.7784,7268577.409,21.7827790271308,65.3872497834353
+3228,1,"Brändöfjärden","strandäng/våtmark","fastland","07_landhöjningsskog_Ickeexploaterad",193,"20133228193","3-Extremt skyddat",28,169,812017.8156,7269171.5195,21.7261013637284,65.3951490983589
+3228,1,"Norrbottens skärgårds kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Exploaterad",194,"20133228194","3-Extremt skyddat",18.1,235,813139.5258,7269183.647,21.7501060962115,65.3941835208754
+3228,1,"Brändöfjärden","strandäng/våtmark","fastland","07_landhöjningsskog_Exploaterad",195,"20133228195","3-Extremt skyddat",67.4,170,812711.2536,7269304.0336,21.7412284390289,65.3956665654755
+3228,1,"Brändöfjärden","strandäng/våtmark","fastland","07_landhöjningsskog_Exploaterad",196,"20133228196","3-Extremt skyddat",5,107,813032.0901,7269406.4155,21.748321986721,65.3962714171864
+3228,1,"Brändöfjärden","sand","fastland","03_sand_Exploaterad",197,"20133228197","3-Extremt skyddat",8.3,71,811365.3704,7269509.625,21.7129276817349,65.3987846251402
+3228,1,"Norrbottens skärgårds kustvatten","block/grus","fastland","02_block/grus_Exploaterad",198,"20133228198","3-Extremt skyddat",6.6,271,813332.4802,7269671.4589,21.7553532585482,65.3983448684862
+3228,1,"Brändöfjärden","block/grus","skär","09_skär_Ickeexploaterad",199,"20133228199","3-Extremt skyddat",27.8,131,811723.5666,7269750.9848,21.7211386222615,65.4005935216257
+3228,1,"Brändöfjärden","block/grus","skär","07_landhöjningsskog_Ickeexploaterad",200,"20133228200","3-Extremt skyddat",28.1,40,811721.1424,7269794.2603,21.7211859355277,65.4009814484686
+3228,1,"Norrbottens skärgårds kustvatten","strandäng/våtmark","fastland","07_landhöjningsskog_Exploaterad",201,"20133228201","3-Extremt skyddat",19.7,293,813437.7469,7269838.4769,21.7579882767325,65.3997319613015
+3228,1,"Norrbottens skärgårds kustvatten","strandäng/våtmark","fastland","04_strandäng/våtmark_Exploaterad",202,"20133228202","3-Extremt skyddat",14.9,202,813457.5064,7269853.5095,21.7584453341335,65.399846931477
+3237,1,"Norrbottens skärgårds kustvatten","sand","öar","06_dyner_Ickeexploaterad",203,"20133237203","5-Skyddat",29.5,232,903936.317,7300021.9782,23.7748223278295,65.5682406402616
+3237,1,"Norrbottens skärgårds kustvatten","sand","öar","06_dyner_Ickeexploaterad",204,"20133237204","6-Mod exponerat",20.4,1,902015.7557,7300147.2066,23.7340671958409,65.5717389382519
+3237,1,"Norrbottens skärgårds kustvatten","sand","öar","07_landhöjningsskog_Ickeexploaterad",205,"20133237205","6-Mod exponerat",94.1,241,903856.4626,7300195.7039,23.7736350956088,65.5698805862153
+3237,1,"Norrbottens skärgårds kustvatten","sand","öar","03_sand_Ickeexploaterad",206,"20133237206","6-Mod exponerat",78.3,84,901360.3732,7300355.6359,23.720652723116,65.5743996842714
+3237,1,"S. Seskaröfjärden sek namn","block/grus","öar","02_block/grus_Ickeexploaterad",207,"20133237207","6-Mod exponerat",24.6,209,903915.0493,7300458.1878,23.7756797872577,65.5721350431098
+3237,1,"Norrbottens skärgårds kustvatten","sand","skär","09_skär_Exploaterad",208,"20133237208","6-Mod exponerat",27.8,39,904713.6167,7301006.041,23.7944344073985,65.5759964291263
+3237,1,"S. Seskaröfjärden sek namn","sand","öar","03_sand_Ickeexploaterad",209,"20133237209","5-Skyddat",15.8,31,901545.5688,7301076.8674,23.7267792347168,65.5805663049082
+3237,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",210,"20133237210","5-Skyddat",17.8,240,902775.4514,7301334.0543,23.7539021564563,65.5813202136156
+3237,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",211,"20133237211","5-Skyddat",22.6,106,902086.9058,7301510.9835,23.7396798240871,65.5837445811203
+3237,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",212,"20133237212","5-Skyddat",19.5,96,902130.5897,7301736.3846,23.7412921362852,65.5856891777602
+3237,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",213,"20133237213","5-Skyddat",30.7,89,902136.1181,7301937.8578,23.7420151658352,65.5874689466912
+3237,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",214,"20133237214","6-Mod exponerat",34.3,85,902119.9921,7302137.232,23.7422678896296,65.5892569879544
+3237,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",215,"20133237215","5-Skyddat",37.8,247,902353.4758,7302204.7233,23.7474747048673,65.5895654666099
+3237,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",216,"20133237216","5-Skyddat",14.9,267,902322.1412,7302248.5939,23.7469348563834,65.5899934306045
+3237,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",217,"20133237217","6-Mod exponerat",33.8,84,902094.052,7302335.655,23.7423074439,65.5910487805789
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",218,"20133238218","5-Skyddat",23.3,259,902424.028,7302592.2201,23.7501508647033,65.5929139845132
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",219,"20133238219","6-Mod exponerat",20.8,73,901953.3974,7302965.6489,23.7411833426611,65.5968101188605
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",220,"20133238220","6-Mod exponerat",19.8,112,901993.885,7303179.4142,23.7426931767055,65.5986554747513
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",221,"20133238221","6-Mod exponerat",24.2,129,902083.0444,7303349.9512,23.7451170000436,65.6000570144022
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",222,"20133238222","5-Skyddat",23.5,281,902419.7762,7303565.9473,23.7529862684993,65.6015538908329
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",223,"20133238223","6-Mod exponerat",21.8,106,902323.0856,7303789.7048,23.7515856440092,65.6036582932161
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",224,"20133238224","6-Mod exponerat",20.8,138,902410.0619,7303961.8075,23.7539683169148,65.6050762784018
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","06_dyner_Ickeexploaterad",225,"20133238225","6-Mod exponerat",49.6,262,902846.46,7304105.7627,23.7637601203161,65.6058097947496
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","03_sand_Ickeexploaterad",226,"20133238226","6-Mod exponerat",32.6,350,904923.9325,7304369.0448,23.8091036558435,65.6055512537202
+3238,1,"S. Seskaröfjärden sek namn","sand","öar","03_sand_Ickeexploaterad",227,"20133238227","5-Skyddat",13.7,22,904304.8522,7304700.5006,23.7968304401136,65.6092642178179
+3247,1,"Seskaröfjärden","sand","skär","09_skär_Ickeexploaterad",228,"20133247228","5-Skyddat",5.9,61,891873.0815,7321764.1422,23.5804271007586,65.7759571821455
+3248,1,"Repskärsfjärden","sand","fastland","07_landhöjningsskog_Ickeexploaterad",229,"20133248229","4-Mycket skyddat",8.1,323,876982.3251,7323016.4995,23.2621727380878,65.8049168222277
+3248,1,"Repskärsfjärden","block/grus","fastland","02_block/grus_Exploaterad",230,"20133248230","5-Skyddat",5.2,32,876213.3276,7323030.2929,23.2455711766543,65.8059427530513
+3248,1,"Repskärsfjärden","block/grus","fastland","02_block/grus_Ickeexploaterad",231,"20133248231","3-Extremt skyddat",2.4,51,877362.0374,7323199.142,23.2709132260403,65.806091643375
+3248,1,"Repskärsfjärden","strandäng/våtmark","fastland","04_strandäng/våtmark_Exploaterad",232,"20133248232","3-Extremt skyddat",17.2,270,879502.9588,7323465.3447,23.3180048875226,65.8059274145334
+3248,1,"Repskärsfjärden","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",233,"20133248233","3-Extremt skyddat",31.7,123,875559.5706,7324123.9149,23.2345473767827,65.8164200498892
+3248,1,"Repskärsfjärden","strandäng/våtmark","fastland","07_landhöjningsskog_Exploaterad",234,"20133248234","3-Extremt skyddat",39.1,236,879360.5499,7324420.3199,23.3176792339482,65.8145737432617
+3248,1,"Repskärsfjärden","strandäng/våtmark","fastland","04_strandäng/våtmark_Ickeexploaterad",235,"20133248235","3-Extremt skyddat",32.2,9,875244.4535,7324733.1258,23.2294651634499,65.822198731487

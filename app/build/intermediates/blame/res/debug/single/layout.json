@@ -1,0 +1,170 @@
+[
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\clickable_field_normal.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\clickable_field_normal.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\blue.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\blue.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\substrat_table.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\substrat_table.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\deponi_table_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\deponi_table_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\edit_text.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\edit_text.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\input_string_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\input_string_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_vallar.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\activity_vallar.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_habitat_table.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\row_habitat_table.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\tree_table_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\tree_table_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\clickable_field.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\clickable_field.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_zoneless.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\activity_zoneless.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\arter_table_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\arter_table_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_deponi_table.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\row_deponi_table.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_zone_split.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\activity_zone_split.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_row.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\list_row.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_trees_table.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\row_trees_table.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\buske_table_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\buske_table_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_vallar_table.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\row_vallar_table.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\edit_field_spinner.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\edit_field_spinner.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_no_input.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\activity_no_input.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\habitat_table_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\habitat_table_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\vallar_table_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\vallar_table_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_dyn_table.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\row_dyn_table.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\arter_table_count_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\arter_table_count_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\edit_field.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\edit_field.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\clickable_field_list.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\clickable_field_list.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\ja_nej_radiogroup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\ja_nej_radiogroup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dyn_table_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\dyn_table_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\clickable_field_yes_no.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\clickable_field_yes_no.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\header.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\header.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_take_picture.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\activity_take_picture.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_habitat.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\activity_habitat.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_arter_table.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\row_arter_table.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_select_art.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\activity_select_art.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\row_buske_table.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\row_buske_table.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\habitat_table_popup_9999.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\habitat_table_popup_9999.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_arter_faltskikt.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\activity_arter_faltskikt.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\deponi.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\deponi.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\arter_table_coverage_popup.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\arter_table_coverage_popup.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dyn_table_popup_9999.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\dyn_table_popup_9999.xml"
+    },
+    {
+        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\layout\\edit_field_komma.xml",
+        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\layout\\edit_field_komma.xml"
+    }
+]

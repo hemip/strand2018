@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical" >
+
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Ange transektens riktning (deg)"          
+            android:textAppearance="?android:attr/textAppearanceLarge"
+             />    
+        <EditText
+            android:id="@+id/riktning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+           android:maxLength="3"
+            android:ems="3"
+            android:inputType="numberDecimal">
+           
+        </EditText>
+
+    <ImageButton
+        android:id="@+id/pic_slut"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/case_no_pic_slut" />
+
+    <ImageButton
+        android:id="@+id/pic_sup"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/case_no_pic_sup" />
+
+    <ImageButton
+        android:id="@+id/pic_upp"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/case_no_pic_upp" />
+
+    <ImageButton
+        android:id="@+id/pic_ut"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="15dp"
+        android:layout_weight="1"
+        android:adjustViewBounds="true"
+        android:scaleType="fitCenter"
+        android:src="@drawable/case_no_pic_ut" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/pic_left"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/case_no_pic_left" />
+
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+            
+             <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+ 			android:layout_weight="1"
+            />
+           <LinearLayout 
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="center"
+            >
+           
+            <TextView 
+            android:id="@+id/gpsText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/gps_button"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:text="No GPS signal..waiting.."
+            android:maxLines="100"
+			android:scrollHorizontally="false"
+            />
+            
+          <Button
+            android:id="@+id/gpsButton"
+            
+             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"            
+            android:onClick="setStartPoint" />
+            
+             <TextView 
+            android:id="@+id/startP_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:paddingLeft="5dp"
+            />
+        </LinearLayout>
+        
+            <TextView 
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+ 			android:layout_weight="1"
+            />
+  		</LinearLayout>
+        <ImageButton
+            android:id="@+id/pic_right"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/case_no_pic_right" />
+   </LinearLayout>
+
+    
+    <Button
+            android:id="@+id/vidare_take_pic"
+            
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge" 
+            android:text="Vidare >" />
+    
+</LinearLayout>
