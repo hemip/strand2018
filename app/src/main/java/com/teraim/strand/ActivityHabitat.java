@@ -49,11 +49,17 @@ public class ActivityHabitat extends M_Activity {
 			"9160",	"9180",	"9190",	"9740",	"9750",	"9760"};
 
 	String[] oKoder;
-	String[] hUtbredning = {"0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","...","0,1 ha","0,1 ha","0,1 ha/0,25 skog"};
+
+	//HansG längd av denna vektor justerad så den överenstämmer med hKoder (12 -> 60)
+	String[] hUtbredning = {"0,1 ha/0,25 skog","0,1 ha","","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","","0,1 ha","0,1 ha","0,1 ha","0,1 ha","100 m2",
+			"0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha",
+			"0,1 ha","0,25 ha","1 ha","0,1 ha","","0,1 ha","0,1 ha","","0,1 ha","","100 m2","0,1 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha",
+			"0,1 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,1 ha","0,25 ha","0,25 ha"};
+
 	String dynHabitat[] = {"fördyner","vita dyner","grå dyner","risdyner",
 			"sandvide-dyner","trädklädda dyner","dynvåtmarker","ej habitat"};
 	String[] dynHabitatKoder = {"2110","2120","2130","2140","2170","2180","2190","9999"};
-	String[] dUtbredning = {"","","","","","0,25 ha","0,1 ha","0,1 ha öv 0,25 skog"};
+	String[] dUtbredning = {"","","","","","0,25 ha","0,1 ha","0,1 ha/0,25 skog"};
 
 	//Detta värde måste ändras om ovanstående kolumner ändras.
 	public final static int SLUT_KOLUMN_NO = 4;

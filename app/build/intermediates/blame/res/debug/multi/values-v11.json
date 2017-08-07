@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v11\\values-v11.xml",
+        "outputFile": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
         "map": [
             {
                 "to": {
@@ -12,14 +12,14 @@
                     "endOffset": 211
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values-v11/styles.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 4,
-                        "startOffset": 170,
+                        "startOffset": 165,
                         "endLine": 7,
                         "endColumn": 12,
-                        "endOffset": 328
+                        "endOffset": 321
                     }
                 }
             },
@@ -33,14 +33,14 @@
                     "endOffset": 359
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values-v11\\styles.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values-v11/styles.xml",
                     "position": {
                         "startLine": 1,
                         "startColumn": 4,
-                        "startOffset": 17,
+                        "startOffset": 16,
                         "endLine": 3,
                         "endColumn": 12,
-                        "endOffset": 162
+                        "endOffset": 159
                     }
                 }
             }

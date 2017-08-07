@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+        "outputFile": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 95
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 13,
                         "startColumn": 3,
-                        "startOffset": 472,
+                        "startOffset": 459,
                         "endColumn": 43,
-                        "endOffset": 512
+                        "endOffset": 499
                     }
                 }
             },
@@ -30,13 +30,13 @@
                     "endOffset": 135
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 1,
-                        "startOffset": 194,
+                        "startOffset": 188,
                         "endColumn": 36,
-                        "endOffset": 229
+                        "endOffset": 223
                     }
                 }
             },
@@ -49,13 +49,13 @@
                     "endOffset": 175
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 7,
                         "startColumn": 1,
-                        "startOffset": 233,
+                        "startOffset": 226,
                         "endColumn": 36,
-                        "endOffset": 268
+                        "endOffset": 261
                     }
                 }
             },
@@ -68,13 +68,13 @@
                     "endOffset": 215
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 10,
                         "startColumn": 1,
-                        "startOffset": 344,
+                        "startOffset": 334,
                         "endColumn": 36,
-                        "endOffset": 379
+                        "endOffset": 369
                     }
                 }
             },
@@ -87,13 +87,13 @@
                     "endOffset": 254
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 8,
                         "startColumn": 1,
-                        "startOffset": 271,
+                        "startOffset": 263,
                         "endColumn": 35,
-                        "endOffset": 305
+                        "endOffset": 297
                     }
                 }
             },
@@ -106,13 +106,13 @@
                     "endOffset": 301
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 12,
                         "startColumn": 3,
-                        "startOffset": 425,
+                        "startOffset": 413,
                         "endColumn": 45,
-                        "endOffset": 467
+                        "endOffset": 455
                     }
                 }
             },
@@ -125,13 +125,13 @@
                     "endOffset": 339
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 9,
                         "startColumn": 1,
-                        "startOffset": 308,
+                        "startOffset": 299,
                         "endColumn": 34,
-                        "endOffset": 341
+                        "endOffset": 332
                     }
                 }
             },
@@ -144,13 +144,13 @@
                     "endOffset": 379
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 5,
                         "startColumn": 1,
-                        "startOffset": 155,
+                        "startOffset": 150,
                         "endColumn": 36,
-                        "endOffset": 190
+                        "endOffset": 185
                     }
                 }
             },
@@ -163,13 +163,13 @@
                     "endOffset": 420
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 11,
                         "startColumn": 3,
-                        "startOffset": 384,
+                        "startOffset": 373,
                         "endColumn": 39,
-                        "endOffset": 420
+                        "endOffset": 409
                     }
                 }
             },
@@ -182,13 +182,13 @@
                     "endOffset": 478
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\dimens.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 92,
+                        "startOffset": 89,
                         "endColumn": 57,
-                        "endOffset": 145
+                        "endOffset": 142
                     }
                 }
             },
@@ -201,13 +201,13 @@
                     "endOffset": 534
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\dimens.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/dimens.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 151,
+                        "startOffset": 147,
                         "endColumn": 55,
-                        "endOffset": 202
+                        "endOffset": 198
                     }
                 }
             },
@@ -220,13 +220,13 @@
                     "endOffset": 587
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
-                        "startOffset": 104,
+                        "startOffset": 100,
                         "endColumn": 52,
-                        "endOffset": 152
+                        "endOffset": 148
                     }
                 }
             },
@@ -239,13 +239,13 @@
                     "endOffset": 631
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 59,
+                        "startOffset": 56,
                         "endColumn": 43,
-                        "endOffset": 98
+                        "endOffset": 95
                     }
                 }
             },
@@ -259,14 +259,14 @@
                     "endOffset": 922
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\styles.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 192,
+                        "startOffset": 186,
                         "endLine": 12,
                         "endColumn": 12,
-                        "endOffset": 484
+                        "endOffset": 472
                     }
                 }
             },
@@ -280,14 +280,14 @@
                     "endOffset": 1082
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\styles.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/styles.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 4,
-                        "startOffset": 525,
+                        "startOffset": 510,
                         "endLine": 17,
                         "endColumn": 12,
-                        "endOffset": 682
+                        "endOffset": 665
                     }
                 }
             },
@@ -301,14 +301,14 @@
                     "endOffset": 1463
                 },
                 "from": {
-                    "file": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\values\\strings.xml",
+                    "file": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/values/strings.xml",
                     "position": {
                         "startLine": 15,
                         "startColumn": 3,
-                        "startOffset": 521,
+                        "startOffset": 506,
                         "endLine": 24,
                         "endColumn": 9,
-                        "endOffset": 906
+                        "endOffset": 882
                     }
                 }
             }

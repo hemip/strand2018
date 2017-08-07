@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <instant-run
-    abi="x86"
+    abi="arm64-v8a,armeabi-v7a,armeabi"
     api-level="25"
-    build-mode="FULL"
-    density="420dpi"
+    build-mode="COLD"
+    density="xhdpi"
     format="10"
-    plugin-version="2.3.1"
-    timestamp="1491919571560"
-    token="-900110469958586925"
-    verifier="FULL_BUILD_REQUESTED" >
+    plugin-version="2.3.3"
+    timestamp="1501965730347"
+    token="-2189804531581436811"
+    verifier="COLD_SWAP_REQUESTED" >
 
     <task
         name="javac"
@@ -18,87 +18,62 @@
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="634" />
+        duration="0" />
     <task
         name="verifier"
-        duration="264" />
+        duration="0" />
 
     <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
-        type="SPLIT" />
-    <artifact
-        location="E:\utv\Android\StrandApp\app\build\outputs\apk\app-debug.apk"
+        location="/Users/hag/StudioProjects/StrandApp/app/build/outputs/apk/app-debug.apk"
         type="SPLIT_MAIN" />
 
     <build
         build-mode="FULL"
-        timestamp="1491919571560"
+        timestamp="1501965189779"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\dep\dependencies.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/dep/dependencies.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_0.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_3.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_7.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_0.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_2.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_5.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_7.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_4.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_8.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_5.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_9.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_4.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_1.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_9.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\intermediates\split-apk\debug\slices\slice_6.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/intermediates/split-apk/debug/slices/slice_8.apk"
             type="SPLIT" />
         <artifact
-            location="E:\utv\Android\StrandApp\app\build\outputs\apk\app-debug.apk"
+            location="/Users/hag/StudioProjects/StrandApp/app/build/outputs/apk/app-debug.apk"
+            type="SPLIT_MAIN" />
+    </build>
+    <build
+        build-mode="COLD"
+        timestamp="1501965730347"
+        verifier="COLD_SWAP_REQUESTED" >
+        <artifact
+            location="/Users/hag/StudioProjects/StrandApp/app/build/outputs/apk/app-debug.apk"
             type="SPLIT_MAIN" />
     </build>
 

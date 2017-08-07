@@ -1,46 +1,46 @@
 [
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\data2.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\data2.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/strandinventering_arter_ormbunkar.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/strandinventering_arter_ormbunkar.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\strandinventering_arter_buskar.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\strandinventering_arter_buskar.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/strandinventering_arter_lavar.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/strandinventering_arter_lavar.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\data3.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\data3.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/herbs.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/herbs.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\strandinventering_arter_ormbunkar.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\strandinventering_arter_ormbunkar.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/data2.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/data2.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\strandinventering_arter_ris.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\strandinventering_arter_ris.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/strandinventering_arter_graminider.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/strandinventering_arter_graminider.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\strandinventering_arter_graminider.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\strandinventering_arter_graminider.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/strandinventering_arter_buskar.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/strandinventering_arter_buskar.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\strandinventering_arter_trad.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\strandinventering_arter_trad.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/strandinventering_arter_ris.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/strandinventering_arter_ris.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\strandinventering_arter_lavar.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\strandinventering_arter_lavar.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/strandinventering_arter_orter.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/strandinventering_arter_orter.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\strandinventering_arter_mossor.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\strandinventering_arter_mossor.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/strandinventering_arter_mossor.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/strandinventering_arter_mossor.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\strandinventering_arter_orter.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\strandinventering_arter_orter.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/data3.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/data3.csv"
     },
     {
-        "merged": "E:\\utv\\Android\\StrandApp\\app\\build\\intermediates\\res\\merged\\debug\\raw\\herbs.csv",
-        "source": "E:\\utv\\Android\\StrandApp\\app\\src\\main\\res\\raw\\herbs.csv"
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/raw/strandinventering_arter_trad.csv",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/raw/strandinventering_arter_trad.csv"
     }
 ]
