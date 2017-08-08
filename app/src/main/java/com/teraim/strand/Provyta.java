@@ -19,7 +19,7 @@ public class Provyta implements Serializable {
 	String brygga,busktackning,dynerblottadsand,exponering,gpseast,gpsnorth,inventerare,inventeringstyp,orsak,kriteriestrand,kriterieovan,klippamax,
 	kusttyp,lagnummer,lutningextra,lutninggeo,lutningsupra,marktypextra,marktypgeo,marktypsupra,
 	marktypovan,ovanhabitat,provyta,pyID,rekreation,rojning,rojningtid,ruta,riktning,
-	slutlengeo,slutlensupra,slutlenovan,strandtyp,vattendjuppyID, stangsel,tradforekomst,tradtackninggeo,
+	slutlengeo,slutlensupra,slutlenovan,strandtyp, stangsel,tradforekomst,tradtackninggeo,
 	tradtackningsupra,tradtackningextra,vegtackningfaltgeo,vegtackningfaltsupra,
 	vegtackningfaltextra,vasslen,vattendjup,vasstathet,year;
 	
