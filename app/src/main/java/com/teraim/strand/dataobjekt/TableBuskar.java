@@ -94,7 +94,7 @@ public class TableBuskar extends TableBase {
 						if(längdE.getText()!=null)
 							langd = längdE.getText().toString();
 						if(täthetE.getText()!=null)
-							langd = täthetE.getText().toString();
+							tathet = täthetE.getText().toString();
 
 						art = entries[1];
 						myData.saveRow(myID,avst,art,bredd,langd,tathet);
