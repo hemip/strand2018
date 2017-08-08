@@ -2,16 +2,16 @@ package com.teraim.strand.dataobjekt;
 
 public class ArtListEntry  implements Comparable<ArtListEntry> {
 
-	private String släkte,familj,svensktNamn;
+	private String familj,släkte,svensktNamn;
 	private ArtListaProvider ap;
 	private String cType;
 
 
 
-	public ArtListEntry(String släkte, String familj, String svensktNamn, String cType,ArtListaProvider ap) {
+	public ArtListEntry(String familj, String släkte, String svensktNamn, String cType,ArtListaProvider ap) {
 		super();
-		this.släkte = släkte;
 		this.familj = familj;
+		this.släkte = släkte;
 		this.svensktNamn = svensktNamn;
 		//Set cType to "Existence (x) by default if not set in call.
 		this.cType = cType!=null?cType.toLowerCase():"x";
