@@ -9,11 +9,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Supra"
+            android:text="Geo (antal)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/supraE"
+            android:id="@+id/geoE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -28,11 +28,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Geo"
+            android:text="Supra (antal)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
-            android:id="@+id/geoE"
+            android:id="@+id/supraE"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Extra"
+            android:text="Extra (antal)"
             android:textAppearance="?android:attr/textAppearanceMedium" />/>
 
         <EditText
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Driftvall"
+            android:text="Driftvall (antal)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText

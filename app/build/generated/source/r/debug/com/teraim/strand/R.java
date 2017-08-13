@@ -117,9 +117,9 @@ public final class R {
         public static final int extraT=0x7f0a0037;
         public static final int field=0x7f0a0065;
         public static final int filler_1=0x7f0a000f;
-        public static final int geo=0x7f0a006e;
-        public static final int geoCB=0x7f0a0048;
-        public static final int geoE=0x7f0a0044;
+        public static final int geo=0x7f0a006d;
+        public static final int geoCB=0x7f0a0047;
+        public static final int geoE=0x7f0a0043;
         public static final int geoT=0x7f0a0035;
         public static final int gpsButton=0x7f0a002d;
         public static final int gpsText=0x7f0a002c;
@@ -180,9 +180,9 @@ public final class R {
         public static final int strandappheader=0x7f0a000e;
         public static final int substratB=0x7f0a0041;
         public static final int sum=0x7f0a0062;
-        public static final int supra=0x7f0a006d;
-        public static final int supraCB=0x7f0a0047;
-        public static final int supraE=0x7f0a0043;
+        public static final int supra=0x7f0a006e;
+        public static final int supraCB=0x7f0a0048;
+        public static final int supraE=0x7f0a0044;
         public static final int supraT=0x7f0a0036;
         public static final int tableRow=0x7f0a0071;
         public static final int tathet=0x7f0a004f;

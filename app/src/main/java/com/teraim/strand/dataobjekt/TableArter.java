@@ -18,11 +18,11 @@ import com.teraim.strand.dataobjekt.InputAlertBuilder.AlertBuildHelper;
 
 public class TableArter extends TableBase {
 
-	protected final static int[] columnIds = new int[] {R.id.namn, R.id.supra, R.id.geo,R.id.extra,R.id.drift};
-	int[] inputviews = new int[] {R.id.supra,R.id.geo,R.id.extra,R.id.drift};
-	int[] editviews = new int[] {R.id.supraE,R.id.geoE,R.id.extraE,R.id.driftE};
-	int[] chkboxes = new int[] {R.id.supraCB,R.id.geoCB,R.id.extraCB,R.id.driftCB};
-	protected final static String[] columnName = new String[] {"NAMN","SUPRA","GEO","XTRA","DRIFT"};
+	protected final static int[] columnIds = new int[] {R.id.namn, R.id.geo, R.id.supra,R.id.extra,R.id.drift};
+	int[] inputviews = new int[] {R.id.geo,R.id.supra,R.id.extra,R.id.drift};
+	int[] editviews = new int[] {R.id.geoE,R.id.supraE,R.id.extraE,R.id.driftE};
+	int[] chkboxes = new int[] {R.id.geoCB,R.id.supraCB,R.id.extraCB,R.id.driftCB};
+	protected final static String[] columnName = new String[] {"NAMN","GEO","SUPRA","EXTRA","DRIFT"};
 	//private CheckBox supraCB,geoCB,extraCB;
 	//private EditText supraE,geoE,extraE;
 //	private TextView artT,supraT,geoT,extraT,driftT;

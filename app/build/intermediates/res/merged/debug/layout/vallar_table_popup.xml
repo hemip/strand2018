@@ -60,7 +60,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:ems="10" >
         </EditText>
         <TextView
@@ -76,7 +76,7 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:ems="10" >
         </EditText>
         <TextView

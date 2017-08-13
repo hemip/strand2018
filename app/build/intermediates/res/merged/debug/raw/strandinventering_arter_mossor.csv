@@ -1,6 +1,4 @@
 Mossor,Dicranum spp.,kvastmossor
-,Pleurozium schreberi,väggmossa
-,Racomitrium canescens,sandraggmossa
-,Racomitrium elongatum,spärraggmossa
-,Racomitrium ericoides,fjäderraggmossa
-,Syntrichia ruraliformis,sandskruvmossa
+Mossor,Pleurozium schreberi,väggmossa
+Mossor,Racomitrium canescens+elongatum+ericoides,gulaktiga sandraggmossor
+Mossor,Syntrichia ruraliformis,sandskruvmossa

@@ -14,7 +14,7 @@
         android:text="TextView" />
 
     <TextView
-        android:id="@+id/supra"
+        android:id="@+id/geo"
         android:layout_height="wrap_content"
         android:gravity= "center"
         android:textAppearance="?android:attr/textAppearanceMedium"
@@ -24,7 +24,7 @@
         android:text="X" />
 
     <TextView
-        android:id="@+id/geo"
+        android:id="@+id/supra"
         android:layout_height="wrap_content"
         android:gravity= "center"
         android:textAppearance="?android:attr/textAppearanceMedium"

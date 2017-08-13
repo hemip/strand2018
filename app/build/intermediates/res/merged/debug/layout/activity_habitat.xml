@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:text="Habitat"
+        android:text="Habitat i transekten"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <LinearLayout
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:text="Habitat ovan"
+        android:text="Habitat ovan transekt"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Spinner
@@ -143,7 +143,7 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="10dp"
         android:layout_marginTop="10dp"
-        android:text="Markanvändning"
+        android:text="Markanvändning ovan transekt"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
     <Spinner

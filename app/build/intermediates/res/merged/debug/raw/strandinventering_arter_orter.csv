@@ -1,11 +1,11 @@
-Amaranthaceae,Atriplex calotheca,flikmålla
-Amaranthaceae,Atriplex glabriuscula,broskmålla
-Amaranthaceae,Atriplex littoralis,strandmålla
+Amaranthaceae,Atriplex calotheca,flikmålla,
+Amaranthaceae,Atriplex glabriuscula,broskmålla,
+Amaranthaceae,Atriplex littoralis,strandmålla,
 Amaranthaceae,Atriplex longipes ssp longpipes,skaftmålla
 Amaranthaceae,Atriplex longipes ssp. praecox,brådmålla
 Amaranthaceae,Sagina nodosa,knutnarv
 Caryophyllaceae,Silene dioica,rödblära
-Caryophyllaceae,Silene uniflora,strandglim
+Caryophyllaceae,Silene uniflora,strandglim,t
 Caryophyllaceae,Silene viscosa,klibbglim
 Caryophyllaceae,Spergularia media,havsnarv
 Caryophyllaceae,Spergularia salina,saltnarv
@@ -22,7 +22,7 @@ Ericaceae,Pyrola chlorantha,grönpyrola
 Euphorbiaceae,Euphorbia palustris,kärrtörel
 Euphorbiaceae,Euphrasia bottnica,strandögontröst
 Euphorbiaceae,Euphrasia frigida var. baltica,klapperögontröst
-Fabaceae,Lathyrus japonicus,strandvial
+Fabaceae,Lathyrus japonicus,strandvial,t
 Fabaceae,Lathyrus niger,vippärt
 Fabaceae,Lathyrus palustris,kärrvial
 Fabaceae,Lotus corniculatus,käringtand
@@ -46,18 +46,18 @@ Orchidaceae,Epipactis palustris,kärrknipprot
 Orobanchaceae,Odontites litoralis,strandrödtoppa
 Orobanchaceae,Rhinanthus minor,ängsskallra
 Orobanchaceae,Rhinanthus serotinus,höskallra
-Papaveraceae,Glaucium flavum,strandvallmo
+Papaveraceae,Glaucium flavum,strandvallmo,rt
 Papaveraceae,Atriplex pedunculata,saltmålla
 Amaranthaceae,Atriplex prostrata,spjutmålla
 Amaranthaceae,Beta vulgaris,strandbeta
 Amaranthaceae,Salicornia europaea,glasört
 Amaranthaceae,Salsola kali,sodaört
 Amaranthaceae,Suaeda maritima,saltört
-Apiaceae,Angelica archangelica ssp. litoralis,strandkvanne
-Apiaceae,Angelica sylvestris,strätta
+Apiaceae,Angelica archangelica ssp. litoralis,strandkvanne,r
+Apiaceae,Angelica sylvestris,strätta,r
 Apiaceae,Anthriscus sylvestris,hundkäx
-Apiaceae,Eryngium maritimum,martorn
-Apiaceae,Ligusticum scothicum,strandloka
+Apiaceae,Eryngium maritimum,martorn,r
+Apiaceae,Ligusticum scothicum,strandloka,r
 Apiaceae,Pimpinella saxifraga,bockrot
 Apiaceae,Hydrocotyle vulgaris,spikblad
 Asteraceae,Achillea millefolium,röllika
@@ -65,10 +65,10 @@ Asteraceae,Antennaria dioica,kattfot
 Asteraceae,Artemisia absinthium,malört
 Asteraceae,Artemisia campestris ssp. bottnica,bottnisk malört
 Asteraceae,Artemisia vulgaris var. coarctata,strandgråbo
-Asteraceae,Aster tripolium,strandaster
 Asteraceae,Bidens tripartita,brunskära
+Asteraceae,Cotula coronopifolia,kotula
 Asteraceae,Hieracium umbellatum,flockfibbla
-Asteraceae,Hypochoeris maculata,slåtterfibbla
+Asteraceae,Hypochoeris maculata,slåtterfibbla,r
 Asteraceae,Matricaria discoidea,gatkamomill
 Asteraceae,Mulgedium tataricum,sandsallad
 Asteraceae,Petasites spurius,spjutskråp
@@ -78,18 +78,18 @@ Asteraceae,Senecio viscosus,klibbkorsört
 Asteraceae,Senecio vulgaris,korsört
 Asteraceae,Seriphidium maritimum ssp. humifusum,baltisk strandmalört
 Asteraceae,Seriphidium maritimum ssp. maritimum,vanlig strandmalört
-Asteraceae,Sonchus arvensis,åkermolke
-Asteraceae,Sonchus palustris,strandmolke
-Asteraceae,Tanacetum vulgare,renfana
+Asteraceae,Sonchus arvensis,åkermolke,r
+Asteraceae,Sonchus palustris,strandmolke,r
+Asteraceae,Tanacetum vulgare,renfana,t
 Asteraceae,Taraxacum sect. palustria,strandmaskrosor
 Asteraceae,Tripleurospermum maritimum ssp. maritimum,kustbaldersbrå
 Asteraceae,Tripleurospermum maritimum ssp. subpolare,nordbaldersbrå
-Asteraceae,Tripolium vulgare,strandaster
+Asteraceae,Tripolium vulgare,strandaster,r
 Boraginaceae,Cynoglossum officinale,hundtunga
 Boraginaceae,Mertensia maritima,ostronört
-Brassicaceae,Cakile maritima,marviol
+Brassicaceae,Cakile maritima,marviol,r
 Brassicaceae,Cochlearia officinalis,skörbjuggsört
-Brassicaceae,Crambe maritima,strandkål
+Brassicaceae,Crambe maritima,strandkål,r
 Brassicaceae,Isatis tinctoria,vejde
 Caprifoliaceae,Valeriana,vänderrötter
 Caryophyllaceae,Cerastium diffusum,västkustarv
@@ -106,7 +106,7 @@ Polygonaceae,Rumex acetosa,ängssyra
 Polygonaceae,Rumex acetosella,bergsyra
 Polygonaceae,Rumex crispus,krusskräppa
 Polygonaceae,Rumex longifolius,gårdsskräppa
-Polygonaceae,Rumex pseudonatronatus,finnskräppa
+Polygonaceae,Rumex pseudonatronatus,finnskräppa,r
 Primulaceae,Anagallis minima,knutört
 Primulaceae,Glaux maritima,strandkrypa
 Primulaceae,Primula nutans,strandviva

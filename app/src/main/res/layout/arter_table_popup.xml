@@ -6,16 +6,16 @@
         android:orientation="vertical" >
 
     <CheckBox
-        android:id="@+id/supraCB"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Supra" />
-
-    <CheckBox
         android:id="@+id/geoCB"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Geo" />
+
+    <CheckBox
+        android:id="@+id/supraCB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Supra" />
 
     <CheckBox
         android:id="@+id/extraCB"
