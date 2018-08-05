@@ -1,5 +1,52 @@
 [
     {
+        "outputFile": "/Users/hag/StudioProjects/strand2018/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endLine": 4,
+                    "endColumn": 12,
+                    "endOffset": 211
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values-v11/styles.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 165,
+                        "endLine": 7,
+                        "endColumn": 12,
+                        "endOffset": 321
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 216,
+                    "endLine": 7,
+                    "endColumn": 12,
+                    "endOffset": 359
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values-v11/styles.xml",
+                    "position": {
+                        "startLine": 1,
+                        "startColumn": 4,
+                        "startOffset": 16,
+                        "endLine": 3,
+                        "endColumn": 12,
+                        "endOffset": 159
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v11/values-v11.xml",
         "map": [
             {

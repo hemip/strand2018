@@ -2,5 +2,9 @@
     {
         "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
         "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/drawable-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/hag/StudioProjects/strand2018/app/build/intermediates/res/merged/debug/drawable-xhdpi/ic_launcher.png",
+        "source": "/Users/hag/StudioProjects/strand2018/app/src/main/res/drawable-xhdpi/ic_launcher.png"
     }
 ]

@@ -1,5 +1,320 @@
 [
     {
+        "outputFile": "/Users/hag/StudioProjects/strand2018/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 44,
+                    "endOffset": 95
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 3,
+                        "startOffset": 459,
+                        "endColumn": 43,
+                        "endOffset": 499
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 3,
+                    "startColumn": 4,
+                    "startOffset": 100,
+                    "endColumn": 39,
+                    "endOffset": 135
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 1,
+                        "startOffset": 188,
+                        "endColumn": 36,
+                        "endOffset": 223
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 4,
+                    "startColumn": 4,
+                    "startOffset": 140,
+                    "endColumn": 39,
+                    "endOffset": 175
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 1,
+                        "startOffset": 226,
+                        "endColumn": 36,
+                        "endOffset": 261
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 5,
+                    "startColumn": 4,
+                    "startOffset": 180,
+                    "endColumn": 39,
+                    "endOffset": 215
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 1,
+                        "startOffset": 334,
+                        "endColumn": 36,
+                        "endOffset": 369
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 6,
+                    "startColumn": 4,
+                    "startOffset": 220,
+                    "endColumn": 38,
+                    "endOffset": 254
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 1,
+                        "startOffset": 263,
+                        "endColumn": 35,
+                        "endOffset": 297
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 7,
+                    "startColumn": 4,
+                    "startOffset": 259,
+                    "endColumn": 46,
+                    "endOffset": 301
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 3,
+                        "startOffset": 413,
+                        "endColumn": 45,
+                        "endOffset": 455
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 8,
+                    "startColumn": 4,
+                    "startOffset": 306,
+                    "endColumn": 37,
+                    "endOffset": 339
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 1,
+                        "startOffset": 299,
+                        "endColumn": 34,
+                        "endOffset": 332
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 9,
+                    "startColumn": 4,
+                    "startOffset": 344,
+                    "endColumn": 39,
+                    "endOffset": 379
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 1,
+                        "startOffset": 150,
+                        "endColumn": 36,
+                        "endOffset": 185
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 10,
+                    "startColumn": 4,
+                    "startOffset": 384,
+                    "endColumn": 40,
+                    "endOffset": 420
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 3,
+                        "startOffset": 373,
+                        "endColumn": 39,
+                        "endOffset": 409
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 11,
+                    "startColumn": 4,
+                    "startOffset": 425,
+                    "endColumn": 57,
+                    "endOffset": 478
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 89,
+                        "endColumn": 57,
+                        "endOffset": 142
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 12,
+                    "startColumn": 4,
+                    "startOffset": 483,
+                    "endColumn": 55,
+                    "endOffset": 534
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 147,
+                        "endColumn": 55,
+                        "endOffset": 198
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 13,
+                    "startColumn": 4,
+                    "startOffset": 539,
+                    "endColumn": 52,
+                    "endOffset": 587
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 100,
+                        "endColumn": 52,
+                        "endOffset": 148
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 14,
+                    "startColumn": 4,
+                    "startOffset": 592,
+                    "endColumn": 43,
+                    "endOffset": 631
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 56,
+                        "endColumn": 43,
+                        "endOffset": 95
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 15,
+                    "startColumn": 4,
+                    "startOffset": 636,
+                    "endLine": 21,
+                    "endColumn": 12,
+                    "endOffset": 922
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 186,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 472
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 22,
+                    "startColumn": 4,
+                    "startOffset": 927,
+                    "endLine": 24,
+                    "endColumn": 12,
+                    "endOffset": 1082
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 510,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 665
+                    }
+                }
+            },
+            {
+                "to": {
+                    "startLine": 25,
+                    "startColumn": 4,
+                    "startOffset": 1087,
+                    "endLine": 34,
+                    "endColumn": 9,
+                    "endOffset": 1463
+                },
+                "from": {
+                    "file": "/Users/hag/StudioProjects/strand2018/app/src/main/res/values/strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 3,
+                        "startOffset": 506,
+                        "endLine": 24,
+                        "endColumn": 9,
+                        "endOffset": 882
+                    }
+                }
+            }
+        ]
+    },
+    {
         "outputFile": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values/values.xml",
         "map": [
             {

@@ -502,7 +502,7 @@ public class ActivityZoneSplit extends M_Activity {
 		addNormalInput(bg,"Total trädtäckning","Total täckning av trädskiktet i Geolitoralen (%)",py.getTradtackninggeo(),ID_TradtackningGeo,InputType.TYPE_CLASS_NUMBER);
 		
 		//SlutLängd 
-		addNormalInput(bg,"Geolitoral slutlängd","Avstånd längs transekten från medelvattenlinjen till där geolittoralen slutar (dm)",py.getSlutlengeo(),ID_SlutlenGeo,InputType.TYPE_NUMBER_FLAG_DECIMAL);
+		addNormalInput(bg,"Geolitoral slutlängd","Avstånd längs transekten från medelvattenlinjen till där geolittoralen slutar (m)",py.getSlutlengeo(),ID_SlutlenGeo,InputType.TYPE_NUMBER_FLAG_DECIMAL);
 		
 		//BUTTONS
 
