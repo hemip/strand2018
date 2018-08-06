@@ -9,7 +9,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Ange area i m2. Minsta areal som anges är 0.01 m2"
+            android:text="Ange antal, längd eller area i meter. Minsta enhet 0.01"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText

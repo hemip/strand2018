@@ -1,11 +1,11 @@
 [
     {
-        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/layout/ja_nej_radiogroup.xml",
-        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/layout/ja_nej_radiogroup.xml"
-    },
-    {
         "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/layout/edit_field_spinner.xml",
         "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/layout/edit_field_spinner.xml"
+    },
+    {
+        "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/layout/ja_nej_radiogroup.xml",
+        "source": "/Users/hag/StudioProjects/StrandApp/app/src/main/res/layout/ja_nej_radiogroup.xml"
     },
     {
         "merged": "/Users/hag/StudioProjects/StrandApp/app/build/intermediates/res/merged/debug/layout/activity_select_art.xml",

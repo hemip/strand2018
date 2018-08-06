@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Sun Aug 05 17:11:04 CEST 2018
+#Sun Aug 05 20:01:25 CEST 2018
 76.base=/Users/hag/StudioProjects/strand2018/app/build/intermediates/res/resources-debug.ap_
 5.base=/Users/hag/StudioProjects/strand2018/app/build/intermediates/res/resources-debug.ap_
 42.base=/Users/hag/StudioProjects/strand2018/app/build/intermediates/res/resources-debug.ap_

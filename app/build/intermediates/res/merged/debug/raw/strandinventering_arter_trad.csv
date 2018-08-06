@@ -11,6 +11,7 @@ Taxaceae,Taxus baccata,Idegran
 -,-,Övr. främ. barrträd (några som inte är Pinaceae?)
 Betulaceae,Betula-,Björkar (ej dvärg-)
 Salicaceae,Populus tremula,Asp
+Salicaceae,Populus pentandra,Jolster
 Salicaceae,Populus-,Övriga popplar
 Fagaceae,Quercus robur,Ekar
 Fagaceae,Fagus sylvatica,Bok
@@ -29,7 +30,7 @@ Rosaceae,Pyrus communis,Päron
 Betulaceae,Alnus glutinosa,Klibbal
 Betulaceae,Alnus incana,Gråal
 Saliceae,Salix caprea,Sälg, diam >20 mm
-Saliceae,Salix-,Pilar, diam >20 mm (ingår jolster?)
+Saliceae,Salix-,Pilar, diam >20 mm
 Rosaceae,Sorbus aucuparia,Rönn
 Rosaceae,Sorbus-,Oxlar
 -,-,Övriga lövträd
