@@ -1,15 +1,21 @@
 apply plugin: 'com.android.application'
 
 android {
+    signingConfigs {
+        config {
+            keyAlias 'strand'
+            keyPassword 'kovall'
+            storeFile file('kovall')
+            storePassword 'kovall'
+        }
+    }
     compileSdkVersion 17
     buildToolsVersion "25.0.2"
-
     defaultConfig {
         applicationId "com.teraim.strand"
         minSdkVersion 11
         targetSdkVersion 15
     }
-
     buildTypes {
         release {
             minifyEnabled false
