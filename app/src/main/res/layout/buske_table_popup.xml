@@ -9,7 +9,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Avstånd"
+            android:text="Avstånd (m)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -28,7 +28,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Bredd"
+            android:text="Bredd (m)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Längd"
+            android:text="Längd (m)"
             android:textAppearance="?android:attr/textAppearanceMedium" />/>
 
         <EditText
@@ -64,7 +64,7 @@
              android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Täthet"
+            android:text="Täthet (procent)"
             android:textAppearance="?android:attr/textAppearanceMedium" />/>
 
         <EditText
