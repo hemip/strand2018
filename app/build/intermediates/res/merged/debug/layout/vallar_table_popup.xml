@@ -32,7 +32,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Position (ange i meter)"
+            android:text="Position (m)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -51,7 +51,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Bredd"
+            android:text="Bredd (m)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Höjd"
+            android:text="Höjd (m)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -83,7 +83,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
-            android:text="Längd"
+            android:text="Längd (m)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -100,7 +100,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 			android:layout_margin="10dp"
-            android:text="Tång (i procent)"
+            android:text="Tång (%)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -117,7 +117,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 			android:layout_margin="10dp"
-            android:text="Gren"
+            android:text="Gren (%)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -133,7 +133,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 			android:layout_margin="10dp"
-            android:text="Annan vegetation"
+            android:text="Annan vegetation (%)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -150,7 +150,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 			android:layout_margin="10dp"
-            android:text="Plast"
+            android:text="Plast (%)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -166,7 +166,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 			android:layout_margin="10dp"
-            android:text="Övrigt skräp"
+            android:text="Övrigt skräp (%)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -183,7 +183,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 			android:layout_margin="10dp"
-            android:text="Annueller"
+            android:text="Annueller (m2)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -192,7 +192,7 @@
             android:layout_height="wrap_content"
 			android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:ems="10" >
         </EditText>
         
@@ -200,7 +200,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 			android:layout_margin="10dp"
-            android:text="Perenner"
+            android:text="Perenner (m2)"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -209,7 +209,7 @@
             android:layout_height="wrap_content"
 			android:layout_marginLeft="10dp"
             android:layout_marginRight="10dp"
-            android:inputType="number"
+            android:inputType="numberDecimal"
             android:ems="10" >
         </EditText>
   </LinearLayout>      
