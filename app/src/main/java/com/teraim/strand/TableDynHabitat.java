@@ -30,8 +30,8 @@ public class TableDynHabitat extends TableBase {
 
 	String[] entries = {"Bebyggd strand","Påverkad av gräv/pirbygge/muddring",
 			"Avverkning kraftig utglesning av träd","Hydrologi påverkad (ex. reglering)",
-			"Området exploaterat eller bebyggt","Ej naturlig skog"};
-	List<String> values = new ArrayList<String>(Arrays.asList("13","14","15","16","17","18"));
+			"Området exploaterat eller bebyggt","Ej naturlig skog","Naturlig skog, men ålderskriterie ej uppfyllt"};
+	List<String> values = new ArrayList<String>(Arrays.asList("13","14","15","16","17","18","19"));
 
 	private Spinner sp_9999;
 	private ArrayAdapter<String> altArrayAdapter;	

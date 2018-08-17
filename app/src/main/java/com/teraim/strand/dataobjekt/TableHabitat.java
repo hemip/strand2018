@@ -34,8 +34,8 @@ public class TableHabitat extends TableBase {
 	
 	public final static String[] noEntries = {"Bebyggd strand","Påverkad av gräv/pirbygge/muddring",
 			"Avverkning kraftig utglesning av träd","Hydrologi påverkad (ex. reglering)",
-			"Området exploaterat eller bebyggt","Ej naturlig skog"};
-	List<String> values = new ArrayList<String>(Arrays.asList("13","14","15","16","17","18"));
+			"Området exploaterat eller bebyggt","Ej naturlig skog","Naturlig skog, men ålderskriterie ej uppfyllt"};
+	List<String> values = new ArrayList<String>(Arrays.asList("13","14","15","16","17","18","19"));
 
 	
 	//	private boolean hasListener = true;
