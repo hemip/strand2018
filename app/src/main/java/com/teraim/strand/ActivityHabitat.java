@@ -51,7 +51,7 @@ public class ActivityHabitat extends M_Activity {
 	String[] oKoder;
 
 	//HansG längd av denna vektor justerad så den överenstämmer med hKoder (12 -> 60)
-	String[] hUtbredning = {"0,1 ha/0,25 skog","0,1 ha","","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","","0,1 ha","0,1 ha","0,1 ha","0,1 ha","100 m2",
+	String[] hUtbredning = {"0,1 ha/0,25 skog","0,1 ha","","0.1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","","0,1 ha","0,1 ha","0,1 ha","0,1 ha","100 m2",
 			"0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha",
 			"0,1 ha","0,25 ha","1 ha","0,1 ha","","0,1 ha","0,1 ha","","0,1 ha","","100 m2","0,1 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha",
 			"0,1 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,1 ha","0,25 ha","0,25 ha"};

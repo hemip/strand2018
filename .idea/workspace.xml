@@ -12,7 +12,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3f5b4912-0090-4308-864d-45ca285f6e05" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/app.iml" afterPath="$PROJECT_DIR$/app/app.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/teraim/strand/ActivityHabitat.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/teraim/strand/ActivityHabitat.java" />
     </list>
     <ignored path="Strand.iws" />
@@ -48,8 +47,8 @@
       <file leaf-file-name="ActivityHabitat.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/teraim/strand/ActivityHabitat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-135">
-              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+            <state relative-caret-position="480">
+              <caret line="53" column="66" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
               <folding />
             </state>
           </provider>
@@ -2727,7 +2726,14 @@
       <option name="project" value="LOCAL" />
       <updated>1534501763178</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="klippstrand lagts till (hur kunde den försvinna?)">
+      <created>1534583532647</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1534583532647</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TodoView">
@@ -2804,7 +2810,8 @@
     <MESSAGE value="Fixat enhet för Annan plast till m2&#10;Möjlighet att mata in decimaler för annueller/perenner för driftvallar" />
     <MESSAGE value="Ny version 18_04&#10;Möjlighet att mata in decimaler annueller/perenner driftvall&#10;Enheter i vall-popup&#10;Bytt enhet för Annan plast till m2" />
     <MESSAGE value="Version 18_05&#10;Ny orsakskategori &quot;Naturlig skog, men ålderskriterie ej uppfyllt&quot; för habitat ovan och dyner" />
-    <option name="LAST_COMMIT_MESSAGE" value="Version 18_05&#10;Ny orsakskategori &quot;Naturlig skog, men ålderskriterie ej uppfyllt&quot; för habitat ovan och dyner" />
+    <MESSAGE value="klippstrand lagts till (hur kunde den försvinna?)" />
+    <option name="LAST_COMMIT_MESSAGE" value="klippstrand lagts till (hur kunde den försvinna?)" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -3379,8 +3386,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/teraim/strand/ActivityHabitat.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-135">
-          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
+        <state relative-caret-position="480">
+          <caret line="53" column="66" selection-start-line="53" selection-start-column="66" selection-end-line="53" selection-end-column="66" />
           <folding />
         </state>
       </provider>
