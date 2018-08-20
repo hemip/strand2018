@@ -231,6 +231,7 @@ public class ActivityHabitat extends M_Activity {
 					public void onItemSelected(AdapterView<?> arg0, View arg1,
 							int arg2, long arg3) {
 						py.setKriterieovan((String)noHabS.getSelectedItem());
+						Log.d("ovanHabitat","setKriterieovan: "+py.getKriterieovan());
 				}
 
 					@Override
