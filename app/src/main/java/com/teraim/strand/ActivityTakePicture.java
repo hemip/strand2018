@@ -61,6 +61,10 @@ public class ActivityTakePicture extends M_Activity implements LocationListener 
 		
 		//Init geoupdate
 		lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
+		//---request for location updates---
+		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER,	0,1,	this);
+
+
 
 		//Create buttons.
 		initPic(slut,"slut");
@@ -104,7 +108,7 @@ public class ActivityTakePicture extends M_Activity implements LocationListener 
 		lm.requestLocationUpdates(
 				LocationManager.GPS_PROVIDER,
 				0,
-				1,
+				0,
 				this);
 
 	}
@@ -196,8 +200,7 @@ public class ActivityTakePicture extends M_Activity implements LocationListener 
 	}
 	@Override
 	public void onProviderEnabled(String arg0) {
-		// TODO Auto-generated method stub
-
+		//ska vara tomt
 	}
 	@Override
 	public void onStatusChanged(String provider, int status, Bundle arg2) {
