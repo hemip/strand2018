@@ -2,14 +2,19 @@ package com.teraim.strand;
 
 import java.util.HashMap;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.location.LocationProvider;
 import android.os.Bundle;
+import android.provider.SyncStateContract;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -61,8 +66,6 @@ public class ActivityTakePicture extends M_Activity implements LocationListener 
 		
 		//Init geoupdate
 		lm = (LocationManager)getSystemService(Context.LOCATION_SERVICE);
-		//---request for location updates---
-		lm.requestLocationUpdates(LocationManager.GPS_PROVIDER,	0,1,	this);
 
 
 
@@ -104,12 +107,18 @@ public class ActivityTakePicture extends M_Activity implements LocationListener 
 	@Override
 	public void onResume() {
 		super.onResume();
-		//---request for location updates---
-		lm.requestLocationUpdates(
-				LocationManager.GPS_PROVIDER,
-				0,
-				0,
-				this);
+
+		// Kolla om vi har rätt tillstånd och be om tillstånd om det behövs
+		if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED) {
+			this.requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, Strand.MY_PERMISSIONS_REQUEST_ACCESS_FINE			);
+		}
+		else{
+			lm.requestLocationUpdates(
+					LocationManager.GPS_PROVIDER,
+					0,
+					0,
+					this);
+		}
 
 	}
 	/**

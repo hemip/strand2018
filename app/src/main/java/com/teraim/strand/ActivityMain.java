@@ -8,12 +8,16 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.v4.app.ActivityCompat;
+import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewGroup;
@@ -67,9 +71,9 @@ public class ActivityMain extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		exprDia = (LinearLayout)this.findViewById(R.id.exprdia);
+
 		ph = new PersistenceHelper(this);
-		//Check if I am running for the first time. If so, perform initial init.
-		initIfFirstTime();
+
 		//Load the input data.
 		//For now, load from resources.
 		InputStream is = getResources().openRawResource(R.raw.data3);
@@ -98,7 +102,6 @@ public class ActivityMain extends Activity {
 		ArrayAdapter<String> altArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, altArray);
 		alternativSpinner.setAdapter(altArrayAdapter);
 
-
 		ytSpinner = (Spinner)this.findViewById(R.id.provytaspinner); 	
 		//Then, create an adaptor and link to the array.
 		provyteArrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, provyteArray);
@@ -110,7 +113,6 @@ public class ActivityMain extends Activity {
 
 			@Override
 			public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
-
 				selectedRuta = rutArray.get(position);
 				refreshProvyteSpinner(selectedRuta);
 				Log.d("Strand","Rutspinner onitemselected");
@@ -133,9 +135,9 @@ public class ActivityMain extends Activity {
 					Log.d("Strand","ytspinner onselected, pos: "+position+" sr: "+selectedRuta+" sp"+selectedProvyta);
 					showProvyteStatus(selectedRuta,selectedProvyta);
 				}
-				else
+				else {
 					exprDia.setVisibility(View.INVISIBLE);
-
+				}
 			}
 
 
@@ -225,10 +227,7 @@ public class ActivityMain extends Activity {
 			expressionMark.setText("\u2713");
 			exprMessage.setText(ny);     				    			
 		}
-
-		
 	}
-
 
 
 
@@ -411,67 +410,6 @@ public class ActivityMain extends Activity {
 			ytSpinner.setSelection(0);
 	}
 
-
-	private void initIfFirstTime() {
-		//If testFile doesnt exist it will be created and found next time.
-		String t = Strand.STRAND_ROOT_DIR +
-				"ifiexistthenallisfine.txt";
-		File f = new File(t);
-		Log.d("Strand","Checking if this is first time use...");
-		boolean exists = f.exists(); 
-
-		if (!exists) {
-			Log.d("Strand","Yes..executing  first time init");
-			initialize();   
-			//create token file to stop further calls to init.
-			try {
-				f.createNewFile();
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
-		else 
-			Log.d("Strand","..Not first time");
-
-	}
-
-	private void initialize() {
-		//create data folder. This will also create the ROOT folder for the Strand app.
-		File folder = new File(Strand.DATA_ROOT_DIR);
-		folder.mkdirs();
-		folder = new File(Strand.PIC_ROOT_DIR);
-		if(!folder.mkdirs())
-			Log.e("Strand","Failed to create pic root folder");
-	}
-
-
-
-
-/*
-				Log.d("Strand","Provyta exists..");
-				if (selected == 0) {
-					DialogInterface.OnClickListener dialogClickListener = new DialogInterface.OnClickListener() {
-						@Override
-						public void onClick(DialogInterface dialog, int which) {
-							switch (which){
-							case DialogInterface.BUTTON_POSITIVE:
-								py=null;
-								startCollect(view);
-								break;
-							case DialogInterface.BUTTON_NEGATIVE:
-								break;
-							}
-						}
-					};
-
-					AlertDialog.Builder builder = new AlertDialog.Builder(this);
-					builder.setTitle("Ytan existerar redan!")
-					.setMessage("Vill du verkligen ta bort alla inmatningar?").setPositiveButton("Ja", dialogClickListener)
-					.setNegativeButton("Nej", dialogClickListener).show();
-
-				} else
- */
 
 
 }

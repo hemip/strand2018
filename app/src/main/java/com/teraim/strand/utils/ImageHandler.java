@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.graphics.Point;
 import android.net.Uri;
 import android.provider.MediaStore;
+import android.support.v4.content.FileProvider;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
@@ -34,19 +35,24 @@ public class ImageHandler {
 	public void drawButton(ImageButton b, String name) {
 		
 		String imgPath = Strand.PIC_ROOT_DIR+py.getpyID()+"_";
-
+		final String imgFileName = imgPath+name+".png";
 
 
 		//Try to load pic from disk, if any.
+		File file = new File(imgFileName);
+
+		if ( !file.exists()) {
+			return;
+		}
+
+
 		//To avoid memory issues, we need to figure out how big bitmap to allocate, approximately
 		//Picture is in landscape & should be approx half the screen width, and 1/5th of the height.
 
 		//First get the ration between h and w of the pic.
 		final BitmapFactory.Options options = new BitmapFactory.Options();
-
-		final String imgFileName = imgPath+name+".png";
 		options.inJustDecodeBounds=true;
-		Bitmap bip = BitmapFactory.decodeFile(imgFileName,options);		
+		BitmapFactory.decodeFile(imgFileName,options);
 
 		//there is a picture..
 		int realW = options.outWidth;
@@ -81,7 +87,7 @@ public class ImageHandler {
 			//now create real bitmap using insampleSize
 
 			options.inJustDecodeBounds = false;
-			bip = BitmapFactory.decodeFile(imgFileName,options);
+			Bitmap bip = BitmapFactory.decodeFile(imgFileName,options);
 			if (bip!=null) {
 				b.setImageBitmap(bip);
 			}
@@ -95,9 +101,6 @@ public class ImageHandler {
 	}
 
 	public void addListener(ImageButton b, final String name) {
-		// TODO Auto-generated method stub
-
-
 		b.setOnClickListener(new OnClickListener()
 		{
 
@@ -111,13 +114,11 @@ public class ImageHandler {
 				Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
 				File file = new File(Strand.PIC_ROOT_DIR, py.getpyID()+"_"+name+".png");
-
 				Log.d("Strand","Saving pic "+name);
 				currSaving=name;
-				Uri outputFileUri = Uri.fromFile(file);
 
+				Uri outputFileUri = FileProvider.getUriForFile(c,c.getApplicationContext().getPackageName()+".provider",file);
 				intent.putExtra(MediaStore.EXTRA_OUTPUT, outputFileUri);
-				//				intent.putExtra(Strand.KEY_PIC_NAME, name);
 				c.startActivityForResult(intent, TAKE_PICTURE);
 
 
