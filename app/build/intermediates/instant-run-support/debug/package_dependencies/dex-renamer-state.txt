@@ -1,4 +1,0 @@
-#Sat Aug 05 22:33:26 CEST 2017
-base.0=/Users/hag/StudioProjects/StrandApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_a2c7a1bbb051a2def46cf5ba9c6c5e4e08ff3938
-renamed.0=classes.dex
-file.0=/Users/hag/StudioProjects/StrandApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-v4-18.0.0_a2c7a1bbb051a2def46cf5ba9c6c5e4e08ff3938/classes.dex
