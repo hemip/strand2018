@@ -36,6 +36,7 @@ build/
 .navigation
 captures/
 output.json 
+*.DS_Store
 
 # Keystore files
 *.jks
