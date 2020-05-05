@@ -128,6 +128,35 @@ public class ImageHandler {
 
 
 	}
+
+	public void takeDeponiPicture(final String deponityp){
+		String name = py.getpyID()+"_Deponi_"+deponityp;
+		int number = getNextDeponiNumber(name);
+		File file = new File(Strand.PIC_ROOT_DIR, name+"_"+number+".png");
+		Log.d("Strand","Saving deponipic "+deponityp);
+
+		Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+		Uri outputFileUri = FileProvider.getUriForFile(c,c.getApplicationContext().getPackageName()+".provider",file);
+		intent.putExtra(MediaStore.EXTRA_OUTPUT, outputFileUri);
+		c.startActivityForResult(intent, TAKE_PICTURE);
+
+	}
+	private int getNextDeponiNumber(String name){
+		int x =0;
+		File dir = new File(Strand.PIC_ROOT_DIR);
+		File[] files = dir.listFiles();
+		for (File file : files) {
+			if (file.getName().startsWith(name) && file.getName().length()>5 ){
+				int l = file.getName().length();
+				int y  = Integer.parseInt( file.getName().substring(l-5,l-4));
+				if (y>x) {x=y;}
+			}
+		}
+
+		return x+1;
+	}
+
+
 	public final static int TAKE_PICTURE = 133;
 	
 	private String currSaving=null;

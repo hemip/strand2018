@@ -43,7 +43,7 @@ public abstract class TableBase extends TableLayout {
 	
 	//Convenience...translate Entry into key-value.
 	protected void addRow(Entry<String, String[]> row) {
-		Log.d("Strand","Trying to add "+row.getValue());
+		Log.d("Strand","Trying to add "+row.getValue().toString());
 		addRow(row.getKey(),row.getValue());
 	}
 	

@@ -3,18 +3,21 @@ package com.teraim.strand.dataobjekt;
 	import java.util.ArrayList;
 import java.util.List;
 
-import android.content.Context;
+	import android.app.Activity;
+	import android.content.Context;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
-import android.widget.EditText;
+	import android.widget.Button;
+	import android.widget.EditText;
 import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.teraim.strand.R;
 import com.teraim.strand.dataobjekt.InputAlertBuilder.AlertBuildHelper;
+	import com.teraim.strand.utils.ImageHandler;
 
-	public class TableDeponi extends TableBase {
+public class TableDeponi extends TableBase {
 
 
 		//protected EditText e1,e2,e3,e4,e5,e6,e7,e8,e9,e10,e11,e12;
@@ -24,10 +27,12 @@ import com.teraim.strand.dataobjekt.InputAlertBuilder.AlertBuildHelper;
 		protected final static String[] columnName = new String[] {"Deponityp","Area"};
 
 		protected final static int NO_OF_COLS = 2;
+		private ImageHandler imageHandler;
 
-		public TableDeponi(Context c, Table data) {
+		public TableDeponi(Activity c, Table data) {
 			super(c,data);
-			redraw(R.layout.row_deponi_table,columnIds,columnName);		
+			redraw(R.layout.row_deponi_table,columnIds,columnName);
+			imageHandler = new ImageHandler(c);
 		}
 
 
@@ -57,6 +62,14 @@ import com.teraim.strand.dataobjekt.InputAlertBuilder.AlertBuildHelper;
 							EditText et = (EditText)inputView.findViewById(R.id.e1);
 							CharSequence val = ((TextView)row.findViewById(R.id.c2)).getText();
 							et.setText(val!=null?val.toString():"");
+							Button pic = (Button)inputView.findViewById(R.id.p1);
+							pic.setOnClickListener(new OnClickListener() {
+								@Override
+								public void onClick(View v) {
+									imageHandler.takeDeponiPicture(myID);
+									Log.d("Strand","Här ska tas en bild på deponi av typ "+myID);
+								}
+							});
 							return inputView;
 						}
 
