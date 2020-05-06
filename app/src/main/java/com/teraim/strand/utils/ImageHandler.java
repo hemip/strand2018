@@ -3,6 +3,8 @@ package com.teraim.strand.utils;
 import java.io.File;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
@@ -10,21 +12,28 @@ import android.graphics.Point;
 import android.net.Uri;
 import android.provider.MediaStore;
 import android.support.v4.content.FileProvider;
+import android.text.Layout;
 import android.util.Log;
 import android.view.Display;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import com.teraim.strand.Provyta;
+import com.teraim.strand.R;
 import com.teraim.strand.Strand;
 
 public class ImageHandler {
 
 	Activity c;
 	Provyta py;
-	
+
+	public final static int TAKE_PICTURE = 133;
+	private String currSaving=null;
+
 	public ImageHandler(Activity c) {
 		this.c=c;
 		py = Strand.getCurrentProvyta(c.getBaseContext());
@@ -33,18 +42,17 @@ public class ImageHandler {
 	
 	
 	public void drawButton(ImageButton b, String name) {
-		
-		String imgPath = Strand.PIC_ROOT_DIR+py.getpyID()+"_";
-		final String imgFileName = imgPath+name+".png";
+
+		String imgPath = Strand.PIC_ROOT_DIR + py.getpyID() + "_";
+		final String imgFileName = imgPath + name + ".png";
 
 
 		//Try to load pic from disk, if any.
 		File file = new File(imgFileName);
 
-		if ( !file.exists()) {
-			return;
+		if (file.exists()) {
+			createButton(b,imgFileName);
 		}
-
 
 		//To avoid memory issues, we need to figure out how big bitmap to allocate, approximately
 		//Picture is in landscape & should be approx half the screen width, and 1/5th of the height.
@@ -99,6 +107,7 @@ public class ImageHandler {
 
 		}
 	}
+
 
 	public void addListener(ImageButton b, final String name) {
 		b.setOnClickListener(new OnClickListener()
@@ -156,10 +165,66 @@ public class ImageHandler {
 		return x+1;
 	}
 
+	public void addDeponiPictures(View v, String deponityp){
+		String name = py.getpyID()+"_Deponi_"+deponityp;
+		LinearLayout layout= v.findViewById(R.id.sw2);
 
-	public final static int TAKE_PICTURE = 133;
-	
-	private String currSaving=null;
+		File dir = new File(Strand.PIC_ROOT_DIR);
+		File[] files = dir.listFiles();
+		for (File file : files) {
+			if (file.getName().startsWith(name) && file.getName().length()>5 ){
+				final ImageView image = new ImageView(c);
+				createButton(image,file.getPath());
+				layout.addView(image);
+				image.setOnLongClickListener(new View.OnLongClickListener() {
+					@Override
+					public boolean onLongClick(View v) {
+						new AlertDialog.Builder(c)
+								.setTitle("Ta bort bild")
+								.setPositiveButton("Ta bort", new DialogInterface.OnClickListener() {
+									@Override
+									public void onClick(DialogInterface dialog, int which) {
+										//ta bort bilden.
+									}
+								});
+						return false;
+					}
+				});
+			}
+		}
+
+	}
+	private void createButton(ImageView image, String imgFileName){
+		final BitmapFactory.Options options = new BitmapFactory.Options();
+		options.inJustDecodeBounds=true;
+		BitmapFactory.decodeFile(imgFileName,options);
+
+		//there is a picture..
+		int realW = options.outWidth;
+		int realH = options.outHeight;
+
+		//check if file exists
+		if (realW>0) {
+			double ratio = realW/realH;
+			double tHeight = 200.0;
+			//height is then the ratio times this..
+			int tWidth = (int) (tHeight*ratio);
+
+			//use target values to calculate the correct inSampleSize
+			options.inSampleSize = calculateInSampleSize(options, tWidth, (int)tHeight);
+
+			Log.d("Strand"," Calculated insamplesize "+options.inSampleSize);
+			//now create real bitmap using insampleSize
+
+			options.inJustDecodeBounds = false;
+			Bitmap bip = BitmapFactory.decodeFile(imgFileName,options);
+			if (bip!=null) {
+				image.setImageBitmap(bip);
+			}
+		}
+	}
+
+
 	
 	public String getCurrentlySaving() {
 		return currSaving;

@@ -29,6 +29,23 @@
             android:layout_height="wrap_content"
             android:text="Ta bild"
             android:layout_marginLeft="5dp"/>
+        <ScrollView
+            android:id="@+id/sw1"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            android:fillViewport="true"
+            android:scrollbarAlwaysDrawVerticalTrack="true"
+            >
+                <LinearLayout
+                    android:id="@+id/sw2"
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp">
+                </LinearLayout>
+
+        </ScrollView>
         
  
 </LinearLayout>

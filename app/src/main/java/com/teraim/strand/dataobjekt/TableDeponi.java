@@ -10,7 +10,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 	import android.widget.Button;
 	import android.widget.EditText;
-import android.widget.TableRow;
+	import android.widget.ScrollView;
+	import android.widget.TableRow;
 import android.widget.TextView;
 
 import com.teraim.strand.R;
@@ -58,7 +59,7 @@ public class TableDeponi extends TableBase {
 
 						@Override
 						public View createView() {
-							View inputView = LayoutInflater.from(c).inflate(R.layout.deponi_table_popup,null);
+							final View inputView = LayoutInflater.from(c).inflate(R.layout.deponi_table_popup,null);
 							EditText et = (EditText)inputView.findViewById(R.id.e1);
 							CharSequence val = ((TextView)row.findViewById(R.id.c2)).getText();
 							et.setText(val!=null?val.toString():"");
@@ -70,6 +71,7 @@ public class TableDeponi extends TableBase {
 									Log.d("Strand","Här ska tas en bild på deponi av typ "+myID);
 								}
 							});
+							imageHandler.addDeponiPictures(inputView,myID);
 							return inputView;
 						}
 
