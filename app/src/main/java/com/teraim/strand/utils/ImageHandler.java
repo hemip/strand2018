@@ -51,7 +51,7 @@ public class ImageHandler {
 		File file = new File(imgFileName);
 
 		if (file.exists()) {
-			createButton(b,imgFileName);
+			addImageToImageView(b,imgFileName);
 		}
 
 		//To avoid memory issues, we need to figure out how big bitmap to allocate, approximately
@@ -165,36 +165,8 @@ public class ImageHandler {
 		return x+1;
 	}
 
-	public void addDeponiPictures(View v, String deponityp){
-		String name = py.getpyID()+"_Deponi_"+deponityp;
-		LinearLayout layout= v.findViewById(R.id.sw2);
 
-		File dir = new File(Strand.PIC_ROOT_DIR);
-		File[] files = dir.listFiles();
-		for (File file : files) {
-			if (file.getName().startsWith(name) && file.getName().length()>5 ){
-				final ImageView image = new ImageView(c);
-				createButton(image,file.getPath());
-				layout.addView(image);
-				image.setOnLongClickListener(new View.OnLongClickListener() {
-					@Override
-					public boolean onLongClick(View v) {
-						new AlertDialog.Builder(c)
-								.setTitle("Ta bort bild")
-								.setPositiveButton("Ta bort", new DialogInterface.OnClickListener() {
-									@Override
-									public void onClick(DialogInterface dialog, int which) {
-										//ta bort bilden.
-									}
-								});
-						return false;
-					}
-				});
-			}
-		}
-
-	}
-	private void createButton(ImageView image, String imgFileName){
+	public void addImageToImageView(ImageView image, String imgFileName){
 		final BitmapFactory.Options options = new BitmapFactory.Options();
 		options.inJustDecodeBounds=true;
 		BitmapFactory.decodeFile(imgFileName,options);
@@ -206,7 +178,7 @@ public class ImageHandler {
 		//check if file exists
 		if (realW>0) {
 			double ratio = realW/realH;
-			double tHeight = 200.0;
+			double tHeight = 400.0;
 			//height is then the ratio times this..
 			int tWidth = (int) (tHeight*ratio);
 

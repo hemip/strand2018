@@ -5,16 +5,19 @@ import java.util.List;
 
 	import android.app.Activity;
 	import android.content.Context;
-import android.util.Log;
+	import android.content.Intent;
+	import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 	import android.widget.Button;
 	import android.widget.EditText;
+	import android.widget.LinearLayout;
 	import android.widget.ScrollView;
 	import android.widget.TableRow;
 import android.widget.TextView;
 
-import com.teraim.strand.R;
+	import com.teraim.strand.ImageViewer;
+	import com.teraim.strand.R;
 import com.teraim.strand.dataobjekt.InputAlertBuilder.AlertBuildHelper;
 	import com.teraim.strand.utils.ImageHandler;
 
@@ -67,11 +70,16 @@ public class TableDeponi extends TableBase {
 							pic.setOnClickListener(new OnClickListener() {
 								@Override
 								public void onClick(View v) {
-									imageHandler.takeDeponiPicture(myID);
-									Log.d("Strand","Här ska tas en bild på deponi av typ "+myID);
+									final TextView c1 = (TextView)row.findViewById(R.id.c1);
+									Intent i = new Intent(c, ImageViewer.class);
+									i.putExtra("TYPE",myID);
+									i.putExtra("HEADER",c1.getText());
+									c.startActivity(i);
+									//imageHandler.takeDeponiPicture(myID);
+									Log.d("Strand","Här ska tas en bild på deponi av typ "+myID +"och header:"+c1.getText());
 								}
 							});
-							imageHandler.addDeponiPictures(inputView,myID);
+							//imageHandler.addDeponiPictures(inputView,myID,(LinearLayout) inputView.findViewById(R.id.sw2));
 							return inputView;
 						}
 

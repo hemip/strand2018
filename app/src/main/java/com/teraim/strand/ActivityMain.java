@@ -387,7 +387,7 @@ public class ActivityMain extends Activity {
 
 
 	private void setSpinner(Spinner mySpinner, String selected) {
-		ArrayAdapter myAdap = (ArrayAdapter) mySpinner.getAdapter(); //cast to an ArrayAdapter
+		ArrayAdapter<String> myAdap = (ArrayAdapter<String>)mySpinner.getAdapter(); //cast to an ArrayAdapter
 		int spinnerPosition = myAdap.getPosition(selected);
 		//set the default according to value
 		Log.d("Strand","setspinner called with "+selected+" position of selected is "+spinnerPosition);

@@ -14,11 +14,10 @@
             android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityMain"></activity>
+        <activity android:name=".ActivityMain" />
         <activity android:name=".ActivityTakePicture" />
         <activity android:name=".ActivityZoneSplit" />
         <activity android:name=".ActivityArterFaltskikt" />
@@ -27,6 +26,8 @@
         <activity android:name=".ActivityNoInput" />
         <activity android:name=".ActivitySelectArt" />
         <activity android:name=".ActivityHabitat" />
+        <activity android:name=".ImageViewer"></activity>
+
         <provider
             android:name="android.support.v4.content.FileProvider"
             android:authorities="${applicationId}.provider"
@@ -37,8 +38,9 @@
                 android:resource="@xml/provider_paths" />
         </provider>
     </application>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
 </manifest>
