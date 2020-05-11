@@ -178,7 +178,7 @@ public class ImageHandler {
 		//check if file exists
 		if (realW>0) {
 			double ratio = realW/realH;
-			double tHeight = 400.0;
+			double tHeight = 800.0;
 			//height is then the ratio times this..
 			int tWidth = (int) (tHeight*ratio);
 

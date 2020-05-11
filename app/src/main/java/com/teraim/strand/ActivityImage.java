@@ -17,8 +17,9 @@ import android.widget.TextView;
 import com.teraim.strand.utils.ImageHandler;
 
 import java.io.File;
+//For viewing and taking photos for "deponi" items.
 
-public class ImageViewer extends Activity {
+public class ActivityImage extends Activity {
 
     String header, type;
     TextView headerTextView;
@@ -59,16 +60,17 @@ public class ImageViewer extends Activity {
         for (final File file : files) {
             if (file.getName().startsWith(name) && file.getName().length()>5 ){
                 final ImageView image = new ImageView(this);
-                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.WRAP_CONTENT, LinearLayout.LayoutParams.WRAP_CONTENT);
+                LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
                 lp.gravity = Gravity.CENTER;
                 lp.setMargins(10, 10, 10, 10);
                 image.setLayoutParams(lp);
                 imageHandler.addImageToImageView(image,file.getPath());
                 layout.addView(image);
+
                 image.setOnLongClickListener(new View.OnLongClickListener() {
                     @Override
                     public boolean onLongClick(View v) {
-                        new AlertDialog.Builder(ImageViewer.this)
+                        new AlertDialog.Builder(ActivityImage.this)
                                 .setTitle("Ta bort bild")
                                 .setPositiveButton("Ta bort", new DialogInterface.OnClickListener() {
                                     @Override
@@ -91,7 +93,7 @@ public class ImageViewer extends Activity {
                     @Override
                     public void onClick(View v) {
                         Intent intent = new Intent(android.content.Intent.ACTION_VIEW);
-                        Uri data = FileProvider.getUriForFile(ImageViewer.this, getApplicationContext().getPackageName() + ".provider", file);
+                        Uri data = FileProvider.getUriForFile(ActivityImage.this, getApplicationContext().getPackageName() + ".provider", file);
                         intent.setDataAndType(data, "image/*");
                         intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
                         startActivity(intent);

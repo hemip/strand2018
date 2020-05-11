@@ -26,7 +26,7 @@
         <activity android:name=".ActivityNoInput" />
         <activity android:name=".ActivitySelectArt" />
         <activity android:name=".ActivityHabitat" />
-        <activity android:name=".ImageViewer"></activity>
+        <activity android:name=".ActivityImage"></activity>
 
         <provider
             android:name="android.support.v4.content.FileProvider"
