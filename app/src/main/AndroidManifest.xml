@@ -27,6 +27,10 @@
         <activity android:name=".ActivitySelectArt" />
         <activity android:name=".ActivityHabitat" />
         <activity android:name=".ActivityImage"></activity>
+        <activity android:name=".exporter.ActivityExport"></activity>
+        <activity android:name=".exporter.UploadActivity"></activity>
+        <activity android:name=".exporter.SendLog"></activity>
+
 
         <provider
             android:name="android.support.v4.content.FileProvider"
