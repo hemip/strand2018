@@ -38,7 +38,7 @@ public class M_Activity extends Activity {
 		//mnu1.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 		menu.add(0, 2, 2, "PY: "+py.getProvyta()).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);		
 		menu.add(0, 3, 3, "Blå Lapp").setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
-		menu.add(0, 4, 4, "Exportera").setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+//		menu.add(0, 4, 4, "Exportera").setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 		return true;
 	}
 
@@ -120,9 +120,10 @@ public class M_Activity extends Activity {
 			d.show();
 
 			break;
-			case 4: //exportera
-				Intent intent = new Intent(this, ActivityExport.class);
-				startActivity(intent);
+//			case 4: //exportera
+//				Intent intent = new Intent(this, ActivityExport.class);
+//				startActivity(intent);
+//				break;
 
 
 		}

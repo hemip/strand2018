@@ -11,6 +11,7 @@ import java.util.Set;
 import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -24,6 +25,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
@@ -32,6 +34,7 @@ import android.widget.TextView;
 import com.teraim.strand.Strand.PersistenceHelper;
 import com.teraim.strand.dataobjekt.StrandInputData;
 import com.teraim.strand.dataobjekt.StrandInputData.Entry;
+import com.teraim.strand.exporter.ActivityExport;
 
 /**
  * 
@@ -51,7 +54,7 @@ public class ActivityMain extends Activity {
 	private Spinner rutSpinner;
 	private Spinner ytSpinner;
 	private Spinner alternativSpinner;
-
+	private Context c;
 
 	private Provyta py = null;
 	private String pyID = null;
@@ -71,7 +74,7 @@ public class ActivityMain extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 		exprDia = (LinearLayout)this.findViewById(R.id.exprdia);
-
+		c=this;
 		ph = new PersistenceHelper(this);
 
 		//Load the input data.
@@ -169,6 +172,13 @@ public class ActivityMain extends Activity {
 			provyteArrayAdapter.notifyDataSetChanged();	
 			rutArrayAdapter.notifyDataSetChanged();		 
 		}
+		((Button)findViewById(R.id.MainPageExportButton)).setOnClickListener(new View.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(c, ActivityExport.class);
+				startActivity(intent);
+			}
+		});
 
 
 
