@@ -31,11 +31,13 @@ public class ActivityExport extends Activity {
 	static final int REQUEST_PERMISSION_READ = 1;
 	static final int REQUEST_PERMISSION_WRITE = 2;
 	private ListView pyListV;
+	private int lagnummer;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-
+		Intent i = getIntent();
+		lagnummer = i.getIntExtra("lagnummer",0);
 		setContentView(R.layout.activity_export);
         try
         {
@@ -175,6 +177,7 @@ public class ActivityExport extends Activity {
 			@Override
 			public void onClick(View v) {
 				Intent intent_upload = new Intent(getBaseContext(), UploadActivity.class);
+				intent_upload.putExtra("lagnummer",lagnummer);
 				startActivity(intent_upload);
 			}
 		});

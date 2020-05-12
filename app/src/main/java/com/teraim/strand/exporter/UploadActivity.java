@@ -1,6 +1,7 @@
 package com.teraim.strand.exporter;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -72,10 +73,11 @@ public class UploadActivity extends Activity {
         uploadInfoText.setText("Laddar upp...");
         results.removeAllViews();
 
+        Intent i = getIntent();
 
         //Hämta användarnamn för servern, tex nils99 dvs nils+lagnummer
         user = Constants.SFTP_USER;
-        user +="99";
+        user +=i.getIntExtra("lagnummer",0);
         filesToUppload = new ArrayList<>();
 
         AddToList((new File(Constants.LOCAL_EXPORT_DIR)).listFiles(), Constants.REMOTE_EXPORT_DIR);
