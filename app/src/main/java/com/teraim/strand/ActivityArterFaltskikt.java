@@ -26,6 +26,7 @@ import com.teraim.strand.dataobjekt.TableArter;
 import com.teraim.strand.dataobjekt.TableBase;
 import com.teraim.strand.dataobjekt.TableBuskar;
 import com.teraim.strand.dataobjekt.TableTrees;
+import com.teraim.strand.utils.Constants;
 
 /**
  * 
@@ -72,8 +73,8 @@ public class ActivityArterFaltskikt extends M_Activity {
 
 		//If a state exist..
 		if (savedInstanceState != null) {
-			state = savedInstanceState.getInt(Strand.KEY_STATE);
-			currCh = savedInstanceState.getString(Strand.KEY_CHAR);
+			state = savedInstanceState.getInt(Constants.KEY_STATE);
+			currCh = savedInstanceState.getString(Constants.KEY_CHAR);
 			Log.d("Strand","My state is "+state);
 		}
 
@@ -82,45 +83,45 @@ public class ActivityArterFaltskikt extends M_Activity {
 		//wrapper for tables to make them scrollable.
 		scrollis = new ScrollView(this);
 		//Get the Table.
-		int table = getIntent().getIntExtra(Strand.KEY_CURRENT_TABLE, -1);
+		int table = getIntent().getIntExtra(Constants.KEY_CURRENT_TABLE, -1);
 		switch (table) {
-		case Strand.TRÄD:
+		case Constants.TRÄD:
 			myTable = new TableTrees(this,py.getTräd());
 			myProvider  = R.raw.strandinventering_arter_trad;
 			Log.d("Strand","Table set to träd.");
 			break;
-		case Strand.BUSKAR:
+		case Constants.BUSKAR:
 			myTable = new TableBuskar(this,py.getBuskar());			
 			myProvider = R.raw.strandinventering_arter_buskar;
 			Log.d("Strand","Table set to buskar.");
 			break;
 
-		case Strand.GRAMINIDER:
+		case Constants.GRAMINIDER:
 			myTable = new TableArter(this,py.getArter());
 			myProvider = R.raw.strandinventering_arter_graminider;
 			Log.d("Strand","Table set to graminider.");
 			break;
-		case Strand.LAVAR:
+		case Constants.LAVAR:
 			myTable = new TableArter(this,py.getArter());
 			myProvider = R.raw.strandinventering_arter_lavar;
 			Log.d("Strand","Table set to lavar.");
 			break;
-		case Strand.MOSSOR:
+		case Constants.MOSSOR:
 			myTable = new TableArter(this,py.getArter());
 			myProvider = R.raw.strandinventering_arter_mossor;
 			Log.d("Strand","Table set to mossor.");
 			break;
-		case Strand.ORTER:
+		case Constants.ORTER:
 			myTable = new TableArter(this,py.getArter());
 			myProvider = R.raw.strandinventering_arter_orter;
 			Log.d("Strand","Table set to örter.");
 			break;
-		case Strand.RIS:
+		case Constants.RIS:
 			myTable = new TableArter(this,py.getArter());
 			myProvider = R.raw.strandinventering_arter_ris;
 			Log.d("Strand","Table set to ris.");
 			break;
-		case Strand.ORMBUNKAR:
+		case Constants.ORMBUNKAR:
 			myTable = new TableArter(this,py.getArter());
 			myProvider = R.raw.strandinventering_arter_ormbunkar;
 			Log.d("Strand","Table set to ormbunkar.");
@@ -297,8 +298,8 @@ public class ActivityArterFaltskikt extends M_Activity {
 	 */
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
-		outState.putInt(Strand.KEY_STATE,state);
-		outState.putString(Strand.KEY_CHAR,currCh);
+		outState.putInt(Constants.KEY_STATE,state);
+		outState.putString(Constants.KEY_CHAR,currCh);
 
 		super.onSaveInstanceState(outState);
 	}

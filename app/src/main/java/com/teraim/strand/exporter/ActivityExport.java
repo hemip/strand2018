@@ -35,18 +35,6 @@ public class ActivityExport extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-/*
-		Thread.setDefaultUncaughtExceptionHandler (new Thread.UncaughtExceptionHandler()
-		{
-			@Override
-			public void uncaughtException (Thread thread, Throwable e)
-			{
-				Log.e("vortex","Uncaught Exception detected in thread {"+thread+"} Exce: "+ e);
-				//e.printStackTrace();
-				handleUncaughtException (thread, e);
-			}
-		});
-		*/
 
 		setContentView(R.layout.activity_export);
         try
@@ -62,7 +50,7 @@ public class ActivityExport extends Activity {
             Log.e("vetrox", e.getMessage());
         }
 
-		getStarted();
+		parseAllPyToJson();
 
 
 	}
@@ -136,7 +124,7 @@ public class ActivityExport extends Activity {
 	
 
 
-	private void getStarted() {
+	private void parseAllPyToJson() {
 
 		//Get provytor if any.
 		final List<Provyta> pyL = Persistent.loadAll();
@@ -190,87 +178,12 @@ public class ActivityExport extends Activity {
 				startActivity(intent_upload);
 			}
 		});
-
-		//Borttaget i version 2017.01
-		//FTPSend f = new FTPSend();
-		//f.send("test.txt", jsonL.get(0).json);
-		//Log.d("Strand",jsonL.get(0).json);
-		//new Thread(f).start();
-
-
-	}
-
-
-	private class FileSend implements Runnable {
-
-		URL url;
-		String toSend;
-
-		public void send(String fileName,String toSend) {
-			this.toSend=toSend;
-			try {
-				url = new URL("ftp://anonymous:anonymous@salix.slu.se/upload/strand/"+fileName);
-			} catch (MalformedURLException e) {
-
-				e.printStackTrace();
-			}
-
-		}
-
-		@Override
-		public void run() {
-			// TODO Auto-generated method stub
-
-		}
-
 	}
 
 
 
 
-	private class FTPSend implements Runnable {
-
-		URL url;
-		String toSend;
-
-		public void send(String fileName,String toSend) {
-			this.toSend=toSend;
-			try {
-				url = new URL("ftp://anonymous:anonymous@salix.slu.se/upload/strand/"+fileName);
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-
-		}
-
-		@Override
-		public void run() {
-
-			android.os.Process.setThreadPriority(android.os.Process.THREAD_PRIORITY_BACKGROUND);
-			URLConnection conn=null;
-
-			try {
-				conn = url.openConnection();
-			} catch (IOException e1) {
-				// TODO Auto-generated catch block
-				e1.printStackTrace();
-			}
-
-			// to upload, open an OutputStream, to download, open an InputStream:  
-			try {
-				OutputStream os = conn.getOutputStream();
-				final PrintStream printStream = new PrintStream(os);
-				printStream.print(toSend);
-				printStream.close();
-				Log.d("Strand","Printed to outstream: "+toSend);
-			} catch (IOException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-		}
 
 
-	}
 
 }

@@ -61,7 +61,7 @@ public class UploadActivity extends Activity {
         uploadProgress = findViewById(R.id.uploadProgress);
         uploadProgress.setText("");
         uploadInfoText = findViewById(R.id.uploadInfoText);
-        uploadInfoText.setText("Kom ihåg att aktivera OpenVpn!");
+        uploadInfoText.setText("");
 
 
 
@@ -75,9 +75,12 @@ public class UploadActivity extends Activity {
 
         //Hämta användarnamn för servern, tex nils99 dvs nils+lagnummer
         user = Constants.SFTP_USER;
+        user +="99";
         filesToUppload = new ArrayList<>();
 
-        AddToList((new File(Constants.LOCAL_DIR)).listFiles(), Constants.SFTP_REMOTE_DIR);
+        AddToList((new File(Constants.LOCAL_EXPORT_DIR)).listFiles(), Constants.REMOTE_EXPORT_DIR);
+        AddToList((new File(Constants.LOCAL_DATA_DIR)).listFiles(), Constants.REMOTE_BACKUP_DIR);
+        AddToList((new File(Constants.LOCAL_PICS_DIR)).listFiles(), Constants.REMOTE_PICS_DIR);
 
 
         progressStatus = 0;

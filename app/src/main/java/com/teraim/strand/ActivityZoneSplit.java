@@ -28,6 +28,7 @@ import android.widget.TextView;
 import com.teraim.strand.dataobjekt.InputAlertBuilder;
 import com.teraim.strand.dataobjekt.InputAlertBuilder.AlertBuildHelper;
 import com.teraim.strand.dataobjekt.TableDeponi;
+import com.teraim.strand.utils.Constants;
 
 /**
  *
@@ -152,7 +153,7 @@ public class ActivityZoneSplit extends M_Activity {
 		super.onCreate(savedInstanceState);
 
 		if (savedInstanceState !=null) {
-			myDisplayState = savedInstanceState.getInt(Strand.KEY_ZONE_DISPLAY_STATE);
+			myDisplayState = savedInstanceState.getInt(Constants.KEY_ZONE_DISPLAY_STATE);
 		}
 		setContentView(R.layout.activity_zone_split);
 
@@ -317,7 +318,7 @@ public class ActivityZoneSplit extends M_Activity {
 
 		//Button
 		final Intent intent = new Intent(this,ActivityArterFaltskikt.class);
-		intent.putExtra(Strand.KEY_CURRENT_TABLE, Strand.BUSKAR);
+		intent.putExtra(Constants.KEY_CURRENT_TABLE, Constants.BUSKAR);
 		addButton(bg,"Buskarter",intent);
 	}
 	protected void goDeponi() {
@@ -345,7 +346,7 @@ public class ActivityZoneSplit extends M_Activity {
 
 		//Button
 		final Intent intent = new Intent(this,ActivityArterFaltskikt.class);
-		intent.putExtra(Strand.KEY_CURRENT_TABLE, Strand.TRÄD);
+		intent.putExtra(Constants.KEY_CURRENT_TABLE, Constants.TRÄD);
 		addButton(bg,"Trädarter",intent);
 	}
 
@@ -483,7 +484,7 @@ public class ActivityZoneSplit extends M_Activity {
 
 	private void addButtonArter() {
 		final Intent intent = new Intent(this,ActivitySelectArt.class);
-		intent.putExtra(Strand.KEY_CURRENT_TABLE, -1);
+		intent.putExtra(Constants.KEY_CURRENT_TABLE, -1);
 		addButton(bg,"Arter",intent);
 	}
 
@@ -742,7 +743,7 @@ public class ActivityZoneSplit extends M_Activity {
 
 	@Override
 	public void onSaveInstanceState(Bundle savedInstanceState) {
-		savedInstanceState.putInt(Strand.KEY_ZONE_DISPLAY_STATE, myDisplayState);
+		savedInstanceState.putInt(Constants.KEY_ZONE_DISPLAY_STATE, myDisplayState);
 		Log.d("Strand","onsaveinstance called");
 		super.onSaveInstanceState(savedInstanceState);
 	}

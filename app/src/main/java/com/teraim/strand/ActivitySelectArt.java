@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 
+import com.teraim.strand.utils.Constants;
+
 public class ActivitySelectArt extends Activity {
 
 	int[] knappar = {R.id.orterB,R.id.risB,R.id.graminidB,R.id.ormB,R.id.mossorB,R.id.lavarB};
@@ -26,25 +28,25 @@ public class ActivitySelectArt extends Activity {
 				int typ=-1;
 				switch(v.getId()) {
 				case R.id.orterB:
-					typ = Strand.ORTER;
+					typ = Constants.ORTER;
 					break;
 				case R.id.risB:
-					typ = Strand.RIS;
+					typ = Constants.RIS;
 					break;
 				case R.id.graminidB:
-					typ = Strand.GRAMINIDER;
+					typ = Constants.GRAMINIDER;
 					break;					
 				case R.id.ormB:
-					typ = Strand.ORMBUNKAR;
+					typ = Constants.ORMBUNKAR;
 					break;
 				case R.id.mossorB:
-					typ = Strand.MOSSOR;
+					typ = Constants.MOSSOR;
 					break;
 				case R.id.lavarB:
-					typ = Strand.LAVAR;
+					typ = Constants.LAVAR;
 					break;
 				}
-				intent.putExtra(Strand.KEY_CURRENT_TABLE, typ);
+				intent.putExtra(Constants.KEY_CURRENT_TABLE, typ);
 				startActivity(intent);
 			}
 			

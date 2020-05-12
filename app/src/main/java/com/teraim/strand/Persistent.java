@@ -1,6 +1,5 @@
 package com.teraim.strand;
 
-import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
@@ -12,6 +11,8 @@ import java.io.StreamCorruptedException;
 
 import android.util.Log;
 
+import com.teraim.strand.utils.Constants;
+
 public class Persistent {
 	
 	public static void onSave (Provyta py) {
@@ -21,7 +22,7 @@ public class Persistent {
 		FileOutputStream f_out=null;
 		try {
 			f_out = new 
-				FileOutputStream(Strand.DATA_ROOT_DIR +py.getpyID());
+				FileOutputStream(Constants.LOCAL_DATA_DIR +py.getpyID());
 		} catch (FileNotFoundException e) {
 			//Most likely get here if the folder is missing. Try this..
 				e.printStackTrace();
@@ -54,7 +55,7 @@ public class Persistent {
 		FileInputStream f_in = null;
 		try {
 			f_in = new 
-				FileInputStream(Strand.DATA_ROOT_DIR+pyID);
+				FileInputStream(Constants.LOCAL_DATA_DIR +pyID);
 		} catch (FileNotFoundException e) {
 			//filenotfound occurs if object has not yet been persisted.
 			Log.d("Strand","Kunde inte hitta provyta med pyID "+pyID);		

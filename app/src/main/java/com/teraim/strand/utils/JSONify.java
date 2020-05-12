@@ -13,7 +13,6 @@ import android.util.JsonWriter;
 import android.util.Log;
 
 import com.teraim.strand.Provyta;
-import com.teraim.strand.Strand;
 
 public class JSONify {
 	
@@ -23,7 +22,7 @@ public class JSONify {
 		Provyta py2 = new Provyta("678910");
 		pyl.add(py1);
 		pyl.add(py2);
-		File file = new File(Strand.DATA_ROOT_DIR+"test.txt");
+		File file = new File(Constants.LOCAL_DATA_DIR +"test.txt");
 		start(new FileOutputStream(file),pyl);
 	}
 

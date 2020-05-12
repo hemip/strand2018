@@ -43,7 +43,7 @@ public class ImageHandler {
 	
 	public void drawButton(ImageButton b, String name) {
 
-		String imgPath = Strand.PIC_ROOT_DIR + py.getpyID() + "_";
+		String imgPath = Constants.LOCAL_PICS_DIR + py.getpyID() + "_";
 		final String imgFileName = imgPath + name + ".png";
 
 
@@ -122,7 +122,7 @@ public class ImageHandler {
 
 				Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
 
-				File file = new File(Strand.PIC_ROOT_DIR, py.getpyID()+"_"+name+".png");
+				File file = new File(Constants.LOCAL_PICS_DIR, py.getpyID()+"_"+name+".png");
 				Log.d("Strand","Saving pic "+name);
 				currSaving=name;
 
@@ -141,7 +141,7 @@ public class ImageHandler {
 	public void takeDeponiPicture(final String deponityp){
 		String name = py.getpyID()+"_Deponi_"+deponityp;
 		int number = getNextDeponiNumber(name);
-		File file = new File(Strand.PIC_ROOT_DIR, name+"_"+number+".png");
+		File file = new File(Constants.LOCAL_PICS_DIR, name+"_"+number+".png");
 		Log.d("Strand","Saving deponipic "+deponityp);
 
 		Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
@@ -152,7 +152,7 @@ public class ImageHandler {
 	}
 	private int getNextDeponiNumber(String name){
 		int x =0;
-		File dir = new File(Strand.PIC_ROOT_DIR);
+		File dir = new File(Constants.LOCAL_PICS_DIR);
 		File[] files = dir.listFiles();
 		for (File file : files) {
 			if (file.getName().startsWith(name) && file.getName().length()>5 ){

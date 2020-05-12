@@ -23,6 +23,7 @@ import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
+import com.teraim.strand.utils.Constants;
 import com.teraim.strand.utils.ImageHandler;
 
 public class ActivityTakePicture extends M_Activity implements LocationListener {
@@ -110,7 +111,7 @@ public class ActivityTakePicture extends M_Activity implements LocationListener 
 
 		// Kolla om vi har rätt tillstånd och be om tillstånd om det behövs
 		if(ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)!= PackageManager.PERMISSION_GRANTED) {
-			this.requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, Strand.MY_PERMISSIONS_REQUEST_ACCESS_FINE			);
+			this.requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, Constants.MY_PERMISSIONS_REQUEST_ACCESS_FINE			);
 		}
 		else{
 			lm.requestLocationUpdates(

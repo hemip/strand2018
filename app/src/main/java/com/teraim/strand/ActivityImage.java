@@ -14,6 +14,7 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.teraim.strand.utils.Constants;
 import com.teraim.strand.utils.ImageHandler;
 
 import java.io.File;
@@ -55,7 +56,7 @@ public class ActivityImage extends Activity {
     private void deponiPictures(String deponityp, LinearLayout layout){
         String name = Strand.getCurrentProvyta(this.getBaseContext()).getpyID()+"_Deponi_"+deponityp;
         layout.removeAllViews();
-        File dir = new File(Strand.PIC_ROOT_DIR);
+        File dir = new File(Constants.LOCAL_PICS_DIR);
         File[] files = dir.listFiles();
         for (final File file : files) {
             if (file.getName().startsWith(name) && file.getName().length()>5 ){

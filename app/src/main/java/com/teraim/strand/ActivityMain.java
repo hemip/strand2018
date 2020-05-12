@@ -35,6 +35,7 @@ import com.teraim.strand.Strand.PersistenceHelper;
 import com.teraim.strand.dataobjekt.StrandInputData;
 import com.teraim.strand.dataobjekt.StrandInputData.Entry;
 import com.teraim.strand.exporter.ActivityExport;
+import com.teraim.strand.utils.Constants;
 
 /**
  * 
@@ -376,7 +377,7 @@ public class ActivityMain extends Activity {
 	private void begin() {
 
 		//Save all values for default when starting up next time..
-		ph.put(Strand.KEY_CURRENT_PY,py.getpyID());
+		ph.put(Constants.KEY_CURRENT_PY,py.getpyID());
 		Log.d("Strand","Saved provyta: "+ (String)ytSpinner.getSelectedItem());
 		//Buffer the py object.
 		Strand.setCurrentProvyta(py);

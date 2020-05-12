@@ -9,6 +9,8 @@ import android.support.v4.app.ActivityCompat;
 import android.support.v4.content.ContextCompat;
 import android.util.Log;
 
+import com.teraim.strand.utils.Constants;
+
 import java.io.File;
 import java.io.IOException;
 
@@ -24,14 +26,14 @@ public class Start extends Activity {
         super.onResume();
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.WRITE_EXTERNAL_STORAGE) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, Strand.MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE
+                    new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, Constants.MY_PERMISSIONS_REQUEST_WRITE_EXTERNAL_STORAGE
             );
             super.onResume();
             return;
         }
         else if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
             ActivityCompat.requestPermissions(this,
-                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, Strand.MY_PERMISSIONS_REQUEST_ACCESS_FINE
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, Constants.MY_PERMISSIONS_REQUEST_ACCESS_FINE
             );
             super.onResume();
             return;
@@ -46,7 +48,7 @@ public class Start extends Activity {
     }
     private void initIfFirstTime() {
         //If testFile doesnt exist it will be created and found next time.
-        String t = Strand.STRAND_ROOT_DIR +
+        String t = Constants.STRAND_ROOT_DIR +
                 "ifiexistthenallisfine.txt";
         File f = new File(t);
         Log.d("Strand","Checking if this is first time use...");
@@ -55,13 +57,15 @@ public class Start extends Activity {
         if (!exists) {
             Log.d("Strand","Yes..executing  first time init");
             //create data folder. This will also create the ROOT folder for the Strand app.
-            File folder = new File(Strand.STRAND_ROOT_DIR);
+            File folder = new File(Constants.STRAND_ROOT_DIR);
             folder.mkdirs();
-            folder = new File(Strand.DATA_ROOT_DIR);
+            folder = new File(Constants.LOCAL_DATA_DIR);
             folder.mkdirs();
-            folder = new File(Strand.PIC_ROOT_DIR);
-            if(!folder.mkdirs())
-                Log.e("Strand","Failed to create pic root folder");
+            folder = new File(Constants.LOCAL_EXPORT_DIR);
+            folder.mkdirs();
+            folder = new File(Constants.LOCAL_PICS_DIR);
+            folder.mkdirs();
+
 
             //create token file to stop further calls to init.
             try {

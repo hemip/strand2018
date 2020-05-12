@@ -18,6 +18,7 @@ import android.widget.Spinner;
 import android.widget.TableRow;
 
 import com.teraim.strand.dataobjekt.TableHabitat;
+import com.teraim.strand.utils.Constants;
 
 public class ActivityHabitat extends M_Activity {
 
@@ -85,8 +86,8 @@ public class ActivityHabitat extends M_Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		if (savedInstanceState != null) {
-			state = savedInstanceState.getInt(Strand.KEY_HABITAT_DISPLAY_STATE);
-			stateDyn = savedInstanceState.getInt(Strand.KEY_HABITAT_DISPLAY_STATE_DYN);
+			state = savedInstanceState.getInt(Constants.KEY_HABITAT_DISPLAY_STATE);
+			stateDyn = savedInstanceState.getInt(Constants.KEY_HABITAT_DISPLAY_STATE_DYN);
 
 		}
 
@@ -382,8 +383,8 @@ public class ActivityHabitat extends M_Activity {
 	@Override
 	protected void onSaveInstanceState(Bundle outState) {
 		super.onSaveInstanceState(outState);
-		outState.putInt(Strand.KEY_HABITAT_DISPLAY_STATE, state);
-		outState.putInt(Strand.KEY_HABITAT_DISPLAY_STATE_DYN, stateDyn);
+		outState.putInt(Constants.KEY_HABITAT_DISPLAY_STATE, state);
+		outState.putInt(Constants.KEY_HABITAT_DISPLAY_STATE_DYN, stateDyn);
 	}
 
 }
