@@ -95,7 +95,7 @@ public class UploadActivity extends Activity {
                     client.Open(user);
                     for (final SFTPUploadFile u : filesToUppload) {
 
-                        int res = client.UpploadFile(u.localFilePath, u.fileName, u.remoteFolder, false);
+                        int res = client.UpploadFile(u, false);
                         uploadedFiles += res;
                         progressStatus += 1;
                         if (res > 0) {
@@ -152,7 +152,7 @@ public class UploadActivity extends Activity {
     private void AddToList(File[] dir, String remoteDir) {
         if (dir != null && dir.length > 0) {
             for (File f : dir) {
-                filesToUppload.add(new SFTPUploadFile(f.getParent(), f.getName(), remoteDir));
+                filesToUppload.add(new SFTPUploadFile(f.getParent(), f.getName(), remoteDir,f.lastModified()));
             }
         }
     }

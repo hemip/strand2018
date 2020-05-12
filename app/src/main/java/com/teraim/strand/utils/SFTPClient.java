@@ -41,22 +41,25 @@ public class SFTPClient {
         sftpChannel = null;
         session = null;
     }
-    public int UpploadFile(final String local_file_path, final String filename, final String remote_folder, final boolean overwrite) throws JSchException, SftpException {
+    public int UpploadFile(final SFTPUploadFile f, final boolean replaceExisting) throws JSchException, SftpException {
         int res = 0;
+        boolean overwrite = replaceExisting;
         if(!connected){
             return 0;
         }
         Boolean fileExits = false;
-        //Check if a file with the same name allready exists.
-        Vector<ChannelSftp.LsEntry> remoteFiles = sftpChannel.ls(remote_folder);
+        //Check if a file with the same name allready exists and overwrite if local file is newer than remote.
+        Vector<ChannelSftp.LsEntry> remoteFiles = sftpChannel.ls(f.remoteFolder);
         for(ChannelSftp.LsEntry l : remoteFiles){
-            if(l.getFilename().equals(filename)){
+            if(l.getFilename().equals(f.fileName)            ){
                 fileExits =true;
+                if(f.timestamp > ((long)l.getAttrs().getMTime())*1000 )//Convert modified times in seconds -> miliseconds.
+                    overwrite = true;
                 break;
             }
         }
         if(overwrite || !fileExits) {
-            sftpChannel.put(local_file_path + "/" + filename, remote_folder + filename);
+            sftpChannel.put(f.localFilePath + "/" + f.fileName, f.remoteFolder + f.fileName);
             res=1;
         }
         return res;
