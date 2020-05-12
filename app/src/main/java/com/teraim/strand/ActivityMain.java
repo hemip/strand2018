@@ -30,6 +30,7 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import android.widget.Spinner;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.teraim.strand.Strand.PersistenceHelper;
 import com.teraim.strand.dataobjekt.StrandInputData;
@@ -176,8 +177,25 @@ public class ActivityMain extends Activity {
 		((Button)findViewById(R.id.MainPageExportButton)).setOnClickListener(new View.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(c, ActivityExport.class);
-				startActivity(intent);
+				boolean showError = true;
+
+				try {
+					int lagnummer = Integer.parseInt(etLag.getText().toString());
+					if(lagnummer>=70 && lagnummer<=100){
+						showError = false;
+						Intent intent = new Intent(c, ActivityExport.class);
+						intent.putExtra("lagnummer",lagnummer);
+						startActivity(intent);
+					}
+				}
+				catch (NumberFormatException e){
+				}
+
+
+				if(showError){
+					Toast toast = Toast.makeText(c, "Fyll i ett korrekt lagnummer!", Toast.LENGTH_LONG);
+					toast.show();
+				}
 			}
 		});
 
