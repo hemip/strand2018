@@ -35,6 +35,8 @@ public class TableHabitat extends TableBase {
 	public final static String[] noEntries = {"Bebyggd strand","Påverkad av gräv/pirbygge/muddring",
 			"Avverkning kraftig utglesning av träd","Hydrologi påverkad (ex. reglering)",
 			"Området exploaterat eller bebyggt","Ej naturlig skog","Naturlig skog, men ålderskriterie ej uppfyllt"};
+	private final static String[] procent  = {"Ej aktuellt","<10%","10-30%",">30%"};
+	private final static String[] grovDodVed  = {"Ej aktuellt","ingen","<10m³",">10³"};
 	List<String> values = new ArrayList<String>(Arrays.asList("13","14","15","16","17","18","19"));
 
 
@@ -44,12 +46,14 @@ public class TableHabitat extends TableBase {
 	private String dynHabitatId;
 	private Spinner sp_9999 ;
 	private ArrayAdapter<String> altArrayAdapter;
+	private ArrayAdapter<String> busktackningAdapter;
 
 	public TableHabitat(Context c, Table data) {
 		super(c,data);
 		redraw(R.layout.row_habitat_table,columnIds,columnName);
 
 		altArrayAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_dropdown_item, noEntries);
+		busktackningAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_dropdown_item, procent);
 	}
 
 
@@ -109,6 +113,11 @@ public class TableHabitat extends TableBase {
 								public View createView() {
 									boolean is9999Habitat = entries[0].equals(ActivityHabitat.KOD_9999);
 									LinearLayout inputView = (LinearLayout)LayoutInflater.from(c).inflate(R.layout.habitat_table_popup,null);
+									Spinner busktackningSpinner = (Spinner)inputView.findViewById(R.id.habitatBusktackning);
+									String[] myEntries = myData.getRow(myID);
+
+									String[] localEntries = myEntries != null ? myEntries : entries;
+
 									int i = 0;
 									for(int id:textviews) {
 											((EditText) inputView.findViewById(editviews[i++])).setText(((TextView) row.findViewById(id)).getText());
@@ -117,13 +126,27 @@ public class TableHabitat extends TableBase {
 									if(is9999Habitat) {
 										sp_9999 = (Spinner)inputView.findViewById(R.id.habiat9999anledningSpinner);
 										sp_9999.setAdapter(altArrayAdapter);
-										sp_9999.setSelection(Strand.getInt(entries[5]), true);
-										Log.d("Strand","no 5 was "+Strand.getInt(entries[5]));
+										//sp_9999.setSelection(Strand.getInt(localEntries[5]), true);
+
+										int habitatIndex = Arrays.asList(noEntries).indexOf(localEntries[5]);
+										habitatIndex = habitatIndex > -1 ? habitatIndex : 0;
+										sp_9999.setSelection(habitatIndex, true);
+
+										Log.d("Strand","no 5 was "+sp_9999.getSelectedItem().toString());
 									}
 									else{
-										((Spinner)inputView.findViewById(R.id.habiat9999anledningSpinner)).setVisibility(INVISIBLE);
-										((TextView)inputView.findViewById(R.id.habiat9999anledningText)).setVisibility(INVISIBLE);
+										((LinearLayout)inputView.findViewById(R.id.habiat9999anledningLayout)).setVisibility(GONE);
 									}
+
+
+									busktackningSpinner.setAdapter(busktackningAdapter);
+									if (localEntries != null && localEntries.length > 6 && localEntries[6] != null && !localEntries[6].isEmpty()) {
+										int busktackningIndex = Arrays.asList(procent).indexOf(localEntries[6]);
+										if (busktackningIndex > -1) {
+											busktackningSpinner.setSelection(busktackningIndex, true);
+										}
+									}
+
 									return inputView;
 								}
 
@@ -134,6 +157,7 @@ public class TableHabitat extends TableBase {
 									List<String> ets = new ArrayList<String>();
 									for(int id:editviews)
 										ets.add(((EditText)inputView.findViewById(id)).getText().toString());
+
 									int i = 0;
 									//Add spinner if any.
 									if (entries[0].equals(ActivityHabitat.KOD_9999)) {
@@ -147,6 +171,9 @@ public class TableHabitat extends TableBase {
 											Log.d("Strand", "Sätter värde " + ets.get(i));
 										i++;
 									}
+
+									ets.add(((Spinner)inputView.findViewById(R.id.habitatBusktackning)).getSelectedItem().toString());
+
 									myData.saveRow(myID,ets);
 
 								}}, row)

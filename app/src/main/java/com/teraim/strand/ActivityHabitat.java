@@ -62,8 +62,6 @@ public class ActivityHabitat extends M_Activity {
 	String[] dynHabitatKoder = {"2110","2120","2130","2140","2170","2180","2190","9999"};
 	String[] dUtbredning = {"","","","","","0,25 ha","0,1 ha","0,1 ha/0,25 skog"};
 
-	String[] procent  = {"Ej aktuellt","<10%","10-30%",">30%"};
-	String[] grovDodVed  = {"Ej aktuellt","ingen","<10m³",">10³"};
 
 
 	//Detta värde måste ändras om ovanstående kolumner ändras.
