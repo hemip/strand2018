@@ -1,27 +1,20 @@
 package com.teraim.strand;
 
-import java.io.File;
-import java.io.IOException;
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-import android.Manifest;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.graphics.Color;
 import android.os.Bundle;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.util.Log;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemSelectedListener;
 import android.widget.ArrayAdapter;
@@ -81,7 +74,7 @@ public class ActivityMain extends Activity {
 
 		//Load the input data.
 		//For now, load from resources.
-		InputStream is = getResources().openRawResource(R.raw.data3);
+		InputStream is = getResources().openRawResource(R.raw.data);
 		assert(is !=null);
 		//This call will parse the input file and create a singleton data object that can be used statically.
 		StrandInputData.parseInputFile(is);
