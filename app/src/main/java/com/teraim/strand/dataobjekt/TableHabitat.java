@@ -40,7 +40,7 @@ public class TableHabitat extends TableBase {
 			"Avverkning kraftig utglesning av träd","Hydrologi påverkad (ex. reglering)",
 			"Området exploaterat eller bebyggt","Ej naturlig skog","Naturlig skog, men ålderskriterie ej uppfyllt"};
 	private final static String[] procent = {"Ej aktuellt","<10%","10-30%",">30%"};
-	private final static String[] grovDodVed = {"Ej aktuellt","<10m3/ha",">103/ha"};
+	private final static String[] grovDodVed = {"Ej aktuellt","< 10m³/ha",">10m³/ha"};
 	private final static String[] skogSuccessionOptions = {"Ej aktuellt","Enbart busk-/lövbård","Busk-, löv- och barrskog"};
 	private final static String[] betesregimOptions = {"Ej aktuellt","Ingen betespåverkan","Tamdjur","Vilda djur/fåglar"};
 	private final static String[] betestryckOptions = {"Ej aktuellt","Ingen betestryck","Lågt betestryck (>30% av ytan)","Medel (30-70% ytan)", "Välbetat (<70% ytan)"};
