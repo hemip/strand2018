@@ -20,6 +20,12 @@ import android.widget.TableRow;
 import com.teraim.strand.dataobjekt.TableHabitat;
 import com.teraim.strand.utils.Constants;
 
+import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.List;
+
+import static com.teraim.strand.ActivityZoneSplit.markTyper;
+
 public class ActivityHabitat extends M_Activity {
 
 
@@ -39,7 +45,7 @@ public class ActivityHabitat extends M_Activity {
 			"Landhöjningsskog","Näringsrik granskog","Åsbarrskog","Trädklädd betesmark",
 			"Lövsumpskog","Näringsfattig bokskog","Näringsrik bokskog","Näringsrik ekskog",
 			"Ädellövskog i branter","Näringsfattig ekskog","Skogsbevuxen myr","Svämlövskog",
-	"Svämädellövskog"};
+			"Svämädellövskog", "Det finns inget \"Ovan\", möter annan strand"};
 
 
 	String[] hKoder = {"9999","1220","1230","1239","1310","1330","1630","1640","1952","2100","2320","2330",
@@ -47,7 +53,7 @@ public class ActivityHabitat extends M_Activity {
 			"6230","6270","6280","6411","6412","6430","6450","6510","6520","6530",
 			"6911",	"6912",	"6913",	"6915",	"6916",	"7110",	"7140",	"7161",	"7162",	"7210",	"7220",	"7230",
 			"7234",	"8230",	"8240",	"9010",	"9020",	"9030",	"9050",	"9060",	"9070",	"9080",	"9110",	"9130",
-			"9160",	"9180",	"9190",	"9740",	"9750",	"9760"};
+			"9160",	"9180",	"9190",	"9740",	"9750",	"9760", ""};
 
 	String[] oKoder;
 
@@ -126,7 +132,10 @@ public class ActivityHabitat extends M_Activity {
 		ArrayAdapter<String> arrayHabA= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, TableHabitat.noEntries);
 		noHabS.setAdapter(arrayHabA);
 
-		ArrayAdapter<String> arrayMo= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, ActivityZoneSplit.markTyper);
+		List<String> markTyperCopy = new ArrayList<>();
+		markTyperCopy.add("Ej aktuellt");
+		markTyperCopy.addAll(markTyper);
+		ArrayAdapter<String> arrayMo= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, markTyperCopy);
 		markanvOvanS.setAdapter(arrayMo);
 
 		final String[] dynHabitatAndCode = new String[dynHabitat.length];
@@ -333,15 +342,15 @@ public class ActivityHabitat extends M_Activity {
 			String mt = py.getMarktypovan();
 			if (mt!=null) {
 				Log.d("Strand","marktypovan: "+py.getMarktypovan());
-				for(int i=0;i<ActivityZoneSplit.markTyper.size();i++)
-					if(mt.equals(ActivityZoneSplit.markTyper.get(i))) {
+				for(int i = 0; i< markTyper.size(); i++)
+					if(mt.equals(markTyper.get(i))) {
 						markanvOvanS.setSelection(i);
 						break;
 					}
 						
 			} else {
 				Log.d("Strand","found no value for marktypovan");
-				markanvOvanS.setSelection(1);
+				markanvOvanS.setSelection(0);
 			}
 			
 			if (py.getHabitat().getRowCount()!=0) {
