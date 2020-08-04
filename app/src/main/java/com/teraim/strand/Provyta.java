@@ -821,7 +821,7 @@ public class Provyta implements Serializable {
 		arter = new Table(5,this);
 		buskar = new Table(5,this);
 		vallar = new Table(12,this);
-		habitat = new Table(11,this);
+		habitat = new Table(14,this);
 		dyner = new Table(5,this);
 		deponi = new Table(2,this);
 		//init deponi with static rows.

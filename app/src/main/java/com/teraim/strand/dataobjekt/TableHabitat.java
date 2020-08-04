@@ -40,7 +40,10 @@ public class TableHabitat extends TableBase {
 			"Avverkning kraftig utglesning av träd","Hydrologi påverkad (ex. reglering)",
 			"Området exploaterat eller bebyggt","Ej naturlig skog","Naturlig skog, men ålderskriterie ej uppfyllt"};
 	private final static String[] procent = {"Ej aktuellt","<10%","10-30%",">30%"};
-	private final static String[] grovDodVed = {"Ej aktuellt","ingen","<10m³",">10³"};
+	private final static String[] grovDodVed = {"Ej aktuellt","<10m3/ha",">103/ha"};
+	private final static String[] skogSuccessionOptions = {"Ej aktuellt","Enbart busk-/lövbård","Busk-, löv- och barrskog"};
+	private final static String[] betesregimOptions = {"Ej aktuellt","Ingen betespåverkan","Tamdjur","Vilda djur/fåglar"};
+	private final static String[] betestryckOptions = {"Ej aktuellt","Ingen betestryck","Lågt betestryck (>30% av ytan)","Medel (30-70% ytan)", "Välbetat (<70% ytan)"};
 	List<String> values = new ArrayList<String>(Arrays.asList("13","14","15","16","17","18","19"));
 
 
@@ -50,7 +53,7 @@ public class TableHabitat extends TableBase {
 	private String dynHabitatId;
 	private Spinner sp_9999 ;
 	private ArrayAdapter<String> altArrayAdapter;
-	private ArrayAdapter<String> busktackningAdapter, krontackningAdapter, grovDodVedAdapter;
+	private ArrayAdapter<String> busktackningAdapter, krontackningAdapter, grovDodVedAdapter, skogSuccessionAdapter, betesregimAdapter, betestryckAdapter;
 
 	public TableHabitat(Context c, Table data) {
 		super(c,data);
@@ -60,6 +63,9 @@ public class TableHabitat extends TableBase {
 		busktackningAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_dropdown_item, procent);
 		krontackningAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_dropdown_item, procent);
 		grovDodVedAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_dropdown_item, grovDodVed);
+		skogSuccessionAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_dropdown_item, skogSuccessionOptions);
+		betesregimAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_dropdown_item, betesregimOptions);
+		betestryckAdapter = new ArrayAdapter<String>(getContext(), android.R.layout.simple_spinner_dropdown_item, betestryckOptions);
 	}
 
 
@@ -122,8 +128,11 @@ public class TableHabitat extends TableBase {
 									Spinner busktackningSpinner = (Spinner)inputView.findViewById(R.id.habitatBusktackning);
 									Spinner krontackningSpinner = (Spinner)inputView.findViewById(R.id.habitatKrontackning);
 									Spinner grovDodVedSpinner = (Spinner)inputView.findViewById(R.id.habitatDodved);
-									CheckBox tradFinnsCheckBox = (CheckBox)inputView.findViewById(R.id.habitatTradFinns);
-									CheckBox stubbarFinnsCheckBox = (CheckBox)inputView.findViewById(R.id.habitatStubbarFinns);
+									Spinner skogSuccessionSpinner = (Spinner)inputView.findViewById(R.id.habitatSkogSuccession);
+									Spinner betesregimSpinner = (Spinner)inputView.findViewById(R.id.habitatBetesregim);
+									Spinner betestryckSpinner = (Spinner)inputView.findViewById(R.id.habitatBetestryck);
+									CheckBox fagelskrammaCheckBox = (CheckBox)inputView.findViewById(R.id.habitatFagelskramma);
+									CheckBox habitatSiktrojningCheckBox = (CheckBox)inputView.findViewById(R.id.habitatSiktrojning);
 									String[] myEntries = myData.getRow(myID);
 
 									String[] localEntries = myEntries != null ? myEntries : entries;
@@ -144,30 +153,45 @@ public class TableHabitat extends TableBase {
 										((LinearLayout)inputView.findViewById(R.id.habiat9999anledningLayout)).setVisibility(GONE);
 									}
 
+									// Fågelskrämma inom 50 m
+									String fagelskramma = ArrayHelper.GetValueOrDefault(localEntries, 6, "false");
+									if (fagelskramma.equals("true"))
+										fagelskrammaCheckBox.setChecked(true);
+
+									// Siktröjning av busk-/träd
+									String siktrojning = ArrayHelper.GetValueOrDefault(localEntries, 7, "false");
+									if (siktrojning.equals("true"))
+										habitatSiktrojningCheckBox.setChecked(true);
+
 									// Busktäckning
 									busktackningSpinner.setAdapter(busktackningAdapter);
-									String currentBusktackning = ArrayHelper.GetValueOrDefault(localEntries, 6, "");
+									String currentBusktackning = ArrayHelper.GetValueOrDefault(localEntries, 8, "");
 									FormsHelper.SetSpinnerSelection(busktackningSpinner, procent, currentBusktackning);
 
 									// Krontäckning
 									krontackningSpinner.setAdapter(krontackningAdapter);
-									String currentKrontackning = ArrayHelper.GetValueOrDefault(localEntries, 7, "");
+									String currentKrontackning = ArrayHelper.GetValueOrDefault(localEntries, 9, "");
 									FormsHelper.SetSpinnerSelection(krontackningSpinner, procent, currentKrontackning);
 
-									// Volym grov dödved
+									// Skog: grov död ved
 									grovDodVedSpinner.setAdapter(grovDodVedAdapter);
-									String currentgrovDodVed = ArrayHelper.GetValueOrDefault(localEntries, 8, "");
+									String currentgrovDodVed = ArrayHelper.GetValueOrDefault(localEntries, 10, "");
 									FormsHelper.SetSpinnerSelection(grovDodVedSpinner, grovDodVed, currentgrovDodVed);
 
-									// Finns träd
-									String tradFinns = ArrayHelper.GetValueOrDefault(localEntries, 9, "false");
-									if (tradFinns.equals("true"))
-										tradFinnsCheckBox.setChecked(true);
+									// Skog: succession
+									skogSuccessionSpinner.setAdapter(skogSuccessionAdapter);
+									String currentSkogSuccession = ArrayHelper.GetValueOrDefault(localEntries, 11, "");
+									FormsHelper.SetSpinnerSelection(skogSuccessionSpinner, skogSuccessionOptions, currentSkogSuccession);
 
-									// Finns stubbar
-									String stubbarFinns = ArrayHelper.GetValueOrDefault(localEntries, 10, "false");
-									if (stubbarFinns.equals("true"))
-										stubbarFinnsCheckBox.setChecked(true);
+									// Betesregim 0,1ha
+									betesregimSpinner.setAdapter(betesregimAdapter);
+									String currentBetesregim = ArrayHelper.GetValueOrDefault(localEntries, 12, "");
+									FormsHelper.SetSpinnerSelection(betesregimSpinner, betesregimOptions, currentBetesregim);
+
+									// Betestryck 0,1ha
+									betestryckSpinner.setAdapter(betestryckAdapter);
+									String currentBetestryck = ArrayHelper.GetValueOrDefault(localEntries, 13, "");
+									FormsHelper.SetSpinnerSelection(betestryckSpinner, betestryckOptions, currentBetestryck);
 
 									/*if (localEntries != null && localEntries.length > 6 && localEntries[6] != null && !localEntries[6].isEmpty()) {
 										int busktackningIndex = Arrays.asList(procent).indexOf(localEntries[6]);
@@ -200,11 +224,14 @@ public class TableHabitat extends TableBase {
 										i++;
 									}
 
+									ets.add(((CheckBox)inputView.findViewById(R.id.habitatFagelskramma)).isChecked() ? "true" : "false");
+									ets.add(((CheckBox)inputView.findViewById(R.id.habitatSiktrojning)).isChecked() ? "true" : "false");
 									ets.add(((Spinner)inputView.findViewById(R.id.habitatBusktackning)).getSelectedItem().toString());
 									ets.add(((Spinner)inputView.findViewById(R.id.habitatKrontackning)).getSelectedItem().toString());
 									ets.add(((Spinner)inputView.findViewById(R.id.habitatDodved)).getSelectedItem().toString());
-									ets.add(((CheckBox)inputView.findViewById(R.id.habitatTradFinns)).isChecked() ? "true" : "false");
-									ets.add(((CheckBox)inputView.findViewById(R.id.habitatStubbarFinns)).isChecked() ? "true" : "false");
+									ets.add(((Spinner)inputView.findViewById(R.id.habitatSkogSuccession)).getSelectedItem().toString());
+									ets.add(((Spinner)inputView.findViewById(R.id.habitatBetesregim)).getSelectedItem().toString());
+									ets.add(((Spinner)inputView.findViewById(R.id.habitatBetestryck)).getSelectedItem().toString());
 
 									myData.saveRow(myID, ets);
 

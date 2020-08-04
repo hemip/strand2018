@@ -159,7 +159,55 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Busktäckning"
+                    android:text="Fågelskrämma inom 50 m"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/habitatFagelskramma"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"></CheckBox>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Siktröjning av busk-/träd"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <CheckBox
+                    android:id="@+id/habitatSiktrojning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"></CheckBox>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Busktäckning 0,1ha"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <Spinner
@@ -180,7 +228,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Krontäckning"
+                    android:text="Trädtäckning 0,1ha"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <Spinner
@@ -207,7 +255,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Volym grov dödved"
+                    android:text="Skog: grov död ved"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
                 <Spinner
@@ -228,17 +276,18 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Finns träd?"
+                    android:text="Skog: succession"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                <CheckBox
-                    android:id="@+id/habitatTradFinns"
+                <Spinner
+                    android:id="@+id/habitatSkogSuccession"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:ems="10"></CheckBox>
+                    android:ems="10"  />
             </LinearLayout>
+
         </LinearLayout>
 
         <LinearLayout
@@ -255,17 +304,39 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:text="Finns stubbar?"
+                    android:text="Betesregim 0,1ha"
                     android:textAppearance="?android:attr/textAppearanceMedium" />
 
-                <CheckBox
-                    android:id="@+id/habitatStubbarFinns"
+                <Spinner
+                    android:id="@+id/habitatBetesregim"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="10dp"
                     android:layout_marginRight="10dp"
-                    android:ems="10"></CheckBox>
+                    android:ems="10"  />
             </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:text="Betestryck 0,1ha"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <Spinner
+                    android:id="@+id/habitatBetestryck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:ems="10"  />
+            </LinearLayout>
+
         </LinearLayout>
 
     </LinearLayout>
