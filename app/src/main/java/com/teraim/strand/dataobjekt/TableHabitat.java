@@ -104,9 +104,10 @@ public class TableHabitat extends TableBase {
 
 
 
-		if (entries[0].equals(ActivityHabitat.KOD_DYNHABITAT))
-			return addDynHabitatRow(myID,entries);
-		else {
+		if (entries[0].equals(ActivityHabitat.KOD_DYNHABITAT)) {
+			final TableRow row = addDynHabitatRow(myID, entries);
+			return row;
+		} else {
 			final TableRow row = createRow(R.layout.row_habitat_table);
 			assert(row!=null);
 			//Load
@@ -116,139 +117,8 @@ public class TableHabitat extends TableBase {
 				((TextView)row.findViewById(id)).setText(entries[i++]);
 
 			row.setTag(myID);
-			row.setOnClickListener(
-
-					InputAlertBuilder.createAlert(-1, "Habitat",null,
-							new AlertBuildHelper(TableHabitat.this.getContext()){
-
-								@Override
-								public View createView() {
-									boolean is9999Habitat = entries[0].equals(ActivityHabitat.KOD_9999);
-									ScrollView inputView = (ScrollView)LayoutInflater.from(c).inflate(R.layout.habitat_table_popup,null);
-									Spinner busktackningSpinner = (Spinner)inputView.findViewById(R.id.habitatBusktackning);
-									Spinner krontackningSpinner = (Spinner)inputView.findViewById(R.id.habitatKrontackning);
-									Spinner grovDodVedSpinner = (Spinner)inputView.findViewById(R.id.habitatDodved);
-									Spinner skogSuccessionSpinner = (Spinner)inputView.findViewById(R.id.habitatSkogSuccession);
-									Spinner betesregimSpinner = (Spinner)inputView.findViewById(R.id.habitatBetesregim);
-									Spinner betestryckSpinner = (Spinner)inputView.findViewById(R.id.habitatBetestryck);
-									CheckBox fagelskrammaCheckBox = (CheckBox)inputView.findViewById(R.id.habitatFagelskramma);
-									CheckBox habitatSiktrojningCheckBox = (CheckBox)inputView.findViewById(R.id.habitatSiktrojning);
-									String[] myEntries = myData.getRow(myID);
-
-									String[] localEntries = myEntries != null ? myEntries : entries;
-
-									int i = 0;
-									for(int id:textviews) {
-											((EditText) inputView.findViewById(editviews[i++])).setText(((TextView) row.findViewById(id)).getText());
-									}
-
-									if(is9999Habitat) {
-										sp_9999 = (Spinner)inputView.findViewById(R.id.habiat9999anledningSpinner);
-										sp_9999.setAdapter(altArrayAdapter);
-										FormsHelper.SetSpinnerSelection(sp_9999, noEntries, localEntries[5]);
-
-										Log.d("Strand","no 5 was "+sp_9999.getSelectedItem().toString());
-									}
-									else{
-										((LinearLayout)inputView.findViewById(R.id.habiat9999anledningLayout)).setVisibility(GONE);
-									}
-
-									// Fågelskrämma inom 50 m
-									String fagelskramma = ArrayHelper.GetValueOrDefault(localEntries, 6, "false");
-									if (fagelskramma.equals("true"))
-										fagelskrammaCheckBox.setChecked(true);
-
-									// Siktröjning av busk-/träd
-									String siktrojning = ArrayHelper.GetValueOrDefault(localEntries, 7, "false");
-									if (siktrojning.equals("true"))
-										habitatSiktrojningCheckBox.setChecked(true);
-
-									// Busktäckning
-									busktackningSpinner.setAdapter(busktackningAdapter);
-									String currentBusktackning = ArrayHelper.GetValueOrDefault(localEntries, 8, "");
-									FormsHelper.SetSpinnerSelection(busktackningSpinner, procent, currentBusktackning);
-
-									// Krontäckning
-									krontackningSpinner.setAdapter(krontackningAdapter);
-									String currentKrontackning = ArrayHelper.GetValueOrDefault(localEntries, 9, "");
-									FormsHelper.SetSpinnerSelection(krontackningSpinner, procent, currentKrontackning);
-
-									// Skog: grov död ved
-									grovDodVedSpinner.setAdapter(grovDodVedAdapter);
-									String currentgrovDodVed = ArrayHelper.GetValueOrDefault(localEntries, 10, "");
-									FormsHelper.SetSpinnerSelection(grovDodVedSpinner, grovDodVed, currentgrovDodVed);
-
-									// Skog: succession
-									skogSuccessionSpinner.setAdapter(skogSuccessionAdapter);
-									String currentSkogSuccession = ArrayHelper.GetValueOrDefault(localEntries, 11, "");
-									FormsHelper.SetSpinnerSelection(skogSuccessionSpinner, skogSuccessionOptions, currentSkogSuccession);
-
-									// Betesregim 0,1ha
-									betesregimSpinner.setAdapter(betesregimAdapter);
-									String currentBetesregim = ArrayHelper.GetValueOrDefault(localEntries, 12, "");
-									FormsHelper.SetSpinnerSelection(betesregimSpinner, betesregimOptions, currentBetesregim);
-
-									// Betestryck 0,1ha
-									betestryckSpinner.setAdapter(betestryckAdapter);
-									String currentBetestryck = ArrayHelper.GetValueOrDefault(localEntries, 13, "");
-									FormsHelper.SetSpinnerSelection(betestryckSpinner, betestryckOptions, currentBetestryck);
-
-									/*if (localEntries != null && localEntries.length > 6 && localEntries[6] != null && !localEntries[6].isEmpty()) {
-										int busktackningIndex = Arrays.asList(procent).indexOf(localEntries[6]);
-										if (busktackningIndex > -1) {
-											busktackningSpinner.setSelection(busktackningIndex, true);
-										}
-									}*/
-
-									return inputView;
-								}
-
-								@Override
-								public void setResult(int resultId, View inputView,
-													  View outputView) {
-									Log.d("Strand","Nu ska jag minsann spara!");
-									List<String> ets = new ArrayList<String>();
-									for(int id:editviews)
-										ets.add(((EditText)inputView.findViewById(id)).getText().toString());
-
-									int i = 0;
-									//Add spinner if any.
-									if (entries[0].equals(ActivityHabitat.KOD_9999))
-										ets.add((String) sp_9999.getSelectedItem());
-									else
-										ets.add("");
-
-									for(int id:columnIds)  {
-											((TextView) row.findViewById(id)).setText(ets.get(i));
-											Log.d("Strand", "Sätter värde " + ets.get(i));
-										i++;
-									}
-
-									ets.add(((CheckBox)inputView.findViewById(R.id.habitatFagelskramma)).isChecked() ? "true" : "false");
-									ets.add(((CheckBox)inputView.findViewById(R.id.habitatSiktrojning)).isChecked() ? "true" : "false");
-									ets.add(((Spinner)inputView.findViewById(R.id.habitatBusktackning)).getSelectedItem().toString());
-									ets.add(((Spinner)inputView.findViewById(R.id.habitatKrontackning)).getSelectedItem().toString());
-									ets.add(((Spinner)inputView.findViewById(R.id.habitatDodved)).getSelectedItem().toString());
-									ets.add(((Spinner)inputView.findViewById(R.id.habitatSkogSuccession)).getSelectedItem().toString());
-									ets.add(((Spinner)inputView.findViewById(R.id.habitatBetesregim)).getSelectedItem().toString());
-									ets.add(((Spinner)inputView.findViewById(R.id.habitatBetestryck)).getSelectedItem().toString());
-
-									myData.saveRow(myID, ets);
-
-								}}, row)
-			);
-			row.setOnLongClickListener(new OnLongClickListener() {
-
-				@Override
-				public boolean onLongClick(View arg0) {
-					Log.d("Strand","This gets fired");
-					removeRow(row);
-					//need to also subtract the distance from all other rows.
-					recalculateDistances();
-
-					return true;
-				}});
-
+			row.setOnClickListener(createHabitatDialog(row, myID, entries));
+			row.setOnLongClickListener(onHabitatLongClick(row));
 
 			addView(row);
 			return row;
@@ -311,7 +181,11 @@ public class TableHabitat extends TableBase {
 
 	//Case first time
 	public TableRow addDynHabitatRow(String[] entries) {
-		return addDynHabitatRow(myData.getNextId(),entries);
+		final TableRow row = addDynHabitatRow(myData.getNextId(),entries);
+
+		row.performClick();
+
+		return row;
 	}
 
 
@@ -355,13 +229,152 @@ public class TableHabitat extends TableBase {
 		addView(row);
 
 		myData.saveRow(myID, entries);
+
+		row.setOnClickListener(createHabitatDialog(row, myID, entries));
 		Log.d("Strand","Added dynhabitatrow. dynRowId set to "+myID);
 		return row;
-
-
 	}
 
+	private OnLongClickListener onHabitatLongClick(final TableRow row) {
+		return new OnLongClickListener() {
+			@Override
+			public boolean onLongClick(View arg0) {
+				Log.d("Strand","This gets fired");
+				removeRow(row);
+				//need to also subtract the distance from all other rows.
+				recalculateDistances();
 
+				return true;
+			}};
+	}
+
+	private OnClickListener createHabitatDialog(final TableRow row, final String myID, final String[] entries) {
+		return InputAlertBuilder.createAlert(-1, "Habitat",null,
+				new AlertBuildHelper(TableHabitat.this.getContext()){
+
+					@Override
+					public View createView() {
+						boolean is9999Habitat = entries[0].equals(ActivityHabitat.KOD_9999);
+						boolean isDynHabitat = entries[0].equals(ActivityHabitat.KOD_DYNHABITAT);
+						ScrollView inputView = (ScrollView)LayoutInflater.from(c).inflate(R.layout.habitat_table_popup,null);
+						Spinner busktackningSpinner = (Spinner)inputView.findViewById(R.id.habitatBusktackning);
+						Spinner krontackningSpinner = (Spinner)inputView.findViewById(R.id.habitatKrontackning);
+						Spinner grovDodVedSpinner = (Spinner)inputView.findViewById(R.id.habitatDodved);
+						Spinner skogSuccessionSpinner = (Spinner)inputView.findViewById(R.id.habitatSkogSuccession);
+						Spinner betesregimSpinner = (Spinner)inputView.findViewById(R.id.habitatBetesregim);
+						Spinner betestryckSpinner = (Spinner)inputView.findViewById(R.id.habitatBetestryck);
+						CheckBox fagelskrammaCheckBox = (CheckBox)inputView.findViewById(R.id.habitatFagelskramma);
+						CheckBox habitatSiktrojningCheckBox = (CheckBox)inputView.findViewById(R.id.habitatSiktrojning);
+						String[] myEntries = myData.getRow(myID);
+
+						String[] localEntries = myEntries != null ? myEntries : entries;
+
+
+						int i = 0;
+						for(int id:textviews) {
+							((EditText) inputView.findViewById(editviews[i++])).setText(((TextView) row.findViewById(id)).getText());
+						}
+
+						if (isDynHabitat) {
+							inputView.findViewById(R.id.habiataStart).setEnabled(false);
+							inputView.findViewById(R.id.habiataSlut).setEnabled(false);
+						}
+
+						if(is9999Habitat) {
+							sp_9999 = (Spinner)inputView.findViewById(R.id.habiat9999anledningSpinner);
+							sp_9999.setAdapter(altArrayAdapter);
+							FormsHelper.SetSpinnerSelection(sp_9999, noEntries, localEntries[5]);
+
+							Log.d("Strand","no 5 was "+sp_9999.getSelectedItem().toString());
+						}
+						else{
+							((LinearLayout)inputView.findViewById(R.id.habiat9999anledningLayout)).setVisibility(GONE);
+						}
+
+						// Fågelskrämma inom 50 m
+						String fagelskramma = ArrayHelper.GetValueOrDefault(localEntries, 6, "false");
+						if (fagelskramma.equals("true"))
+							fagelskrammaCheckBox.setChecked(true);
+
+						// Siktröjning av busk-/träd
+						String siktrojning = ArrayHelper.GetValueOrDefault(localEntries, 7, "false");
+						if (siktrojning.equals("true"))
+							habitatSiktrojningCheckBox.setChecked(true);
+
+						// Busktäckning
+						busktackningSpinner.setAdapter(busktackningAdapter);
+						String currentBusktackning = ArrayHelper.GetValueOrDefault(localEntries, 8, "");
+						FormsHelper.SetSpinnerSelection(busktackningSpinner, procent, currentBusktackning);
+
+						// Krontäckning
+						krontackningSpinner.setAdapter(krontackningAdapter);
+						String currentKrontackning = ArrayHelper.GetValueOrDefault(localEntries, 9, "");
+						FormsHelper.SetSpinnerSelection(krontackningSpinner, procent, currentKrontackning);
+
+						// Skog: grov död ved
+						grovDodVedSpinner.setAdapter(grovDodVedAdapter);
+						String currentgrovDodVed = ArrayHelper.GetValueOrDefault(localEntries, 10, "");
+						FormsHelper.SetSpinnerSelection(grovDodVedSpinner, grovDodVed, currentgrovDodVed);
+
+						// Skog: succession
+						skogSuccessionSpinner.setAdapter(skogSuccessionAdapter);
+						String currentSkogSuccession = ArrayHelper.GetValueOrDefault(localEntries, 11, "");
+						FormsHelper.SetSpinnerSelection(skogSuccessionSpinner, skogSuccessionOptions, currentSkogSuccession);
+
+						// Betesregim 0,1ha
+						betesregimSpinner.setAdapter(betesregimAdapter);
+						String currentBetesregim = ArrayHelper.GetValueOrDefault(localEntries, 12, "");
+						FormsHelper.SetSpinnerSelection(betesregimSpinner, betesregimOptions, currentBetesregim);
+
+						// Betestryck 0,1ha
+						betestryckSpinner.setAdapter(betestryckAdapter);
+						String currentBetestryck = ArrayHelper.GetValueOrDefault(localEntries, 13, "");
+						FormsHelper.SetSpinnerSelection(betestryckSpinner, betestryckOptions, currentBetestryck);
+
+									/*if (localEntries != null && localEntries.length > 6 && localEntries[6] != null && !localEntries[6].isEmpty()) {
+										int busktackningIndex = Arrays.asList(procent).indexOf(localEntries[6]);
+										if (busktackningIndex > -1) {
+											busktackningSpinner.setSelection(busktackningIndex, true);
+										}
+									}*/
+
+						return inputView;
+					}
+
+					@Override
+					public void setResult(int resultId, View inputView,
+										  View outputView) {
+						Log.d("Strand","Nu ska jag minsann spara!");
+						List<String> ets = new ArrayList<String>();
+						for(int id:editviews)
+							ets.add(((EditText)inputView.findViewById(id)).getText().toString());
+
+						int i = 0;
+						//Add spinner if any.
+						if (entries[0].equals(ActivityHabitat.KOD_9999))
+							ets.add((String) sp_9999.getSelectedItem());
+						else
+							ets.add("");
+
+						for(int id:columnIds)  {
+							((TextView) row.findViewById(id)).setText(ets.get(i));
+							Log.d("Strand", "Sätter värde " + ets.get(i));
+							i++;
+						}
+
+						ets.add(((CheckBox)inputView.findViewById(R.id.habitatFagelskramma)).isChecked() ? "true" : "false");
+						ets.add(((CheckBox)inputView.findViewById(R.id.habitatSiktrojning)).isChecked() ? "true" : "false");
+						ets.add(((Spinner)inputView.findViewById(R.id.habitatBusktackning)).getSelectedItem().toString());
+						ets.add(((Spinner)inputView.findViewById(R.id.habitatKrontackning)).getSelectedItem().toString());
+						ets.add(((Spinner)inputView.findViewById(R.id.habitatDodved)).getSelectedItem().toString());
+						ets.add(((Spinner)inputView.findViewById(R.id.habitatSkogSuccession)).getSelectedItem().toString());
+						ets.add(((Spinner)inputView.findViewById(R.id.habitatBetesregim)).getSelectedItem().toString());
+						ets.add(((Spinner)inputView.findViewById(R.id.habitatBetestryck)).getSelectedItem().toString());
+
+						myData.saveRow(myID, ets);
+
+					}}, row);
+	}
 
 
 
