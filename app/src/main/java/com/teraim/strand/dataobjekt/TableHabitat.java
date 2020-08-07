@@ -255,7 +255,6 @@ public class TableHabitat extends TableBase {
 					@Override
 					public View createView() {
 						boolean is9999Habitat = entries[0].equals(ActivityHabitat.KOD_9999);
-						boolean isDynHabitat = entries[0].equals(ActivityHabitat.KOD_DYNHABITAT);
 						ScrollView inputView = (ScrollView)LayoutInflater.from(c).inflate(R.layout.habitat_table_popup,null);
 						Spinner busktackningSpinner = (Spinner)inputView.findViewById(R.id.habitatBusktackning);
 						Spinner krontackningSpinner = (Spinner)inputView.findViewById(R.id.habitatKrontackning);
@@ -273,11 +272,6 @@ public class TableHabitat extends TableBase {
 						int i = 0;
 						for(int id:textviews) {
 							((EditText) inputView.findViewById(editviews[i++])).setText(((TextView) row.findViewById(id)).getText());
-						}
-
-						if (isDynHabitat) {
-							inputView.findViewById(R.id.habiataStart).setEnabled(false);
-							inputView.findViewById(R.id.habiataSlut).setEnabled(false);
 						}
 
 						if(is9999Habitat) {
