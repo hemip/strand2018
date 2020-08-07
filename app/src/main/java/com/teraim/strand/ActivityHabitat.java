@@ -53,7 +53,7 @@ public class ActivityHabitat extends M_Activity {
 			"6230","6270","6280","6411","6412","6430","6450","6510","6520","6530",
 			"6911",	"6912",	"6913",	"6915",	"6916",	"7110",	"7140",	"7161",	"7162",	"7210",	"7220",	"7230",
 			"7234",	"8230",	"8240",	"9010",	"9020",	"9030",	"9050",	"9060",	"9070",	"9080",	"9110",	"9130",
-			"9160",	"9180",	"9190",	"9740",	"9750",	"9760", ""};
+			"9160",	"9180",	"9190",	"9740",	"9750",	"9760", "9998"};
 
 	String[] oKoder;
 
@@ -63,10 +63,10 @@ public class ActivityHabitat extends M_Activity {
 			"0,1 ha","0,25 ha","1 ha","0,1 ha","","0,1 ha","0,1 ha","","0,1 ha","","100 m2","0,1 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha",
 			"0,1 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,1 ha","0,25 ha","0,25 ha"};
 
-	String dynHabitat[] = {"fördyner","vita dyner","grå dyner","risdyner",
+	String dynHabitat[] = {"vita dyner","grå dyner","risdyner",
 			"sandvide-dyner","trädklädda dyner","dynvåtmarker","ej habitat"};
-	String[] dynHabitatKoder = {"2110","2120","2130","2140","2170","2180","2190","9999"};
-	String[] dUtbredning = {"","","","","","0,25 ha","0,1 ha","0,1 ha/0,25 skog"};
+	String[] dynHabitatKoder = {"2120","2130","2140","2170","2180","2190","9999"};
+	String[] dUtbredning = {"","","","","0,25 ha","0,1 ha","0,1 ha/0,25 skog"};
 
 
 
@@ -121,13 +121,19 @@ public class ActivityHabitat extends M_Activity {
 		final FrameLayout dynFrame = (FrameLayout)this.findViewById(R.id.dynFrame);
 		final FrameLayout habitatFrame = (FrameLayout)this.findViewById(R.id.habitatFrame);
 
-		final String[] habitatAndCode = new String[habitat.length];
-		for (int i=0;i<habitat.length;i++)
+		final String[] habitatAndCode = new String[habitat.length-1];
+		for (int i=0;i<habitat.length-1;i++)
 			habitatAndCode[i] = hKoder[i]+" "+habitat[i];
 
 		ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, habitatAndCode);
 		spinnerH.setAdapter(arrayAdapter);
-		spinnerO.setAdapter(arrayAdapter);
+
+		final String[] habitatAndCodeOvan = new String[habitat.length];
+		for (int i=0;i<habitat.length;i++)
+			habitatAndCodeOvan[i] = hKoder[i]+" "+habitat[i];
+
+		ArrayAdapter<String> arrayAdapterOvan = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, habitatAndCodeOvan);
+		spinnerO.setAdapter(arrayAdapterOvan);
 
 		ArrayAdapter<String> arrayHabA= new ArrayAdapter<String>(this, android.R.layout.simple_spinner_dropdown_item, TableHabitat.noEntries);
 		noHabS.setAdapter(arrayHabA);
