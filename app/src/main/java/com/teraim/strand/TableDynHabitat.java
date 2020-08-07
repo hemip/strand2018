@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.ScrollView;
 import android.widget.Spinner;
 import android.widget.TableRow;
 import android.widget.TextView;
@@ -77,7 +78,7 @@ public class TableDynHabitat extends TableBase {
 					public View createView() {
 						boolean kriteria = entries[0].equals(ActivityHabitat.KOD_9999);
 						int rowLayoutId = (kriteria)?R.layout.dyn_table_popup_9999:R.layout.dyn_table_popup;
-						LinearLayout inputView = (LinearLayout)LayoutInflater.from(c).inflate(rowLayoutId,null);
+						ScrollView inputView = (ScrollView)LayoutInflater.from(c).inflate(rowLayoutId,null);
 						int i = 0;
 						
 						for(int id:textviews) {
