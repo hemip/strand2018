@@ -107,6 +107,7 @@ public class ActivitySubstratSelection extends M_Activity {
 				final TextView summa = (TextView)et.findViewById(R.id.sum);
 				final int sb[] = {R.id.sb1,R.id.sb2,R.id.sb3,R.id.sb4,R.id.sb5,R.id.sb6,R.id.sb7,R.id.sb8};
 				final SeekBar SB[] = new SeekBar[8];
+				final String[][] currentSubstrat = py.getSubstrat();
 
 				int i=0;
 				for(int ide:sb) 
@@ -193,7 +194,7 @@ public class ActivitySubstratSelection extends M_Activity {
 								boolean fromUser)
 						{
 							currSBValue.put(seekbar.getId(), progress);
-							updateSumma();
+							updateSumma(currSBValue, summa);
 
 							if (!timed) {
 								timer = new Timer();
@@ -201,14 +202,6 @@ public class ActivitySubstratSelection extends M_Activity {
 								timed = true;
 
 							}
-						}
-
-						private void updateSumma() {
-							sum = 0;
-							for(int s=0;s<=currSBValue.size();s++) 
-								sum+=currSBValue.valueAt(s);
-
-							summa.setText("Summa: "+sum);
 						}
 
 						public void onStartTrackingTouch(SeekBar seekBar)
@@ -225,7 +218,17 @@ public class ActivitySubstratSelection extends M_Activity {
 							// TODO Auto-generated method stub
 						}
 					});
+
+
 				}
+
+				int seekbarIndex = 0;
+				for (final SeekBar seekbar:SB) {
+					int currentSeekbarValue = Integer.parseInt(currentSubstrat[col-1][seekbarIndex++]);
+					seekbar.setProgress(currentSeekbarValue);
+					currSBValue.put(seekbar.getId(),currentSeekbarValue);
+				}
+
 				alert.setPositiveButton("Spara", new DialogInterface.OnClickListener() {
 					public void onClick(DialogInterface dialog, int whichButton) {				  
 						//((TextView) v).setText(et.getText());
@@ -250,7 +253,7 @@ public class ActivitySubstratSelection extends M_Activity {
 						String[][] su = py.getSubstrat();
 						for(int i=0;i<NO_OF_COLS-1;i++)
 							for(int j=0;j<NO_OF_ROWS-1;j++)
-						su[i][j]=fields[1+i+(j+1)*NO_OF_COLS];
+								su[i][j]=fields[1+i+(j+1)*NO_OF_COLS];
 								
 						py.setSubstrat(su);
 					}
@@ -263,8 +266,15 @@ public class ActivitySubstratSelection extends M_Activity {
 				});	
 				alert.show();
 			}
+
+			private void updateSumma(final SparseIntArray currSBValue, final TextView summa) {
+				sum = 0;
+				for(int s=0;s<=currSBValue.size();s++)
+					sum+=currSBValue.valueAt(s);
+
+				summa.setText("Summa: "+sum);
+			}
 		});
 	}
-
 
 }
