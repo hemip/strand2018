@@ -273,8 +273,6 @@ public class ActivityHabitat extends M_Activity {
 					}});			}
 			});
 
-		
-
 
 		Log.d("Strand","My state is "+((state==TABLE_VISIBLE)?"TABLE_VISIBLE":((state==STATE_INITIAL)?"STATE_INITIAL":"STATE_UNKNOWN")));
 
@@ -289,9 +287,6 @@ public class ActivityHabitat extends M_Activity {
 				stateDyn = DYN_SPINNER_VISIBLE;
 			else 
 				stateDyn = TABLE_VISIBLE;
-
-
-
 		}
 
 		if (stateDyn == DYN_SPINNER_VISIBLE) 
@@ -299,10 +294,6 @@ public class ActivityHabitat extends M_Activity {
 		if (stateDyn == TABLE_VISIBLE)	{
 			sv.setVisibility(View.VISIBLE);
 			dynFrame.addView(tableD);
-
-
-
-
 			sandblotta.addTextChangedListener(new TextWatcher() {
 				@Override
 				public void onTextChanged(CharSequence s, int start, int before, int count) {
@@ -323,8 +314,6 @@ public class ActivityHabitat extends M_Activity {
 
 				}
 			});
-
-
 		}
 
 		if (state == STATE_INITIAL) {
@@ -345,11 +334,22 @@ public class ActivityHabitat extends M_Activity {
 				Log.d("Strand","found no value for getOvanHabitat");
 				spinnerO.setSelection(1);
 			}
+
+			String kriterieOvan = py.getKriterieovan();
+			if (kriterieOvan!=null) {
+				Log.d("KriterieOvan","getKriterieovan: "+py.getKriterieovan());
+				for(int i=0;i<TableHabitat.noEntries.length;i++)
+					if(kriterieOvan.equals(TableHabitat.noEntries[i])) {
+						noHabS.setSelection(i);
+						break;
+					}
+			}
+
 			String mt = py.getMarktypovan();
 			if (mt!=null) {
 				Log.d("Strand","marktypovan: "+py.getMarktypovan());
-				for(int i = 0; i< markTyper.size(); i++)
-					if(mt.equals(markTyper.get(i))) {
+				for(int i = 0; i< markTyperCopy.size(); i++)
+					if(mt.equals(markTyperCopy.get(i))) {
 						markanvOvanS.setSelection(i);
 						break;
 					}
