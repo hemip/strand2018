@@ -2,6 +2,7 @@ package com.teraim.strand.exporter;
 
 import java.io.IOException;
 import java.io.StringWriter;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
@@ -209,7 +210,9 @@ public class JSONify {
 		write("ruta",py.getRuta());
 		write("provyta",py.getProvyta());
 		//BORTTAGNA I VERSION 2017.01
-		//write("matstart",py.get.toString());
+		write("matstart", new SimpleDateFormat("yyyy-MM-dd").format(py.getMätstart()));
+
+
 
 		write("blalapp",py.getBlålapp().toString());
 		return sw;
