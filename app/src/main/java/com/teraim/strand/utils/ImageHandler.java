@@ -138,6 +138,36 @@ public class ImageHandler {
 
 	}
 
+	public String takeExtraPicture(){
+		String name = py.getpyID()+"_Extra";
+		int number = getNextExtraPictureNumber(name);
+		String fileName = name+"_"+number+".png";
+		File file = new File(Constants.LOCAL_PICS_DIR, fileName);
+
+		Log.d("Strand","Saving extra picture");
+
+		Intent intent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+		Uri outputFileUri = FileProvider.getUriForFile(c,c.getApplicationContext().getPackageName()+".provider",file);
+		intent.putExtra(MediaStore.EXTRA_OUTPUT, outputFileUri);
+		c.startActivityForResult(intent, TAKE_PICTURE);
+
+		return fileName;
+	}
+
+	private int getNextExtraPictureNumber(String name){
+		int x =0;
+		File dir = new File(Constants.LOCAL_PICS_DIR);
+		File[] files = dir.listFiles();
+		for (File file : files) {
+			if (file.getName().startsWith(name) && file.getName().length()>5 ){
+				int l = file.getName().length();
+				int y  = Integer.parseInt( file.getName().substring(l-5,l-4));
+				if (y>x) {x=y;}
+			}
+		}
+		return x+1;
+	}
+
 	public void takeDeponiPicture(final String deponityp){
 		String name = py.getpyID()+"_Deponi_"+deponityp;
 		int number = getNextDeponiNumber(name);
@@ -148,8 +178,8 @@ public class ImageHandler {
 		Uri outputFileUri = FileProvider.getUriForFile(c,c.getApplicationContext().getPackageName()+".provider",file);
 		intent.putExtra(MediaStore.EXTRA_OUTPUT, outputFileUri);
 		c.startActivityForResult(intent, TAKE_PICTURE);
-
 	}
+
 	private int getNextDeponiNumber(String name){
 		int x =0;
 		File dir = new File(Constants.LOCAL_PICS_DIR);

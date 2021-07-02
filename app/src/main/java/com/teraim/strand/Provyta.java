@@ -58,7 +58,7 @@ public class Provyta implements Serializable {
 	Date mätstart;
 	
 	//Tabeller
-	Table träd,buskar,arter,vallar,habitat,dyner,deponi;	
+	Table träd,buskar,arter,vallar,habitat,dyner,deponi,extraImages;
 
 	
 	/**
@@ -327,7 +327,12 @@ public class Provyta implements Serializable {
 	}
 
 
-
+	/**
+	 * @return the extraImages
+	 */
+	public Table getExtraImages() {
+		return extraImages;
+	}
 
 	/**
 	 * @return the arter
@@ -824,6 +829,8 @@ public class Provyta implements Serializable {
 		habitat = new Table(14,this);
 		dyner = new Table(5,this);
 		deponi = new Table(2,this);
+		extraImages = new Table(3, this);
+
 		//init deponi with static rows.
 		deponi.saveRow(deponi.getNextId(), "Tång (m2)","0");
 		deponi.saveRow(deponi.getNextId(), "Gren/kvist/ved (m2)","0");

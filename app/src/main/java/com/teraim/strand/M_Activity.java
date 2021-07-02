@@ -7,6 +7,7 @@ import java.util.TimerTask;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.view.LayoutInflater;
@@ -25,6 +26,7 @@ public class M_Activity extends Activity {
 
 	private MenuItem saveStat;
 	private boolean hideMostItems = false;
+	private Context context;
 
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
@@ -38,6 +40,7 @@ public class M_Activity extends Activity {
 		//mnu1.setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 		menu.add(0, 2, 2, "PY: "+py.getProvyta()).setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);		
 		menu.add(0, 3, 3, "Blå Lapp").setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
+		menu.add(0, 4, 4, "Extra Bild").setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 //		menu.add(0, 4, 4, "Exportera").setShowAsAction(MenuItem.SHOW_AS_ACTION_ALWAYS);
 		return true;
 	}
@@ -67,11 +70,9 @@ public class M_Activity extends Activity {
 	protected void onResume() {
 		//Timer to update save status every second.
 		timer = new Timer();
-		timer.scheduleAtFixedRate(new CheckSaveStatusTask(),0, 1000);	
+		timer.scheduleAtFixedRate(new CheckSaveStatusTask(),0, 1000);
+		this.context = this;
 		super.onResume();
-
-
-
 	}
 
 	@Override
@@ -118,8 +119,11 @@ public class M_Activity extends Activity {
 			//lp.height = 600;
 
 			d.show();
-
 			break;
+			case 4: // Extra bilder
+				Intent intent = new Intent(context, ActivityExtraImages.class);
+				startActivity(intent);
+				break;
 //			case 4: //exportera
 //				Intent intent = new Intent(this, ActivityExport.class);
 //				startActivity(intent);

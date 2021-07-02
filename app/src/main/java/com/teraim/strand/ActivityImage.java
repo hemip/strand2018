@@ -53,6 +53,7 @@ public class ActivityImage extends Activity {
         super.onResume();
 
     }
+
     private void deponiPictures(String deponityp, LinearLayout layout){
         String name = Strand.getCurrentProvyta(this.getBaseContext()).getpyID()+"_Deponi_"+deponityp;
         layout.removeAllViews();

@@ -114,6 +114,9 @@ public class JSONify {
         writer.name("Vallar");
         writeArray(py.getVallar());
 
+		Log.d("p","ExtraImages:");
+		writer.name("ExtraImages");
+		writeArray(py.getExtraImages());
 
 		String subs[][] = py.getSubstrat();
 
