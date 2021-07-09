@@ -77,7 +77,7 @@ public class ActivityExtraImages extends Activity {
         }
     }
 
-    private void addImageTextToView(LinearLayout layout, String extraPictureFileName, String label, String value, int extraImageTableColumnIndex, boolean enableEdit) {
+    private void addImageTextToView(LinearLayout layout, final String extraPictureFileName, final String label, final String value, final int extraImageTableColumnIndex, boolean enableEdit) {
         final TextView textView = new TextView(this);
         LinearLayout.LayoutParams lp = new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT, LinearLayout.LayoutParams.WRAP_CONTENT);
         //lp.gravity = Gravity.CENTER;
@@ -101,7 +101,7 @@ public class ActivityExtraImages extends Activity {
         layout.addView(textView);
     }
 
-    private void showTextEditDialog(String extraPictureFileName, String label, String value, int extraImageTableColumnIndex) {
+    private void showTextEditDialog(final String extraPictureFileName, String label, String value, final int extraImageTableColumnIndex) {
         AlertDialog.Builder alert = new AlertDialog.Builder(this);
         alert.setTitle(label);
 
