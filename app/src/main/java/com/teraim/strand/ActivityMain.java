@@ -174,7 +174,7 @@ public class ActivityMain extends Activity {
 
 				try {
 					int lagnummer = Integer.parseInt(etLag.getText().toString());
-					if(lagnummer>=70 && lagnummer<=100){
+					if(lagnummer>=10 && lagnummer<=100){
 						showError = false;
 						Intent intent = new Intent(c, ActivityExport.class);
 						intent.putExtra("lagnummer",lagnummer);
