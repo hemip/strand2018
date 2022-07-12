@@ -30,7 +30,7 @@ public class ActivityHabitat extends M_Activity {
 
 
 	String habitat[] = {"ej habitat","sten och grusvallar",
-			"havsklippor","klippstrand","glasörtsstränder","salta strandängar",
+			"havsklippor","mjuka klippor","klippstrand","glasörtsstränder","salta strandängar",
 			"strandängar vid Östersjön","sandstränder vid Östersjön","moränstrand","dynhabitat",
 			"rissandhedar","grässandhedar","Större vattendrag","Fukthedar",
 			"Torra hedar","Enbuskmark på hed","Enbuskmark kalkgräsmark",
@@ -48,7 +48,7 @@ public class ActivityHabitat extends M_Activity {
 			"Svämädellövskog", "Det finns inget \"Ovan\", möter annan strand"};
 
 
-	String[] hKoder = {"9999","1220","1230","1239","1310","1330","1630","1640","1952","2100","2320","2330",
+	String[] hKoder = {"9999","1220","1230","1238","1239","1310","1330","1630","1640","1952","2100","2320","2330",
 			"3210","4010","4030","5131","5132","6110","6120","6210","6211",
 			"6230","6270","6280","6411","6412","6430","6450","6510","6520","6530",
 			"6911",	"6912",	"6913",	"6915",	"6916",	"7110",	"7140",	"7161",	"7162",	"7210",	"7220",	"7230",
@@ -58,7 +58,7 @@ public class ActivityHabitat extends M_Activity {
 	String[] oKoder;
 
 	//HansG längd av denna vektor justerad så den överenstämmer med hKoder (12 -> 60)
-	String[] hUtbredning = {"0,1 ha/0,25 skog","0,1 ha","","0.1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","","0,1 ha","0,1 ha","0,1 ha","0,1 ha","100 m2",
+	String[] hUtbredning = {"0,1 ha/0,25 skog","0,1 ha","","","0.1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","","0,1 ha","0,1 ha","0,1 ha","0,1 ha","100 m2",
 			"0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha","0,1 ha",
 			"0,1 ha","0,25 ha","1 ha","0,1 ha","","0,1 ha","0,1 ha","","0,1 ha","","100 m2","0,1 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha",
 			"0,1 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,25 ha","0,1 ha","0,25 ha","0,25 ha"};
