@@ -338,7 +338,7 @@ public class ActivityZoneSplit extends M_Activity {
 		bg.removeAllViews();
 
 		//Trädförekomst
-		entries = new ArrayList<String>(Arrays.asList("Trädlös","Enstaka träd","Skog (>2,5 ha)"));
+		entries = new ArrayList<String>(Arrays.asList("Trädlös","Enstaka träd","Skog (>0,25 ha)"));
 		values = sequence(entries);
 		addSpinnerInput(bg,"Trädförekomst","Trädförekomst på öar",py.getTradforekomst(),ID_Tradforekomst,entries,values);
 
